@@ -1,0 +1,77 @@
+@host = https://localhost:7134
+@token = 
+
+### Registrar um novo usuário
+POST {{host}}/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "player1",
+  "email": "player1@example.com",
+  "password": "Password123!"
+}
+
+### Login de usuário
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{
+  "usernameOrEmail": "player1",
+  "password": "Password123!"
+}
+
+### Validar Token
+POST {{host}}/api/auth/validate-token
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+"{{token}}"
+
+### Obter detalhes da própria conta
+GET {{host}}/api/account/me
+Authorization: Bearer {{token}}
+
+### Atualizar dados da própria conta
+PUT {{host}}/api/account/me
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "email": "player1-updated@example.com",
+  "currentPassword": "Password123!",
+  "newPassword": "NewPassword456!"
+}
+
+### Limpar cache do próprio usuário
+POST {{host}}/api/account/me/clear-cache
+Authorization: Bearer {{token}}
+
+### [ADMIN] Obter detalhes da conta de outro usuário
+GET {{host}}/api/account/{userId}
+Authorization: Bearer {{token}}
+
+### [ADMIN] Banir um usuário
+POST {{host}}/api/account/{userId}/ban
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "until": "2025-12-31T23:59:59Z",
+  "reason": "Violação dos termos de uso"
+}
+
+### [ADMIN] Desbanir um usuário
+POST {{host}}/api/account/{userId}/unban
+Authorization: Bearer {{token}}
+
+### [ADMIN] Ativar uma conta
+POST {{host}}/api/account/{userId}/activate
+Authorization: Bearer {{token}}
+
+### [ADMIN] Desativar uma conta
+POST {{host}}/api/account/{userId}/deactivate
+Authorization: Bearer {{token}}
+
+### [ADMIN] Limpar cache para um usuário específico
+POST {{host}}/api/account/{userId}/clear-cache
+Authorization: Bearer {{token}}

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.2.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>8ac9eb63-21f1-4536-bfaf-29c3294d050b</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../GameServer.AuthService/GameServer.AuthService.csproj" />
+    <ProjectReference Include="..\GameServer.ApiService\GameServer.ApiService.csproj" />
+    <ProjectReference Include="..\GameServer.Web\GameServer.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.2.1" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="9.2.1" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="9.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="obj\Debug\net9.0\Aspire\references\" />
+  </ItemGroup>
+
+</Project>

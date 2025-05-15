@@ -1,0 +1,7 @@
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/GameServer.CharacterService.csproj.AssemblyReference.cache
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/GameServer.CharacterService.GeneratedMSBuildEditorConfig.editorconfig
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/GameServer.CharacterService.AssemblyInfoInputs.cache
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/GameServer.CharacterService.AssemblyInfo.cs
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/GameServer.CharacterService.csproj.CoreCompileInputs.cache
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/GameServer.CharacterService.MvcApplicationPartsAssemblyInfo.cs
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/GameServer.CharacterService.MvcApplicationPartsAssemblyInfo.cache

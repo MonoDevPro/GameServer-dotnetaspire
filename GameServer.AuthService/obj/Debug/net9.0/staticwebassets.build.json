@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "XiN4Q8n6JYIhHV1RTr2X3FQi2sFlMe2yKLGA7C2qt18=",
+  "Source": "GameServer.AuthService",
+  "BasePath": "_content/GameServer.AuthService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

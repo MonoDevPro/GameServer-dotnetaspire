@@ -1,0 +1,6 @@
+@GameServer.CharacterService_HostAddress = http://localhost:5145
+
+GET {{GameServer.CharacterService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
