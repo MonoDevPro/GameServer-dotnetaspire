@@ -1,31 +1,29 @@
-using Microsoft.Extensions.Hosting;
-
 var builder = DistributedApplication.CreateBuilder(args);
 
 // Declaração de um recurso PostgreSQL
 var postgresdb = builder.AddPostgres("postgresdb")
-    .WithVolume("postgresdb-data", "/var/lib/postgresql/data") // Opcional: persistir dados em um volume Docker
+    .WithVolume("postgres-data", "/var/lib/postgresql/data") // <-- Volume aplicado CORRETAMENTE ao SERVIDOR
     .WithPgAdmin();
-
-// Declaração de um recurso de messaging RabbitMQ
-var rabbitmq = builder.AddRabbitMQ("rabbitmq")
-    .WithVolume("rabbitmq-data", "/var/lib/rabbitmq") // Opcional: persistir dados em um volume Docker
-    .WithManagementPlugin();
-
-var apiService = builder.AddProject<Projects.GameServer_ApiService>("apiservice")
-    .WithHttpsHealthCheck("/health");
+var authdb = postgresdb // Referência ao banco de dados PostgreSQL
+    .AddDatabase("authdb", "authdb");
+var chardb = postgresdb // Referência ao banco de dados PostgreSQL
+    .AddDatabase("chardb", "chardb");
 
 var authService = builder.AddProject<Projects.GameServer_AuthService>("authservice")
     .WithHttpsHealthCheck("/health")
-    .WithReference(postgresdb); // Referência ao banco de dados PostgreSQL
+    .WithReference(authdb); // Referência ao banco de dados PostgreSQL
 
-builder.AddProject<Projects.GameServer_Web>("webfrontend")
-    .WithExternalHttpEndpoints()
+var characterService = builder.AddProject<Projects.GameServer_CharacterService>("characterservice")
     .WithHttpsHealthCheck("/health")
-    .WithReference(apiService)
+    .WithReference(chardb) // Referência ao banco de dados PostgreSQL
+    .WaitFor(authService); // aguarda o serviço de autenticação
+
+var gameServer = builder.AddProject<Projects.GameServer_Web>("webservice")
+    .WithHttpsHealthCheck("/health")
+    .WithExternalHttpEndpoints()
     .WithReference(authService)
-    .WaitFor(apiService)
-    .WaitFor(authService);
+    .WithReference(characterService)
+    .WaitFor(characterService); // aguarda o serviço de personagens
 
 builder.Build().Run();
 

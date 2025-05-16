@@ -13,7 +13,7 @@ public class Character
     public DateTime CreatedAt { get; private set; }
     public DateTime LastUpdatedAt { get; private set; }
     public bool IsActive { get; private set; }
-    public virtual List<InventoryItem> Inventory { get; private set; } = new List<InventoryItem>();
+    public virtual List<InventoryItem> Inventory { get; private set; } = [];
 
     // Construtor privado para EF Core
     private Character() { }

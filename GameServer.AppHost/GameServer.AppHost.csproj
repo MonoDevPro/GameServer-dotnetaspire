@@ -12,14 +12,13 @@
 
   <ItemGroup>
     <ProjectReference Include="../GameServer.AuthService/GameServer.AuthService.csproj" />
-    <ProjectReference Include="..\GameServer.ApiService\GameServer.ApiService.csproj" />
-    <ProjectReference Include="..\GameServer.Web\GameServer.Web.csproj" />
+    <ProjectReference Include="../GameServer.CharacterService/GameServer.CharacterService.csproj" />
+    <ProjectReference Include="../GameServer.Web/GameServer.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="9.2.1" />
     <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="9.2.1" />
-    <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="9.2.1" />
   </ItemGroup>
 
   <ItemGroup>

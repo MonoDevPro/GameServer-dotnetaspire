@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GameServer.ServiceDefaults\GameServer.ServiceDefaults.csproj" />
+    <ProjectReference Include="../GameServer.ServiceDefaults/GameServer.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

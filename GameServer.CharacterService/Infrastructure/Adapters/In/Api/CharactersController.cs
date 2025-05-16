@@ -3,6 +3,7 @@ using GameServer.CharacterService.Application.Models;
 using GameServer.CharacterService.Application.Ports.In;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace GameServer.CharacterService.Infrastructure.Adapters.In.Api;
 
@@ -26,6 +27,7 @@ public class CharactersController : ControllerBase
     /// Obtém todos os personagens da conta do usuário autenticado
     /// </summary>
     [HttpGet]
+    [EnableRateLimiting("character-get")]  // Aplicando rate limiting
     [ProducesResponseType(typeof(CharacterListResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> GetCharacters()
@@ -53,6 +55,7 @@ public class CharactersController : ControllerBase
     /// Obtém um personagem específico pelo ID
     /// </summary>
     [HttpGet("{id:guid}")]
+    [EnableRateLimiting("character-get")]  // Aplicando rate limiting
     [ProducesResponseType(typeof(CharacterResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(StatusCodes.Status403Forbidden)]
@@ -94,6 +97,7 @@ public class CharactersController : ControllerBase
     /// Cria um novo personagem
     /// </summary>
     [HttpPost]
+    [EnableRateLimiting("character-put")]  // Aplicando rate limiting
     [ProducesResponseType(typeof(CharacterResponse), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -132,6 +136,7 @@ public class CharactersController : ControllerBase
     /// Atualiza um personagem existente
     /// </summary>
     [HttpPut("{id:guid}")]
+    [EnableRateLimiting("character-put")]  // Aplicando rate limiting
     [ProducesResponseType(typeof(CharacterResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -180,6 +185,7 @@ public class CharactersController : ControllerBase
     /// Desativa um personagem
     /// </summary>
     [HttpPut("{id:guid}/deactivate")]
+    [EnableRateLimiting("character-put")]  // Aplicando rate limiting
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(StatusCodes.Status403Forbidden)]
@@ -223,6 +229,7 @@ public class CharactersController : ControllerBase
     /// Ativa um personagem
     /// </summary>
     [HttpPut("{id:guid}/activate")]
+    [EnableRateLimiting("character-put")]  // Aplicando rate limiting
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(StatusCodes.Status403Forbidden)]

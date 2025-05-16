@@ -56,9 +56,6 @@ public class JwtTokenGenerator : ITokenGenerator
                 
                 // Todos os usuários têm pelo menos a role Player
                 new Claim(ClaimTypes.Role, "Player"),
-                
-                // aqui o accountId explicitamente
-                new Claim("accountId", user.Id.ToString())
             };
 
             // Se o usuário for administrador, adiciona a role "Admin" às claims

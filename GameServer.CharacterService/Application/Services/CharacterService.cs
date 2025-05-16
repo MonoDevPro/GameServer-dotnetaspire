@@ -9,32 +9,21 @@ namespace GameServer.CharacterService.Application.Services;
 public class CharacterService : ICharacterUseCases
 {
     private readonly ICharacterRepository _characterRepository;
-    private readonly IAccountsCache _accountsCache;
     private readonly CharacterCreationService _characterCreationService;
     private readonly ILogger<CharacterService> _logger;
 
     public CharacterService(
         ICharacterRepository characterRepository,
-        IAccountsCache accountsCache,
         CharacterCreationService characterCreationService,
         ILogger<CharacterService> logger)
     {
         _characterRepository = characterRepository;
-        _accountsCache = accountsCache;
         _characterCreationService = characterCreationService;
         _logger = logger;
     }
 
     public async Task<CharacterResponse> CreateCharacter(Guid accountId, CreateCharacterRequest request)
     {
-        // Verificar se a conta existe e está ativa
-        var isActive = await _accountsCache.IsActiveAsync(accountId);
-        if (!isActive)
-        {
-            _logger.LogWarning("Tentativa de criar personagem para conta inativa: {AccountId}", accountId);
-            throw new ArgumentException("A conta não está ativa", nameof(accountId));
-        }
-
         // Verificar se o nome já está em uso
         var nameExists = await _characterRepository.ExistsByNameAsync(request.Name);
         if (nameExists)
@@ -44,7 +33,7 @@ public class CharacterService : ICharacterUseCases
         }
 
         // Verificar quantos personagens a conta já tem
-        var characterCount = await _characterRepository.GetCountByAccountIdAsync(accountId);
+        var characterCount = await _characterRepository.GetCountByUserIdAsync(accountId);
         if (characterCount >= 5) // Limite de 5 personagens por conta
         {
             _logger.LogWarning("Tentativa de criar mais de 5 personagens para conta: {AccountId}", accountId);
@@ -76,8 +65,8 @@ public class CharacterService : ICharacterUseCases
     {
         try
         {
-            var characters = await _characterRepository.GetByAccountIdAsync(accountId);
-            var totalCount = await _characterRepository.GetCountByAccountIdAsync(accountId);
+            var characters = await _characterRepository.GetByUserIdAsync(accountId);
+            var totalCount = await _characterRepository.GetCountByUserIdAsync(accountId);
             
             var characterResponses = characters.Select(MapToCharacterResponse);
             
@@ -109,14 +98,6 @@ public class CharacterService : ICharacterUseCases
         {
             _logger.LogWarning("Tentativa de atualizar personagem inexistente: {CharacterId}", characterId);
             throw new KeyNotFoundException($"Personagem com ID {characterId} não encontrado");
-        }
-
-        // Verificar se a conta está ativa
-        var isActive = await _accountsCache.IsActiveAsync(character.AccountId);
-        if (!isActive)
-        {
-            _logger.LogWarning("Tentativa de atualizar personagem de conta inativa: {AccountId}", character.AccountId);
-            throw new InvalidOperationException("A conta não está ativa");
         }
 
         try
@@ -183,14 +164,6 @@ public class CharacterService : ICharacterUseCases
         {
             _logger.LogWarning("Tentativa de ativar personagem inexistente: {CharacterId}", characterId);
             throw new KeyNotFoundException($"Personagem com ID {characterId} não encontrado");
-        }
-
-        // Verificar se a conta está ativa
-        var isActive = await _accountsCache.IsActiveAsync(character.AccountId);
-        if (!isActive)
-        {
-            _logger.LogWarning("Tentativa de ativar personagem de conta inativa: {AccountId}", character.AccountId);
-            throw new InvalidOperationException("Não é possível ativar personagem de uma conta inativa");
         }
 
         try

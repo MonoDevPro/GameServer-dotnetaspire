@@ -73,7 +73,7 @@ public class EfCharacterRepository : ICharacterRepository
         }
     }
 
-    public async Task<IEnumerable<Character>> GetByAccountIdAsync(Guid accountId)
+    public async Task<IEnumerable<Character>> GetByUserIdAsync(Guid accountId)
     {
         try
         {
@@ -104,7 +104,7 @@ public class EfCharacterRepository : ICharacterRepository
         }
     }
 
-    public async Task<int> GetCountByAccountIdAsync(Guid accountId)
+    public async Task<int> GetCountByUserIdAsync(Guid accountId)
     {
         try
         {

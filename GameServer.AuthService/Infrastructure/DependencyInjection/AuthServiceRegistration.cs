@@ -21,9 +21,6 @@ public static class AuthServiceRegistration
     /// </summary>
     public static IServiceCollection AddHexagonalAuthService(this IServiceCollection services, IConfiguration configuration)
     {
-        /// <summary>
-        /// Application Services - Serviços de Aplicação
-        /// </summary>
         // 1. Implementações concretas das portas de entrada
         services.AddScoped<IAuthenticationService, AuthenticationService>();
         services.AddScoped<IAccountService, AccountService>();

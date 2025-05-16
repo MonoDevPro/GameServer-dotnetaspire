@@ -11,6 +11,8 @@ public interface ICharacterRepository
     /// Obtém um personagem pelo ID
     /// </summary>
     Task<Character?> GetByIdAsync(Guid id);
+
+    Task<Character?> GetByNameAsync(string name);
     
     /// <summary>
     /// Verifica se já existe um personagem com o mesmo nome
@@ -20,12 +22,12 @@ public interface ICharacterRepository
     /// <summary>
     /// Obtém personagens por ID da conta
     /// </summary>
-    Task<IEnumerable<Character>> GetByAccountIdAsync(Guid accountId);
+    Task<IEnumerable<Character>> GetByUserIdAsync(Guid accountId);
     
     /// <summary>
     /// Obtém a contagem total de personagens por ID da conta
     /// </summary>
-    Task<int> GetCountByAccountIdAsync(Guid accountId);
+    Task<int> GetCountByUserIdAsync(Guid accountId);
     
     /// <summary>
     /// Cria um novo personagem
@@ -35,7 +37,7 @@ public interface ICharacterRepository
     /// <summary>
     /// Atualiza um personagem existente
     /// </summary>
-    Task<Character> UpdateAsync(Character character);
+    Task<bool> UpdateAsync(Character character);
     
     /// <summary>
     /// Exclui um personagem (exclusão física ou lógica)

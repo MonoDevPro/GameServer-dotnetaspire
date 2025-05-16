@@ -179,3 +179,4 @@
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/Aspire.RabbitMQ.Client.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/HealthChecks.Rabbitmq.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/RabbitMQ.Client.dll
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/obj/Debug/net9.0/GameServer.AuthService.sourcelink.json

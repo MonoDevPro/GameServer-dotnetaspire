@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "nYlDjLmYBrrI4ymuro6kSHssQ7vu0c/UmkSbGmXFRdg=",
+  "Source": "GameServer.CharacterService",
+  "BasePath": "_content/GameServer.CharacterService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

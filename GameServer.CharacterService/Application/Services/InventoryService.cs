@@ -11,20 +11,17 @@ public class InventoryService : IInventoryUseCases
     private readonly ICharacterRepository _characterRepository;
     private readonly IInventoryRepository _inventoryRepository;
     private readonly DomainInventoryService _domainInventoryService;
-    private readonly IAccountsCache _accountsCache;
     private readonly ILogger<InventoryService> _logger;
 
     public InventoryService(
         ICharacterRepository characterRepository,
         IInventoryRepository inventoryRepository,
         DomainInventoryService domainInventoryService,
-        IAccountsCache accountsCache,
         ILogger<InventoryService> logger)
     {
         _characterRepository = characterRepository;
         _inventoryRepository = inventoryRepository;
         _domainInventoryService = domainInventoryService;
-        _accountsCache = accountsCache;
         _logger = logger;
     }
 
@@ -76,14 +73,6 @@ public class InventoryService : IInventoryUseCases
         {
             _logger.LogWarning("Tentativa de adicionar item para personagem inativo: {CharacterId}", characterId);
             throw new InvalidOperationException("Não é possível adicionar itens a um personagem inativo");
-        }
-
-        // Verificar se a conta está ativa
-        var isActive = await _accountsCache.IsActiveAsync(character.AccountId);
-        if (!isActive)
-        {
-            _logger.LogWarning("Tentativa de adicionar item para personagem de conta inativa: {AccountId}", character.AccountId);
-            throw new InvalidOperationException("A conta associada a este personagem não está ativa");
         }
 
         try

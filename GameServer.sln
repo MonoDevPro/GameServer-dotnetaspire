@@ -1,58 +1,60 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.AppHost", "GameServer.AppHost\GameServer.AppHost.csproj", "{68B143F1-A373-4648-92A1-A3B54E275823}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.AppHost", "GameServer.AppHost\GameServer.AppHost.csproj", "{1354EB8A-2B92-1B3B-7C17-CBEE243DC6E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.ServiceDefaults", "GameServer.ServiceDefaults\GameServer.ServiceDefaults.csproj", "{3365725B-A08B-4794-893E-C717D4DFE9EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.ServiceDefaults", "GameServer.ServiceDefaults\GameServer.ServiceDefaults.csproj", "{B4781513-7348-C492-7E25-F6BEB80F1E3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.ApiService", "GameServer.ApiService\GameServer.ApiService.csproj", "{A56B4806-E395-4DB9-BEEC-BD45775FBB80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.AuthService", "GameServer.AuthService\GameServer.AuthService.csproj", "{721EB500-5215-7601-22D8-E5308BCB96DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.Web", "GameServer.Web\GameServer.Web.csproj", "{6B231163-2B7F-4337-A0B5-6EC409D198F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.AuthService.Tests", "GameServer.AuthService.Tests\GameServer.AuthService.Tests.csproj", "{F3DA0375-4468-0C6A-B487-11CA4A9F37D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.AuthService", "GameServer.AuthService\GameServer.AuthService.csproj", "{0313012A-0F4E-41F6-9E22-7F2719B6FBB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.CharacterService", "GameServer.CharacterService\GameServer.CharacterService.csproj", "{3DEC5074-7361-36BB-C6DA-62ADA8253164}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.AuthService.Tests", "GameServer.AuthService.Tests\GameServer.AuthService.Tests.csproj", "{5BC345A0-3BF0-4BCE-8DEF-65195DDB0734}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.Web", "GameServer.Web\GameServer.Web.csproj", "{3A1B21D9-472D-2A9F-118F-44C7E39783AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.CharacterService", "GameServer.CharacterService\GameServer.CharacterService.csproj", "{241462C5-679A-48AC-8162-DD194D6AFC27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer.WorldService", "GameServer\GameServer.WorldService.csproj", "{23D0DF70-772C-41A8-BB46-D10E44190D24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1354EB8A-2B92-1B3B-7C17-CBEE243DC6E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1354EB8A-2B92-1B3B-7C17-CBEE243DC6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1354EB8A-2B92-1B3B-7C17-CBEE243DC6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1354EB8A-2B92-1B3B-7C17-CBEE243DC6E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4781513-7348-C492-7E25-F6BEB80F1E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4781513-7348-C492-7E25-F6BEB80F1E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4781513-7348-C492-7E25-F6BEB80F1E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4781513-7348-C492-7E25-F6BEB80F1E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721EB500-5215-7601-22D8-E5308BCB96DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721EB500-5215-7601-22D8-E5308BCB96DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721EB500-5215-7601-22D8-E5308BCB96DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721EB500-5215-7601-22D8-E5308BCB96DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3DA0375-4468-0C6A-B487-11CA4A9F37D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3DA0375-4468-0C6A-B487-11CA4A9F37D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3DA0375-4468-0C6A-B487-11CA4A9F37D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3DA0375-4468-0C6A-B487-11CA4A9F37D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DEC5074-7361-36BB-C6DA-62ADA8253164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DEC5074-7361-36BB-C6DA-62ADA8253164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DEC5074-7361-36BB-C6DA-62ADA8253164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DEC5074-7361-36BB-C6DA-62ADA8253164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A1B21D9-472D-2A9F-118F-44C7E39783AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1B21D9-472D-2A9F-118F-44C7E39783AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1B21D9-472D-2A9F-118F-44C7E39783AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1B21D9-472D-2A9F-118F-44C7E39783AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D0DF70-772C-41A8-BB46-D10E44190D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D0DF70-772C-41A8-BB46-D10E44190D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D0DF70-772C-41A8-BB46-D10E44190D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D0DF70-772C-41A8-BB46-D10E44190D24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{68B143F1-A373-4648-92A1-A3B54E275823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68B143F1-A373-4648-92A1-A3B54E275823}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68B143F1-A373-4648-92A1-A3B54E275823}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68B143F1-A373-4648-92A1-A3B54E275823}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3365725B-A08B-4794-893E-C717D4DFE9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3365725B-A08B-4794-893E-C717D4DFE9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3365725B-A08B-4794-893E-C717D4DFE9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3365725B-A08B-4794-893E-C717D4DFE9EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A56B4806-E395-4DB9-BEEC-BD45775FBB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A56B4806-E395-4DB9-BEEC-BD45775FBB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A56B4806-E395-4DB9-BEEC-BD45775FBB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A56B4806-E395-4DB9-BEEC-BD45775FBB80}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B231163-2B7F-4337-A0B5-6EC409D198F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B231163-2B7F-4337-A0B5-6EC409D198F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B231163-2B7F-4337-A0B5-6EC409D198F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B231163-2B7F-4337-A0B5-6EC409D198F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0313012A-0F4E-41F6-9E22-7F2719B6FBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0313012A-0F4E-41F6-9E22-7F2719B6FBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0313012A-0F4E-41F6-9E22-7F2719B6FBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0313012A-0F4E-41F6-9E22-7F2719B6FBB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5BC345A0-3BF0-4BCE-8DEF-65195DDB0734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BC345A0-3BF0-4BCE-8DEF-65195DDB0734}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BC345A0-3BF0-4BCE-8DEF-65195DDB0734}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BC345A0-3BF0-4BCE-8DEF-65195DDB0734}.Release|Any CPU.Build.0 = Release|Any CPU
-		{241462C5-679A-48AC-8162-DD194D6AFC27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{241462C5-679A-48AC-8162-DD194D6AFC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{241462C5-679A-48AC-8162-DD194D6AFC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{241462C5-679A-48AC-8162-DD194D6AFC27}.Release|Any CPU.Build.0 = Release|Any CPU
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45515C58-0A61-4A67-B5F4-E0EBD989B476}
 	EndGlobalSection
 EndGlobal

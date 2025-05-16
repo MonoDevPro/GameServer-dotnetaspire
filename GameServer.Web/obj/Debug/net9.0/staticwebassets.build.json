@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vdGp4Deq82H75GWLxhYQEjVIZHdkFYVY2mu1iVPWI9E=",
+  "Hash": "piU5nEtqqDkjXyimp3KO/b1FrR5XLGTrC6EitqyiG5Q=",
   "Source": "GameServer.Web",
   "BasePath": "_content/GameServer.Web",
   "Mode": "Default",
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-eifuxh3apv.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-2lliat6w8e.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint=eifuxh3apv}]?.map.gz",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint=2lliat6w8e}]?.map.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -115,8 +115,8 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7dbhmezvnl",
-      "Integrity": "Ne6mBKc0FJ69vsh7gaRDB+/ROD50j4O6zheosPCT8bc=",
+      "Fingerprint": "e18usttpwm",
+      "Integrity": "zjsXVcsgqTC5r64KoqM/dnBkh5mv6EwpeOqwAFwRA7A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-vdv1rcdpjw.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-pvflz0xxoc.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "app#[.{fingerprint=vdv1rcdpjw}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=pvflz0xxoc}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fpfxkwsitd",
-      "Integrity": "wyF043H9Gzg/QSx/cTRfz/EFqVbvgDDu6ISqqskkt54=",
+      "Fingerprint": "4trizbbd32",
+      "Integrity": "uKPiAYJWbIiI4yjE1RcrPx+u84jHOC1h79LGXPyzKUA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/app.css"
@@ -248,12 +248,12 @@
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-23uacwfyv0.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-dgjwef9tq0.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint=23uacwfyv0}]?.map.gz",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint=dgjwef9tq0}]?.map.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -262,8 +262,8 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3a3b5q341v",
-      "Integrity": "pR0Ag7E4rT+2izFJf3EYBsBUj+Un8iOa6tDsDGn0Tkg=",
+      "Fingerprint": "brwlyihey2",
+      "Integrity": "6ewnjcF8Z52ov4ljXBNi4wkP1Cypw3J8awqVuIk4ZZQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
@@ -584,12 +584,12 @@
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-dep4p3korh.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-268o6umgdk.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint=dep4p3korh}]?.js.gz",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint=268o6umgdk}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -598,8 +598,8 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "gnezmvx6ov",
-      "Integrity": "FIn+PXASHCLmIy7vwKfL73p2hEMxjj3kNsf4LKxOqe8=",
+      "Fingerprint": "ia0a8m09cc",
+      "Integrity": "BoCFrYmICJfFtxVBKFY8xafn3GW808tQcc/v9z8bP30=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
@@ -626,12 +626,12 @@
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-zsykr4ggw7.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-seqzrpmm51.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint=zsykr4ggw7}]?.map.gz",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint=seqzrpmm51}]?.map.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -640,8 +640,8 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "77yaxjxxzo",
-      "Integrity": "owgKxTGNPxEr0wKNHWqobPCLi1oduh4Ak4WIb7/GAJ8=",
+      "Fingerprint": "jvk7j14o61",
+      "Integrity": "bzwTyjCLJZYhdEHjkH5RXZROs+aFy2bAe4R+LZJ9VTM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
@@ -815,12 +815,12 @@
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-00je11psij.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-acyxpdvfio.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint=00je11psij}]?.js.gz",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint=acyxpdvfio}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -829,19 +829,19 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "91sqinn8ah",
-      "Integrity": "k3Eg+lnkLa2LkRPAaddOhNiMEF+YaRitoxrprPmu+e8=",
+      "Fingerprint": "1gk138vlzk",
+      "Integrity": "wVBUZYuS8hUktiojAYJmcIg5L2iUI8LyNV2ngIJZW4o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-xrytv2kf82.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-1pun7cbrze.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint=xrytv2kf82}]?.js.gz",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint=1pun7cbrze}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -850,19 +850,19 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "w8lg6j38fi",
-      "Integrity": "cA46BXGuXxewGxzcXFHfVyFmWAvdQEIjyPNFidJnnOA=",
+      "Fingerprint": "8kcvpyeb2y",
+      "Integrity": "qI0V1bd4I1q3UHnibqfMV+sAbkaHxKwn9iQGk/z9SvU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-l3dlg6funf.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-5mnkgnlui1.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint=l3dlg6funf}]?.map.gz",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint=5mnkgnlui1}]?.map.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -871,8 +871,8 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9fsyylwhq4",
-      "Integrity": "Zdp9Eew+c4BR0EEHRFNWFAM/PG6nLkeb/sN+21aZv+g=",
+      "Fingerprint": "wjnbn5exam",
+      "Integrity": "/BZ2HNodQUwrADgKSx0Hu+oqHqg/J/8SOmb28ym3ayw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
@@ -899,12 +899,12 @@
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-iofbj0yrob.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-wcrvd1j25r.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint=iofbj0yrob}]?.map.gz",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint=wcrvd1j25r}]?.map.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -913,8 +913,8 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "1ov4vr7yw4",
-      "Integrity": "UTSrmoZPUSoISDPo89EeqnCayntVxNpBgW0GB4Bubgk=",
+      "Fingerprint": "pav3wl43lw",
+      "Integrity": "z6p9EJhUulqh81Mxa3hBNXgoxaQ7O0o2A7sFGVbk5vo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
@@ -983,12 +983,12 @@
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-4ikyqr2tnb.gz",
+      "Identity": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-rfkjifgvl9.gz",
       "SourceId": "GameServer.Web",
       "SourceType": "Discovered",
       "ContentRoot": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/GameServer.Web",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint=4ikyqr2tnb}]?.map.gz",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint=rfkjifgvl9}]?.map.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -997,8 +997,8 @@
       "RelatedAsset": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "cm5b8t0tqp",
-      "Integrity": "zDJbqTB4+fTatIouITBGbxL4zLU4bHdaFVpr82bCLNY=",
+      "Fingerprint": "9lvp811z9z",
+      "Integrity": "LeiADllRqfEVt0Um5FmiPBc7oFvZnNQWzuyd3jgSWzM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vdv1rcdpjw",
-      "Integrity": "3e+vh6/KUk22C9Sv/RAg7nA1uAALNQb9ua9ZOjuAHbk=",
+      "Fingerprint": "pvflz0xxoc",
+      "Integrity": "pZZPcNlexr4OrOZgFnLfVmXrS1yBlnspZXrCtGxKpqU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/app.css"
@@ -1774,8 +1774,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "00je11psij",
-      "Integrity": "sCwUaADduLQ9+JrTYIg2RCFctP3kHctA19pQ0cnxcW8=",
+      "Fingerprint": "acyxpdvfio",
+      "Integrity": "GukdcwJKsXhNR1gIffIQFlOMqdsBeGoCuhk7a8kOQas=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
@@ -1795,8 +1795,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "23uacwfyv0",
-      "Integrity": "Ms1KM0PduC/8cTCr1VZuHJFyCcQwrfJlWqC0Ecw4JIk=",
+      "Fingerprint": "dgjwef9tq0",
+      "Integrity": "fWQs5o0kPOUaC8cQ/E4RMica4HO9W0WGGbZlTLJa58A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
@@ -1837,8 +1837,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "iofbj0yrob",
-      "Integrity": "3giMNvZLixy7XrVTzFJ6955ZZMSoqDEjQ0qhCD8CN6g=",
+      "Fingerprint": "wcrvd1j25r",
+      "Integrity": "QB1qtmxj9ytdasFT8FSFTFE+0Q97DVrrxUsCVUh0ngk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
@@ -1858,8 +1858,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dep4p3korh",
-      "Integrity": "a8EpLEESAFDrRPZ/3fKQZS9Sq/MCvJSTAAF7+msgJ5g=",
+      "Fingerprint": "268o6umgdk",
+      "Integrity": "pmJJWdpAwrC1OSjBXUaE9hdfeMGcAnBh3m/r+VyFjtw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
@@ -1879,8 +1879,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4ikyqr2tnb",
-      "Integrity": "TKKQunivpjpOrOMHvVhnEpnC039WzOihePy8EpzjsNY=",
+      "Fingerprint": "rfkjifgvl9",
+      "Integrity": "yWPBAaZL7Ea4PF/VOobgXMVb++O/4HcjDIlMTFa5ubw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
@@ -1921,8 +1921,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l3dlg6funf",
-      "Integrity": "b3I23Af+7BfXH6so+XLVnDh4oPnWD6yRMZ2M5cmJIAE=",
+      "Fingerprint": "5mnkgnlui1",
+      "Integrity": "c69UgoBAlIzLRuBuFJkKXvciNbP3RYi55EAmARTj9gg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
@@ -1942,8 +1942,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xrytv2kf82",
-      "Integrity": "s+OXOTcmWfKy2uS/ek9g742HDSN+4eflCtdRXhVWdDY=",
+      "Fingerprint": "1pun7cbrze",
+      "Integrity": "JYIl3HLMxah5KV/eIqteJFn5qYg+j/IpV6F0E8GE1k0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
@@ -1963,8 +1963,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "eifuxh3apv",
-      "Integrity": "Bv+oW0aT7iRN2UUb1ExZWbbNXASJS4nAOQ65S4j47OE=",
+      "Fingerprint": "2lliat6w8e",
+      "Integrity": "xntUuK4dVENJbznCNFuUlCIcEiChgzIX664ykq83tJg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
@@ -2005,8 +2005,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zsykr4ggw7",
-      "Integrity": "M3jeZdm1lLNAbJ+mkGv8vmxHhJGhpMjN84fw5rfGGOA=",
+      "Fingerprint": "seqzrpmm51",
+      "Integrity": "dE9VkaDQxO8t8qB3UvUW2mIrtC0njfXazWBVCtVbPkk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
@@ -2015,7 +2015,7 @@
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-vdv1rcdpjw.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-pvflz0xxoc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2034,11 +2034,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wyF043H9Gzg/QSx/cTRfz/EFqVbvgDDu6ISqqskkt54=\""
+          "Value": "\"uKPiAYJWbIiI4yjE1RcrPx+u84jHOC1h79LGXPyzKUA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2058,13 +2058,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"3e+vh6/KUk22C9Sv/RAg7nA1uAALNQb9ua9ZOjuAHbk=\""
+          "Value": "W/\"pZZPcNlexr4OrOZgFnLfVmXrS1yBlnspZXrCtGxKpqU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3e+vh6/KUk22C9Sv/RAg7nA1uAALNQb9ua9ZOjuAHbk="
+          "Value": "sha256-pZZPcNlexr4OrOZgFnLfVmXrS1yBlnspZXrCtGxKpqU="
         }
       ]
     },
@@ -2087,11 +2087,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3e+vh6/KUk22C9Sv/RAg7nA1uAALNQb9ua9ZOjuAHbk=\""
+          "Value": "\"pZZPcNlexr4OrOZgFnLfVmXrS1yBlnspZXrCtGxKpqU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2101,13 +2101,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3e+vh6/KUk22C9Sv/RAg7nA1uAALNQb9ua9ZOjuAHbk="
+          "Value": "sha256-pZZPcNlexr4OrOZgFnLfVmXrS1yBlnspZXrCtGxKpqU="
         }
       ]
     },
     {
       "Route": "app.css.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-vdv1rcdpjw.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-pvflz0xxoc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2124,11 +2124,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wyF043H9Gzg/QSx/cTRfz/EFqVbvgDDu6ISqqskkt54=\""
+          "Value": "\"uKPiAYJWbIiI4yjE1RcrPx+u84jHOC1h79LGXPyzKUA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2146,13 +2146,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wyF043H9Gzg/QSx/cTRfz/EFqVbvgDDu6ISqqskkt54="
+          "Value": "sha256-uKPiAYJWbIiI4yjE1RcrPx+u84jHOC1h79LGXPyzKUA="
         }
       ]
     },
     {
-      "Route": "app.vdv1rcdpjw.css",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-vdv1rcdpjw.gz",
+      "Route": "app.pvflz0xxoc.css",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-pvflz0xxoc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2171,11 +2171,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wyF043H9Gzg/QSx/cTRfz/EFqVbvgDDu6ISqqskkt54=\""
+          "Value": "\"uKPiAYJWbIiI4yjE1RcrPx+u84jHOC1h79LGXPyzKUA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2195,13 +2195,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"3e+vh6/KUk22C9Sv/RAg7nA1uAALNQb9ua9ZOjuAHbk=\""
+          "Value": "W/\"pZZPcNlexr4OrOZgFnLfVmXrS1yBlnspZXrCtGxKpqU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vdv1rcdpjw"
+          "Value": "pvflz0xxoc"
         },
         {
           "Name": "label",
@@ -2209,12 +2209,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3e+vh6/KUk22C9Sv/RAg7nA1uAALNQb9ua9ZOjuAHbk="
+          "Value": "sha256-pZZPcNlexr4OrOZgFnLfVmXrS1yBlnspZXrCtGxKpqU="
         }
       ]
     },
     {
-      "Route": "app.vdv1rcdpjw.css",
+      "Route": "app.pvflz0xxoc.css",
       "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2232,11 +2232,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3e+vh6/KUk22C9Sv/RAg7nA1uAALNQb9ua9ZOjuAHbk=\""
+          "Value": "\"pZZPcNlexr4OrOZgFnLfVmXrS1yBlnspZXrCtGxKpqU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2246,7 +2246,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vdv1rcdpjw"
+          "Value": "pvflz0xxoc"
         },
         {
           "Name": "label",
@@ -2254,13 +2254,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3e+vh6/KUk22C9Sv/RAg7nA1uAALNQb9ua9ZOjuAHbk="
+          "Value": "sha256-pZZPcNlexr4OrOZgFnLfVmXrS1yBlnspZXrCtGxKpqU="
         }
       ]
     },
     {
-      "Route": "app.vdv1rcdpjw.css.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-vdv1rcdpjw.gz",
+      "Route": "app.pvflz0xxoc.css.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/5f1c4mqs0u-pvflz0xxoc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2277,11 +2277,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wyF043H9Gzg/QSx/cTRfz/EFqVbvgDDu6ISqqskkt54=\""
+          "Value": "\"uKPiAYJWbIiI4yjE1RcrPx+u84jHOC1h79LGXPyzKUA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2299,7 +2299,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vdv1rcdpjw"
+          "Value": "pvflz0xxoc"
         },
         {
           "Name": "label",
@@ -2307,7 +2307,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wyF043H9Gzg/QSx/cTRfz/EFqVbvgDDu6ISqqskkt54="
+          "Value": "sha256-uKPiAYJWbIiI4yjE1RcrPx+u84jHOC1h79LGXPyzKUA="
         }
       ]
     },
@@ -2334,7 +2334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2379,7 +2379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2418,7 +2418,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2479,7 +2479,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2524,7 +2524,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2579,7 +2579,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2640,7 +2640,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2685,7 +2685,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2740,7 +2740,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2793,7 +2793,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2830,7 +2830,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2877,7 +2877,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2930,7 +2930,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2967,7 +2967,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 06:13:43 GMT"
+          "Value": "Thu, 15 May 2025 23:08:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3014,7 +3014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3067,7 +3067,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3106,7 +3106,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3167,7 +3167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3212,7 +3212,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3265,7 +3265,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3312,7 +3312,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3365,7 +3365,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3402,7 +3402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3449,7 +3449,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3502,7 +3502,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3541,7 +3541,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3602,7 +3602,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3647,7 +3647,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3700,7 +3700,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3747,7 +3747,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3800,7 +3800,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3837,7 +3837,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3884,7 +3884,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3945,7 +3945,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3990,7 +3990,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4045,7 +4045,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4098,7 +4098,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4137,7 +4137,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4198,7 +4198,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4243,7 +4243,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4296,7 +4296,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4343,7 +4343,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4396,7 +4396,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4433,7 +4433,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4480,7 +4480,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4541,7 +4541,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4586,7 +4586,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4641,7 +4641,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4694,7 +4694,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4733,7 +4733,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4794,7 +4794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4839,7 +4839,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4892,7 +4892,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4939,7 +4939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4992,7 +4992,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5029,7 +5029,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5076,7 +5076,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5137,7 +5137,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5182,7 +5182,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5237,7 +5237,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5298,7 +5298,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5343,7 +5343,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5398,7 +5398,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5451,7 +5451,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5490,7 +5490,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5551,7 +5551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5596,7 +5596,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5649,7 +5649,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5696,7 +5696,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5749,7 +5749,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5786,7 +5786,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5833,7 +5833,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5886,7 +5886,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5925,7 +5925,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5986,7 +5986,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6031,7 +6031,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6084,7 +6084,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6131,7 +6131,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6184,7 +6184,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6221,7 +6221,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6268,7 +6268,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6329,7 +6329,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6374,7 +6374,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6429,7 +6429,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6490,7 +6490,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6535,7 +6535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6590,7 +6590,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6643,7 +6643,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6682,7 +6682,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6743,7 +6743,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6788,7 +6788,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6841,7 +6841,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6888,7 +6888,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6941,7 +6941,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6978,7 +6978,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7025,7 +7025,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7078,7 +7078,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7115,7 +7115,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7162,7 +7162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7223,7 +7223,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7268,7 +7268,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7323,7 +7323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7376,7 +7376,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7413,7 +7413,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7460,7 +7460,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7521,7 +7521,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7566,7 +7566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7621,7 +7621,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7682,7 +7682,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7727,7 +7727,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:23 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7782,7 +7782,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7835,7 +7835,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7872,7 +7872,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7919,7 +7919,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7972,7 +7972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8009,7 +8009,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8056,7 +8056,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8117,7 +8117,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8162,7 +8162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8217,7 +8217,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8278,7 +8278,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8323,7 +8323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8378,7 +8378,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8431,7 +8431,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8470,7 +8470,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8531,7 +8531,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8576,7 +8576,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8629,7 +8629,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8676,7 +8676,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8729,7 +8729,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8766,7 +8766,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8813,7 +8813,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8874,7 +8874,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8919,7 +8919,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8974,7 +8974,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9027,7 +9027,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9064,7 +9064,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9111,7 +9111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9172,7 +9172,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9217,7 +9217,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9272,7 +9272,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9325,7 +9325,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9362,7 +9362,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9409,7 +9409,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9470,7 +9470,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9515,7 +9515,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9570,7 +9570,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9623,7 +9623,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9660,7 +9660,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9707,7 +9707,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9760,7 +9760,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9797,7 +9797,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9844,7 +9844,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9905,7 +9905,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9950,7 +9950,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10005,7 +10005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10066,7 +10066,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10111,7 +10111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10166,7 +10166,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10219,7 +10219,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10256,7 +10256,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10303,7 +10303,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10356,7 +10356,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10393,7 +10393,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10440,7 +10440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10501,7 +10501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10546,7 +10546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10601,7 +10601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10662,7 +10662,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10707,7 +10707,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10762,7 +10762,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10815,7 +10815,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10852,7 +10852,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10899,7 +10899,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10952,7 +10952,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10989,7 +10989,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11036,7 +11036,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11097,7 +11097,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11142,7 +11142,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11197,7 +11197,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11250,7 +11250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11287,7 +11287,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11334,7 +11334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11395,7 +11395,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11440,7 +11440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11495,7 +11495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11548,7 +11548,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11585,7 +11585,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11632,7 +11632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11693,7 +11693,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11738,7 +11738,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11793,7 +11793,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11846,7 +11846,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11885,7 +11885,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11946,7 +11946,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11991,7 +11991,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12044,7 +12044,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12091,7 +12091,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12144,7 +12144,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12181,7 +12181,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12228,7 +12228,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12289,7 +12289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12334,7 +12334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12389,7 +12389,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12450,7 +12450,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12495,7 +12495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12526,8 +12526,169 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.00je11psij.js",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-00je11psij.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.1pun7cbrze.js",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-1pun7cbrze.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000025687131"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38929"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qI0V1bd4I1q3UHnibqfMV+sAbkaHxKwn9iQGk/z9SvU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JYIl3HLMxah5KV/eIqteJFn5qYg+j/IpV6F0E8GE1k0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1pun7cbrze"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JYIl3HLMxah5KV/eIqteJFn5qYg+j/IpV6F0E8GE1k0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.1pun7cbrze.js",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167417"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JYIl3HLMxah5KV/eIqteJFn5qYg+j/IpV6F0E8GE1k0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1pun7cbrze"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JYIl3HLMxah5KV/eIqteJFn5qYg+j/IpV6F0E8GE1k0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.1pun7cbrze.js.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-1pun7cbrze.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qI0V1bd4I1q3UHnibqfMV+sAbkaHxKwn9iQGk/z9SvU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1pun7cbrze"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qI0V1bd4I1q3UHnibqfMV+sAbkaHxKwn9iQGk/z9SvU="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.acyxpdvfio.js",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-acyxpdvfio.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -12546,11 +12707,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"k3Eg+lnkLa2LkRPAaddOhNiMEF+YaRitoxrprPmu+e8=\""
+          "Value": "\"wVBUZYuS8hUktiojAYJmcIg5L2iUI8LyNV2ngIJZW4o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12570,13 +12731,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sCwUaADduLQ9+JrTYIg2RCFctP3kHctA19pQ0cnxcW8=\""
+          "Value": "W/\"GukdcwJKsXhNR1gIffIQFlOMqdsBeGoCuhk7a8kOQas=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "00je11psij"
+          "Value": "acyxpdvfio"
         },
         {
           "Name": "label",
@@ -12584,12 +12745,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sCwUaADduLQ9+JrTYIg2RCFctP3kHctA19pQ0cnxcW8="
+          "Value": "sha256-GukdcwJKsXhNR1gIffIQFlOMqdsBeGoCuhk7a8kOQas="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.00je11psij.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.acyxpdvfio.js",
       "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -12607,11 +12768,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sCwUaADduLQ9+JrTYIg2RCFctP3kHctA19pQ0cnxcW8=\""
+          "Value": "\"GukdcwJKsXhNR1gIffIQFlOMqdsBeGoCuhk7a8kOQas=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12621,7 +12782,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "00je11psij"
+          "Value": "acyxpdvfio"
         },
         {
           "Name": "label",
@@ -12629,13 +12790,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sCwUaADduLQ9+JrTYIg2RCFctP3kHctA19pQ0cnxcW8="
+          "Value": "sha256-GukdcwJKsXhNR1gIffIQFlOMqdsBeGoCuhk7a8kOQas="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.00je11psij.js.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-00je11psij.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.acyxpdvfio.js.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-acyxpdvfio.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12652,11 +12813,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"k3Eg+lnkLa2LkRPAaddOhNiMEF+YaRitoxrprPmu+e8=\""
+          "Value": "\"wVBUZYuS8hUktiojAYJmcIg5L2iUI8LyNV2ngIJZW4o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12674,7 +12835,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "00je11psij"
+          "Value": "acyxpdvfio"
         },
         {
           "Name": "label",
@@ -12682,13 +12843,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-k3Eg+lnkLa2LkRPAaddOhNiMEF+YaRitoxrprPmu+e8="
+          "Value": "sha256-wVBUZYuS8hUktiojAYJmcIg5L2iUI8LyNV2ngIJZW4o="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-00je11psij.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-acyxpdvfio.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -12707,11 +12868,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"k3Eg+lnkLa2LkRPAaddOhNiMEF+YaRitoxrprPmu+e8=\""
+          "Value": "\"wVBUZYuS8hUktiojAYJmcIg5L2iUI8LyNV2ngIJZW4o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12731,13 +12892,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sCwUaADduLQ9+JrTYIg2RCFctP3kHctA19pQ0cnxcW8=\""
+          "Value": "W/\"GukdcwJKsXhNR1gIffIQFlOMqdsBeGoCuhk7a8kOQas=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sCwUaADduLQ9+JrTYIg2RCFctP3kHctA19pQ0cnxcW8="
+          "Value": "sha256-GukdcwJKsXhNR1gIffIQFlOMqdsBeGoCuhk7a8kOQas="
         }
       ]
     },
@@ -12760,11 +12921,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sCwUaADduLQ9+JrTYIg2RCFctP3kHctA19pQ0cnxcW8=\""
+          "Value": "\"GukdcwJKsXhNR1gIffIQFlOMqdsBeGoCuhk7a8kOQas=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12774,18 +12935,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sCwUaADduLQ9+JrTYIg2RCFctP3kHctA19pQ0cnxcW8="
+          "Value": "sha256-GukdcwJKsXhNR1gIffIQFlOMqdsBeGoCuhk7a8kOQas="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.23uacwfyv0.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-23uacwfyv0.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.dgjwef9tq0.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-dgjwef9tq0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000010900371"
+          "Quality": "0.000010900489"
         }
       ],
       "ResponseHeaders": [
@@ -12795,15 +12956,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "91739"
+          "Value": "91738"
         },
         {
           "Name": "ETag",
-          "Value": "\"pR0Ag7E4rT+2izFJf3EYBsBUj+Un8iOa6tDsDGn0Tkg=\""
+          "Value": "\"6ewnjcF8Z52ov4ljXBNi4wkP1Cypw3J8awqVuIk4ZZQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12823,13 +12984,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ms1KM0PduC/8cTCr1VZuHJFyCcQwrfJlWqC0Ecw4JIk=\""
+          "Value": "W/\"fWQs5o0kPOUaC8cQ/E4RMica4HO9W0WGGbZlTLJa58A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "23uacwfyv0"
+          "Value": "dgjwef9tq0"
         },
         {
           "Name": "label",
@@ -12837,12 +12998,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ms1KM0PduC/8cTCr1VZuHJFyCcQwrfJlWqC0Ecw4JIk="
+          "Value": "sha256-fWQs5o0kPOUaC8cQ/E4RMica4HO9W0WGGbZlTLJa58A="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.23uacwfyv0.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.dgjwef9tq0.map",
       "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -12860,11 +13021,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ms1KM0PduC/8cTCr1VZuHJFyCcQwrfJlWqC0Ecw4JIk=\""
+          "Value": "\"fWQs5o0kPOUaC8cQ/E4RMica4HO9W0WGGbZlTLJa58A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12874,7 +13035,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "23uacwfyv0"
+          "Value": "dgjwef9tq0"
         },
         {
           "Name": "label",
@@ -12882,13 +13043,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ms1KM0PduC/8cTCr1VZuHJFyCcQwrfJlWqC0Ecw4JIk="
+          "Value": "sha256-fWQs5o0kPOUaC8cQ/E4RMica4HO9W0WGGbZlTLJa58A="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.23uacwfyv0.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-23uacwfyv0.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.dgjwef9tq0.map.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-dgjwef9tq0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12897,7 +13058,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "91739"
+          "Value": "91738"
         },
         {
           "Name": "Content-Type",
@@ -12905,11 +13066,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pR0Ag7E4rT+2izFJf3EYBsBUj+Un8iOa6tDsDGn0Tkg=\""
+          "Value": "\"6ewnjcF8Z52ov4ljXBNi4wkP1Cypw3J8awqVuIk4ZZQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12927,7 +13088,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "23uacwfyv0"
+          "Value": "dgjwef9tq0"
         },
         {
           "Name": "label",
@@ -12935,13 +13096,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pR0Ag7E4rT+2izFJf3EYBsBUj+Un8iOa6tDsDGn0Tkg="
+          "Value": "sha256-6ewnjcF8Z52ov4ljXBNi4wkP1Cypw3J8awqVuIk4ZZQ="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-00je11psij.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/r27j6tl1t7-acyxpdvfio.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12958,11 +13119,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"k3Eg+lnkLa2LkRPAaddOhNiMEF+YaRitoxrprPmu+e8=\""
+          "Value": "\"wVBUZYuS8hUktiojAYJmcIg5L2iUI8LyNV2ngIJZW4o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12980,18 +13141,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-k3Eg+lnkLa2LkRPAaddOhNiMEF+YaRitoxrprPmu+e8="
+          "Value": "sha256-wVBUZYuS8hUktiojAYJmcIg5L2iUI8LyNV2ngIJZW4o="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-23uacwfyv0.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-dgjwef9tq0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000010900371"
+          "Quality": "0.000010900489"
         }
       ],
       "ResponseHeaders": [
@@ -13001,15 +13162,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "91739"
+          "Value": "91738"
         },
         {
           "Name": "ETag",
-          "Value": "\"pR0Ag7E4rT+2izFJf3EYBsBUj+Un8iOa6tDsDGn0Tkg=\""
+          "Value": "\"6ewnjcF8Z52ov4ljXBNi4wkP1Cypw3J8awqVuIk4ZZQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13029,13 +13190,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ms1KM0PduC/8cTCr1VZuHJFyCcQwrfJlWqC0Ecw4JIk=\""
+          "Value": "W/\"fWQs5o0kPOUaC8cQ/E4RMica4HO9W0WGGbZlTLJa58A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ms1KM0PduC/8cTCr1VZuHJFyCcQwrfJlWqC0Ecw4JIk="
+          "Value": "sha256-fWQs5o0kPOUaC8cQ/E4RMica4HO9W0WGGbZlTLJa58A="
         }
       ]
     },
@@ -13058,11 +13219,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ms1KM0PduC/8cTCr1VZuHJFyCcQwrfJlWqC0Ecw4JIk=\""
+          "Value": "\"fWQs5o0kPOUaC8cQ/E4RMica4HO9W0WGGbZlTLJa58A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13072,13 +13233,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ms1KM0PduC/8cTCr1VZuHJFyCcQwrfJlWqC0Ecw4JIk="
+          "Value": "sha256-fWQs5o0kPOUaC8cQ/E4RMica4HO9W0WGGbZlTLJa58A="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-23uacwfyv0.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/8dvcrruqnf-dgjwef9tq0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13087,7 +13248,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "91739"
+          "Value": "91738"
         },
         {
           "Name": "Content-Type",
@@ -13095,11 +13256,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pR0Ag7E4rT+2izFJf3EYBsBUj+Un8iOa6tDsDGn0Tkg=\""
+          "Value": "\"6ewnjcF8Z52ov4ljXBNi4wkP1Cypw3J8awqVuIk4ZZQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13117,7 +13278,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pR0Ag7E4rT+2izFJf3EYBsBUj+Un8iOa6tDsDGn0Tkg="
+          "Value": "sha256-6ewnjcF8Z52ov4ljXBNi4wkP1Cypw3J8awqVuIk4ZZQ="
         }
       ]
     },
@@ -13146,7 +13307,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13207,7 +13368,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13252,7 +13413,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13307,7 +13468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13360,7 +13521,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13397,7 +13558,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13420,8 +13581,8 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.iofbj0yrob.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-iofbj0yrob.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-wcrvd1j25r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13440,15 +13601,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UTSrmoZPUSoISDPo89EeqnCayntVxNpBgW0GB4Bubgk=\""
+          "Value": "\"z6p9EJhUulqh81Mxa3hBNXgoxaQ7O0o2A7sFGVbk5vo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -13464,26 +13625,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"3giMNvZLixy7XrVTzFJ6955ZZMSoqDEjQ0qhCD8CN6g=\""
+          "Value": "W/\"QB1qtmxj9ytdasFT8FSFTFE+0Q97DVrrxUsCVUh0ngk=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "iofbj0yrob"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-3giMNvZLixy7XrVTzFJ6955ZZMSoqDEjQ0qhCD8CN6g="
+          "Value": "sha256-QB1qtmxj9ytdasFT8FSFTFE+0Q97DVrrxUsCVUh0ngk="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.iofbj0yrob.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13501,35 +13654,27 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3giMNvZLixy7XrVTzFJ6955ZZMSoqDEjQ0qhCD8CN6g=\""
+          "Value": "\"QB1qtmxj9ytdasFT8FSFTFE+0Q97DVrrxUsCVUh0ngk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "iofbj0yrob"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-3giMNvZLixy7XrVTzFJ6955ZZMSoqDEjQ0qhCD8CN6g="
+          "Value": "sha256-QB1qtmxj9ytdasFT8FSFTFE+0Q97DVrrxUsCVUh0ngk="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.iofbj0yrob.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-iofbj0yrob.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-wcrvd1j25r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13546,11 +13691,164 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UTSrmoZPUSoISDPo89EeqnCayntVxNpBgW0GB4Bubgk=\""
+          "Value": "\"z6p9EJhUulqh81Mxa3hBNXgoxaQ7O0o2A7sFGVbk5vo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z6p9EJhUulqh81Mxa3hBNXgoxaQ7O0o2A7sFGVbk5vo="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.wcrvd1j25r.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-wcrvd1j25r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000011611030"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86124"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z6p9EJhUulqh81Mxa3hBNXgoxaQ7O0o2A7sFGVbk5vo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"QB1qtmxj9ytdasFT8FSFTFE+0Q97DVrrxUsCVUh0ngk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wcrvd1j25r"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QB1qtmxj9ytdasFT8FSFTFE+0Q97DVrrxUsCVUh0ngk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.wcrvd1j25r.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QB1qtmxj9ytdasFT8FSFTFE+0Q97DVrrxUsCVUh0ngk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wcrvd1j25r"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QB1qtmxj9ytdasFT8FSFTFE+0Q97DVrrxUsCVUh0ngk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.wcrvd1j25r.map.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-wcrvd1j25r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z6p9EJhUulqh81Mxa3hBNXgoxaQ7O0o2A7sFGVbk5vo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13568,7 +13866,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iofbj0yrob"
+          "Value": "wcrvd1j25r"
         },
         {
           "Name": "label",
@@ -13576,150 +13874,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UTSrmoZPUSoISDPo89EeqnCayntVxNpBgW0GB4Bubgk="
+          "Value": "sha256-z6p9EJhUulqh81Mxa3hBNXgoxaQ7O0o2A7sFGVbk5vo="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-iofbj0yrob.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000011611030"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86124"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UTSrmoZPUSoISDPo89EeqnCayntVxNpBgW0GB4Bubgk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"3giMNvZLixy7XrVTzFJ6955ZZMSoqDEjQ0qhCD8CN6g=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3giMNvZLixy7XrVTzFJ6955ZZMSoqDEjQ0qhCD8CN6g="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "332090"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3giMNvZLixy7XrVTzFJ6955ZZMSoqDEjQ0qhCD8CN6g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3giMNvZLixy7XrVTzFJ6955ZZMSoqDEjQ0qhCD8CN6g="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/tnthoyh9kv-iofbj0yrob.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86124"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UTSrmoZPUSoISDPo89EeqnCayntVxNpBgW0GB4Bubgk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-UTSrmoZPUSoISDPo89EeqnCayntVxNpBgW0GB4Bubgk="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.dep4p3korh.js",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-dep4p3korh.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.268o6umgdk.js",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-268o6umgdk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13738,11 +13899,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FIn+PXASHCLmIy7vwKfL73p2hEMxjj3kNsf4LKxOqe8=\""
+          "Value": "\"BoCFrYmICJfFtxVBKFY8xafn3GW808tQcc/v9z8bP30=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13762,13 +13923,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"a8EpLEESAFDrRPZ/3fKQZS9Sq/MCvJSTAAF7+msgJ5g=\""
+          "Value": "W/\"pmJJWdpAwrC1OSjBXUaE9hdfeMGcAnBh3m/r+VyFjtw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dep4p3korh"
+          "Value": "268o6umgdk"
         },
         {
           "Name": "label",
@@ -13776,12 +13937,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-a8EpLEESAFDrRPZ/3fKQZS9Sq/MCvJSTAAF7+msgJ5g="
+          "Value": "sha256-pmJJWdpAwrC1OSjBXUaE9hdfeMGcAnBh3m/r+VyFjtw="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.dep4p3korh.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.268o6umgdk.js",
       "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13799,11 +13960,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a8EpLEESAFDrRPZ/3fKQZS9Sq/MCvJSTAAF7+msgJ5g=\""
+          "Value": "\"pmJJWdpAwrC1OSjBXUaE9hdfeMGcAnBh3m/r+VyFjtw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13813,7 +13974,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dep4p3korh"
+          "Value": "268o6umgdk"
         },
         {
           "Name": "label",
@@ -13821,13 +13982,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-a8EpLEESAFDrRPZ/3fKQZS9Sq/MCvJSTAAF7+msgJ5g="
+          "Value": "sha256-pmJJWdpAwrC1OSjBXUaE9hdfeMGcAnBh3m/r+VyFjtw="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.dep4p3korh.js.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-dep4p3korh.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.268o6umgdk.js.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-268o6umgdk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13844,11 +14005,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FIn+PXASHCLmIy7vwKfL73p2hEMxjj3kNsf4LKxOqe8=\""
+          "Value": "\"BoCFrYmICJfFtxVBKFY8xafn3GW808tQcc/v9z8bP30=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13866,7 +14027,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dep4p3korh"
+          "Value": "268o6umgdk"
         },
         {
           "Name": "label",
@@ -13874,13 +14035,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-FIn+PXASHCLmIy7vwKfL73p2hEMxjj3kNsf4LKxOqe8="
+          "Value": "sha256-BoCFrYmICJfFtxVBKFY8xafn3GW808tQcc/v9z8bP30="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-dep4p3korh.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-268o6umgdk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13899,11 +14060,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FIn+PXASHCLmIy7vwKfL73p2hEMxjj3kNsf4LKxOqe8=\""
+          "Value": "\"BoCFrYmICJfFtxVBKFY8xafn3GW808tQcc/v9z8bP30=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13923,13 +14084,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"a8EpLEESAFDrRPZ/3fKQZS9Sq/MCvJSTAAF7+msgJ5g=\""
+          "Value": "W/\"pmJJWdpAwrC1OSjBXUaE9hdfeMGcAnBh3m/r+VyFjtw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-a8EpLEESAFDrRPZ/3fKQZS9Sq/MCvJSTAAF7+msgJ5g="
+          "Value": "sha256-pmJJWdpAwrC1OSjBXUaE9hdfeMGcAnBh3m/r+VyFjtw="
         }
       ]
     },
@@ -13952,11 +14113,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a8EpLEESAFDrRPZ/3fKQZS9Sq/MCvJSTAAF7+msgJ5g=\""
+          "Value": "\"pmJJWdpAwrC1OSjBXUaE9hdfeMGcAnBh3m/r+VyFjtw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13966,174 +14127,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-a8EpLEESAFDrRPZ/3fKQZS9Sq/MCvJSTAAF7+msgJ5g="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.4ikyqr2tnb.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-4ikyqr2tnb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000015666860"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "63828"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zDJbqTB4+fTatIouITBGbxL4zLU4bHdaFVpr82bCLNY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"TKKQunivpjpOrOMHvVhnEpnC039WzOihePy8EpzjsNY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4ikyqr2tnb"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.map"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-TKKQunivpjpOrOMHvVhnEpnC039WzOihePy8EpzjsNY="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.4ikyqr2tnb.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "305438"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TKKQunivpjpOrOMHvVhnEpnC039WzOihePy8EpzjsNY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4ikyqr2tnb"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.map"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-TKKQunivpjpOrOMHvVhnEpnC039WzOihePy8EpzjsNY="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.4ikyqr2tnb.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-4ikyqr2tnb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "63828"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zDJbqTB4+fTatIouITBGbxL4zLU4bHdaFVpr82bCLNY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4ikyqr2tnb"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.map.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zDJbqTB4+fTatIouITBGbxL4zLU4bHdaFVpr82bCLNY="
+          "Value": "sha256-pmJJWdpAwrC1OSjBXUaE9hdfeMGcAnBh3m/r+VyFjtw="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-dep4p3korh.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/kvm5ulz5p9-268o6umgdk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14150,11 +14150,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FIn+PXASHCLmIy7vwKfL73p2hEMxjj3kNsf4LKxOqe8=\""
+          "Value": "\"BoCFrYmICJfFtxVBKFY8xafn3GW808tQcc/v9z8bP30=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14172,18 +14172,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FIn+PXASHCLmIy7vwKfL73p2hEMxjj3kNsf4LKxOqe8="
+          "Value": "sha256-BoCFrYmICJfFtxVBKFY8xafn3GW808tQcc/v9z8bP30="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-4ikyqr2tnb.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-rfkjifgvl9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000015666860"
+          "Quality": "0.000015667105"
         }
       ],
       "ResponseHeaders": [
@@ -14193,15 +14193,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "63828"
+          "Value": "63827"
         },
         {
           "Name": "ETag",
-          "Value": "\"zDJbqTB4+fTatIouITBGbxL4zLU4bHdaFVpr82bCLNY=\""
+          "Value": "\"LeiADllRqfEVt0Um5FmiPBc7oFvZnNQWzuyd3jgSWzM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14221,13 +14221,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"TKKQunivpjpOrOMHvVhnEpnC039WzOihePy8EpzjsNY=\""
+          "Value": "W/\"yWPBAaZL7Ea4PF/VOobgXMVb++O/4HcjDIlMTFa5ubw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TKKQunivpjpOrOMHvVhnEpnC039WzOihePy8EpzjsNY="
+          "Value": "sha256-yWPBAaZL7Ea4PF/VOobgXMVb++O/4HcjDIlMTFa5ubw="
         }
       ]
     },
@@ -14250,11 +14250,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TKKQunivpjpOrOMHvVhnEpnC039WzOihePy8EpzjsNY=\""
+          "Value": "\"yWPBAaZL7Ea4PF/VOobgXMVb++O/4HcjDIlMTFa5ubw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14264,13 +14264,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TKKQunivpjpOrOMHvVhnEpnC039WzOihePy8EpzjsNY="
+          "Value": "sha256-yWPBAaZL7Ea4PF/VOobgXMVb++O/4HcjDIlMTFa5ubw="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-4ikyqr2tnb.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-rfkjifgvl9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14279,7 +14279,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "63828"
+          "Value": "63827"
         },
         {
           "Name": "Content-Type",
@@ -14287,11 +14287,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zDJbqTB4+fTatIouITBGbxL4zLU4bHdaFVpr82bCLNY=\""
+          "Value": "\"LeiADllRqfEVt0Um5FmiPBc7oFvZnNQWzuyd3jgSWzM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14309,7 +14309,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zDJbqTB4+fTatIouITBGbxL4zLU4bHdaFVpr82bCLNY="
+          "Value": "sha256-LeiADllRqfEVt0Um5FmiPBc7oFvZnNQWzuyd3jgSWzM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.rfkjifgvl9.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-rfkjifgvl9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000015667105"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63827"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LeiADllRqfEVt0Um5FmiPBc7oFvZnNQWzuyd3jgSWzM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"yWPBAaZL7Ea4PF/VOobgXMVb++O/4HcjDIlMTFa5ubw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rfkjifgvl9"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWPBAaZL7Ea4PF/VOobgXMVb++O/4HcjDIlMTFa5ubw="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.rfkjifgvl9.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWPBAaZL7Ea4PF/VOobgXMVb++O/4HcjDIlMTFa5ubw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rfkjifgvl9"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWPBAaZL7Ea4PF/VOobgXMVb++O/4HcjDIlMTFa5ubw="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.rfkjifgvl9.map.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/z2159j934f-rfkjifgvl9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63827"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LeiADllRqfEVt0Um5FmiPBc7oFvZnNQWzuyd3jgSWzM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rfkjifgvl9"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.map.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LeiADllRqfEVt0Um5FmiPBc7oFvZnNQWzuyd3jgSWzM="
         }
       ]
     },
@@ -14338,7 +14499,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14399,7 +14560,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14444,7 +14605,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14499,7 +14660,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14552,7 +14713,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14563,6 +14724,167 @@
         {
           "Name": "integrity",
           "Value": "sha256-vsT6O0aTlEe++hX6vbubiIiTeM6yUc9xBMMlKDI6AOM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.5mnkgnlui1.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-5mnkgnlui1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000017776514"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56253"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/BZ2HNodQUwrADgKSx0Hu+oqHqg/J/8SOmb28ym3ayw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"c69UgoBAlIzLRuBuFJkKXvciNbP3RYi55EAmARTj9gg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5mnkgnlui1"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c69UgoBAlIzLRuBuFJkKXvciNbP3RYi55EAmARTj9gg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.5mnkgnlui1.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222455"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c69UgoBAlIzLRuBuFJkKXvciNbP3RYi55EAmARTj9gg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5mnkgnlui1"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c69UgoBAlIzLRuBuFJkKXvciNbP3RYi55EAmARTj9gg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.5mnkgnlui1.map.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-5mnkgnlui1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/BZ2HNodQUwrADgKSx0Hu+oqHqg/J/8SOmb28ym3ayw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5mnkgnlui1"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/BZ2HNodQUwrADgKSx0Hu+oqHqg/J/8SOmb28ym3ayw="
         }
       ]
     },
@@ -14589,7 +14911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14612,174 +14934,13 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.l3dlg6funf.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-l3dlg6funf.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000017776830"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "56252"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Zdp9Eew+c4BR0EEHRFNWFAM/PG6nLkeb/sN+21aZv+g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"b3I23Af+7BfXH6so+XLVnDh4oPnWD6yRMZ2M5cmJIAE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l3dlg6funf"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-b3I23Af+7BfXH6so+XLVnDh4oPnWD6yRMZ2M5cmJIAE="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.l3dlg6funf.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "222455"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b3I23Af+7BfXH6so+XLVnDh4oPnWD6yRMZ2M5cmJIAE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l3dlg6funf"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-b3I23Af+7BfXH6so+XLVnDh4oPnWD6yRMZ2M5cmJIAE="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.l3dlg6funf.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-l3dlg6funf.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "56252"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Zdp9Eew+c4BR0EEHRFNWFAM/PG6nLkeb/sN+21aZv+g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l3dlg6funf"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Zdp9Eew+c4BR0EEHRFNWFAM/PG6nLkeb/sN+21aZv+g="
-        }
-      ]
-    },
-    {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-l3dlg6funf.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-5mnkgnlui1.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000017776830"
+          "Quality": "0.000017776514"
         }
       ],
       "ResponseHeaders": [
@@ -14789,15 +14950,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "56252"
+          "Value": "56253"
         },
         {
           "Name": "ETag",
-          "Value": "\"Zdp9Eew+c4BR0EEHRFNWFAM/PG6nLkeb/sN+21aZv+g=\""
+          "Value": "\"/BZ2HNodQUwrADgKSx0Hu+oqHqg/J/8SOmb28ym3ayw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14817,13 +14978,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"b3I23Af+7BfXH6so+XLVnDh4oPnWD6yRMZ2M5cmJIAE=\""
+          "Value": "W/\"c69UgoBAlIzLRuBuFJkKXvciNbP3RYi55EAmARTj9gg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-b3I23Af+7BfXH6so+XLVnDh4oPnWD6yRMZ2M5cmJIAE="
+          "Value": "sha256-c69UgoBAlIzLRuBuFJkKXvciNbP3RYi55EAmARTj9gg="
         }
       ]
     },
@@ -14846,11 +15007,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"b3I23Af+7BfXH6so+XLVnDh4oPnWD6yRMZ2M5cmJIAE=\""
+          "Value": "\"c69UgoBAlIzLRuBuFJkKXvciNbP3RYi55EAmARTj9gg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14860,13 +15021,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-b3I23Af+7BfXH6so+XLVnDh4oPnWD6yRMZ2M5cmJIAE="
+          "Value": "sha256-c69UgoBAlIzLRuBuFJkKXvciNbP3RYi55EAmARTj9gg="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-l3dlg6funf.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s2rbddnxyp-5mnkgnlui1.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14875,7 +15036,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "56252"
+          "Value": "56253"
         },
         {
           "Name": "Content-Type",
@@ -14883,11 +15044,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Zdp9Eew+c4BR0EEHRFNWFAM/PG6nLkeb/sN+21aZv+g=\""
+          "Value": "\"/BZ2HNodQUwrADgKSx0Hu+oqHqg/J/8SOmb28ym3ayw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14905,13 +15066,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Zdp9Eew+c4BR0EEHRFNWFAM/PG6nLkeb/sN+21aZv+g="
+          "Value": "sha256-/BZ2HNodQUwrADgKSx0Hu+oqHqg/J/8SOmb28ym3ayw="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-xrytv2kf82.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-1pun7cbrze.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -14930,11 +15091,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cA46BXGuXxewGxzcXFHfVyFmWAvdQEIjyPNFidJnnOA=\""
+          "Value": "\"qI0V1bd4I1q3UHnibqfMV+sAbkaHxKwn9iQGk/z9SvU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14954,13 +15115,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"s+OXOTcmWfKy2uS/ek9g742HDSN+4eflCtdRXhVWdDY=\""
+          "Value": "W/\"JYIl3HLMxah5KV/eIqteJFn5qYg+j/IpV6F0E8GE1k0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-s+OXOTcmWfKy2uS/ek9g742HDSN+4eflCtdRXhVWdDY="
+          "Value": "sha256-JYIl3HLMxah5KV/eIqteJFn5qYg+j/IpV6F0E8GE1k0="
         }
       ]
     },
@@ -14983,11 +15144,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s+OXOTcmWfKy2uS/ek9g742HDSN+4eflCtdRXhVWdDY=\""
+          "Value": "\"JYIl3HLMxah5KV/eIqteJFn5qYg+j/IpV6F0E8GE1k0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14997,13 +15158,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-s+OXOTcmWfKy2uS/ek9g742HDSN+4eflCtdRXhVWdDY="
+          "Value": "sha256-JYIl3HLMxah5KV/eIqteJFn5qYg+j/IpV6F0E8GE1k0="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.js.eifuxh3apv.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-eifuxh3apv.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.2lliat6w8e.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-2lliat6w8e.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -15022,11 +15183,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ne6mBKc0FJ69vsh7gaRDB+/ROD50j4O6zheosPCT8bc=\""
+          "Value": "\"zjsXVcsgqTC5r64KoqM/dnBkh5mv6EwpeOqwAFwRA7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15046,13 +15207,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Bv+oW0aT7iRN2UUb1ExZWbbNXASJS4nAOQ65S4j47OE=\""
+          "Value": "W/\"xntUuK4dVENJbznCNFuUlCIcEiChgzIX664ykq83tJg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eifuxh3apv"
+          "Value": "2lliat6w8e"
         },
         {
           "Name": "label",
@@ -15060,12 +15221,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Bv+oW0aT7iRN2UUb1ExZWbbNXASJS4nAOQ65S4j47OE="
+          "Value": "sha256-xntUuK4dVENJbznCNFuUlCIcEiChgzIX664ykq83tJg="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.js.eifuxh3apv.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.2lliat6w8e.map",
       "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -15083,11 +15244,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Bv+oW0aT7iRN2UUb1ExZWbbNXASJS4nAOQ65S4j47OE=\""
+          "Value": "\"xntUuK4dVENJbznCNFuUlCIcEiChgzIX664ykq83tJg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15097,7 +15258,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eifuxh3apv"
+          "Value": "2lliat6w8e"
         },
         {
           "Name": "label",
@@ -15105,13 +15266,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Bv+oW0aT7iRN2UUb1ExZWbbNXASJS4nAOQ65S4j47OE="
+          "Value": "sha256-xntUuK4dVENJbznCNFuUlCIcEiChgzIX664ykq83tJg="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.js.eifuxh3apv.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-eifuxh3apv.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.2lliat6w8e.map.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-2lliat6w8e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15128,11 +15289,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ne6mBKc0FJ69vsh7gaRDB+/ROD50j4O6zheosPCT8bc=\""
+          "Value": "\"zjsXVcsgqTC5r64KoqM/dnBkh5mv6EwpeOqwAFwRA7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15150,7 +15311,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eifuxh3apv"
+          "Value": "2lliat6w8e"
         },
         {
           "Name": "label",
@@ -15158,13 +15319,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ne6mBKc0FJ69vsh7gaRDB+/ROD50j4O6zheosPCT8bc="
+          "Value": "sha256-zjsXVcsgqTC5r64KoqM/dnBkh5mv6EwpeOqwAFwRA7A="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-xrytv2kf82.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-1pun7cbrze.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15181,11 +15342,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cA46BXGuXxewGxzcXFHfVyFmWAvdQEIjyPNFidJnnOA=\""
+          "Value": "\"qI0V1bd4I1q3UHnibqfMV+sAbkaHxKwn9iQGk/z9SvU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15203,13 +15364,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cA46BXGuXxewGxzcXFHfVyFmWAvdQEIjyPNFidJnnOA="
+          "Value": "sha256-qI0V1bd4I1q3UHnibqfMV+sAbkaHxKwn9iQGk/z9SvU="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-eifuxh3apv.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-2lliat6w8e.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -15228,11 +15389,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ne6mBKc0FJ69vsh7gaRDB+/ROD50j4O6zheosPCT8bc=\""
+          "Value": "\"zjsXVcsgqTC5r64KoqM/dnBkh5mv6EwpeOqwAFwRA7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15252,13 +15413,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Bv+oW0aT7iRN2UUb1ExZWbbNXASJS4nAOQ65S4j47OE=\""
+          "Value": "W/\"xntUuK4dVENJbznCNFuUlCIcEiChgzIX664ykq83tJg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Bv+oW0aT7iRN2UUb1ExZWbbNXASJS4nAOQ65S4j47OE="
+          "Value": "sha256-xntUuK4dVENJbznCNFuUlCIcEiChgzIX664ykq83tJg="
         }
       ]
     },
@@ -15281,11 +15442,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Bv+oW0aT7iRN2UUb1ExZWbbNXASJS4nAOQ65S4j47OE=\""
+          "Value": "\"xntUuK4dVENJbznCNFuUlCIcEiChgzIX664ykq83tJg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15295,13 +15456,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Bv+oW0aT7iRN2UUb1ExZWbbNXASJS4nAOQ65S4j47OE="
+          "Value": "sha256-xntUuK4dVENJbznCNFuUlCIcEiChgzIX664ykq83tJg="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-eifuxh3apv.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/2l9pyjj9u6-2lliat6w8e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15318,11 +15479,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ne6mBKc0FJ69vsh7gaRDB+/ROD50j4O6zheosPCT8bc=\""
+          "Value": "\"zjsXVcsgqTC5r64KoqM/dnBkh5mv6EwpeOqwAFwRA7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15340,7 +15501,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ne6mBKc0FJ69vsh7gaRDB+/ROD50j4O6zheosPCT8bc="
+          "Value": "sha256-zjsXVcsgqTC5r64KoqM/dnBkh5mv6EwpeOqwAFwRA7A="
         }
       ]
     },
@@ -15369,7 +15530,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15422,7 +15583,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15459,7 +15620,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15483,7 +15644,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-zsykr4ggw7.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-seqzrpmm51.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -15502,11 +15663,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"owgKxTGNPxEr0wKNHWqobPCLi1oduh4Ak4WIb7/GAJ8=\""
+          "Value": "\"bzwTyjCLJZYhdEHjkH5RXZROs+aFy2bAe4R+LZJ9VTM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15526,13 +15687,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"M3jeZdm1lLNAbJ+mkGv8vmxHhJGhpMjN84fw5rfGGOA=\""
+          "Value": "W/\"dE9VkaDQxO8t8qB3UvUW2mIrtC0njfXazWBVCtVbPkk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-M3jeZdm1lLNAbJ+mkGv8vmxHhJGhpMjN84fw5rfGGOA="
+          "Value": "sha256-dE9VkaDQxO8t8qB3UvUW2mIrtC0njfXazWBVCtVbPkk="
         }
       ]
     },
@@ -15555,11 +15716,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"M3jeZdm1lLNAbJ+mkGv8vmxHhJGhpMjN84fw5rfGGOA=\""
+          "Value": "\"dE9VkaDQxO8t8qB3UvUW2mIrtC0njfXazWBVCtVbPkk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15569,13 +15730,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-M3jeZdm1lLNAbJ+mkGv8vmxHhJGhpMjN84fw5rfGGOA="
+          "Value": "sha256-dE9VkaDQxO8t8qB3UvUW2mIrtC0njfXazWBVCtVbPkk="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-zsykr4ggw7.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-seqzrpmm51.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15592,11 +15753,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"owgKxTGNPxEr0wKNHWqobPCLi1oduh4Ak4WIb7/GAJ8=\""
+          "Value": "\"bzwTyjCLJZYhdEHjkH5RXZROs+aFy2bAe4R+LZJ9VTM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15614,13 +15775,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-owgKxTGNPxEr0wKNHWqobPCLi1oduh4Ak4WIb7/GAJ8="
+          "Value": "sha256-bzwTyjCLJZYhdEHjkH5RXZROs+aFy2bAe4R+LZJ9VTM="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.zsykr4ggw7.map",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-zsykr4ggw7.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.seqzrpmm51.map",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-seqzrpmm51.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -15639,11 +15800,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"owgKxTGNPxEr0wKNHWqobPCLi1oduh4Ak4WIb7/GAJ8=\""
+          "Value": "\"bzwTyjCLJZYhdEHjkH5RXZROs+aFy2bAe4R+LZJ9VTM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15663,13 +15824,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"M3jeZdm1lLNAbJ+mkGv8vmxHhJGhpMjN84fw5rfGGOA=\""
+          "Value": "W/\"dE9VkaDQxO8t8qB3UvUW2mIrtC0njfXazWBVCtVbPkk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zsykr4ggw7"
+          "Value": "seqzrpmm51"
         },
         {
           "Name": "label",
@@ -15677,12 +15838,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-M3jeZdm1lLNAbJ+mkGv8vmxHhJGhpMjN84fw5rfGGOA="
+          "Value": "sha256-dE9VkaDQxO8t8qB3UvUW2mIrtC0njfXazWBVCtVbPkk="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.zsykr4ggw7.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.seqzrpmm51.map",
       "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -15700,11 +15861,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"M3jeZdm1lLNAbJ+mkGv8vmxHhJGhpMjN84fw5rfGGOA=\""
+          "Value": "\"dE9VkaDQxO8t8qB3UvUW2mIrtC0njfXazWBVCtVbPkk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15714,7 +15875,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zsykr4ggw7"
+          "Value": "seqzrpmm51"
         },
         {
           "Name": "label",
@@ -15722,13 +15883,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-M3jeZdm1lLNAbJ+mkGv8vmxHhJGhpMjN84fw5rfGGOA="
+          "Value": "sha256-dE9VkaDQxO8t8qB3UvUW2mIrtC0njfXazWBVCtVbPkk="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.zsykr4ggw7.map.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-zsykr4ggw7.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.seqzrpmm51.map.gz",
+      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/na5mwfdpr1-seqzrpmm51.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15745,11 +15906,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"owgKxTGNPxEr0wKNHWqobPCLi1oduh4Ak4WIb7/GAJ8=\""
+          "Value": "\"bzwTyjCLJZYhdEHjkH5RXZROs+aFy2bAe4R+LZJ9VTM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15767,7 +15928,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zsykr4ggw7"
+          "Value": "seqzrpmm51"
         },
         {
           "Name": "label",
@@ -15775,7 +15936,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-owgKxTGNPxEr0wKNHWqobPCLi1oduh4Ak4WIb7/GAJ8="
+          "Value": "sha256-bzwTyjCLJZYhdEHjkH5RXZROs+aFy2bAe4R+LZJ9VTM="
         }
       ]
     },
@@ -15804,7 +15965,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15865,7 +16026,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15910,7 +16071,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
+          "Value": "Thu, 15 May 2025 23:02:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15937,167 +16098,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-/HNGvQK2e3VCs31fM5jgaMUxhKsPx6kBVervbFO5jlg="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.xrytv2kf82.js",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-xrytv2kf82.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000025687131"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "38929"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cA46BXGuXxewGxzcXFHfVyFmWAvdQEIjyPNFidJnnOA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"s+OXOTcmWfKy2uS/ek9g742HDSN+4eflCtdRXhVWdDY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xrytv2kf82"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-s+OXOTcmWfKy2uS/ek9g742HDSN+4eflCtdRXhVWdDY="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.xrytv2kf82.js",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "167417"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"s+OXOTcmWfKy2uS/ek9g742HDSN+4eflCtdRXhVWdDY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xrytv2kf82"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-s+OXOTcmWfKy2uS/ek9g742HDSN+4eflCtdRXhVWdDY="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/bootstrap.xrytv2kf82.js.gz",
-      "AssetFile": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/compressed/s05n7ftxyb-xrytv2kf82.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "38929"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cA46BXGuXxewGxzcXFHfVyFmWAvdQEIjyPNFidJnnOA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 04:06:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xrytv2kf82"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/bootstrap.js.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cA46BXGuXxewGxzcXFHfVyFmWAvdQEIjyPNFidJnnOA="
         }
       ]
     }

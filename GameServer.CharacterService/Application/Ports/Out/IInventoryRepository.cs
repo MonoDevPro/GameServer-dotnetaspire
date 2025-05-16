@@ -20,12 +20,12 @@ public interface IInventoryRepository
     /// <summary>
     /// Adiciona um novo item ao inventário
     /// </summary>
-    Task<InventoryItem> AddAsync(InventoryItem item);
+    Task<bool> AddAsync(InventoryItem item);
     
     /// <summary>
     /// Atualiza um item existente no inventário
     /// </summary>
-    Task<InventoryItem> UpdateAsync(InventoryItem item);
+    Task<bool> UpdateAsync(InventoryItem item);
     
     /// <summary>
     /// Remove um item do inventário

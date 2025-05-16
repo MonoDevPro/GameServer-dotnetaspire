@@ -7,7 +7,6 @@ public class CharacterDbContext : DbContext
 {
     public DbSet<Character> Characters { get; set; }
     public DbSet<InventoryItem> InventoryItems { get; set; }
-    public DbSet<AccountCache> AccountCaches { get; set; }
 
     public CharacterDbContext(DbContextOptions<CharacterDbContext> options) : base(options)
     {
@@ -55,16 +54,6 @@ public class CharacterDbContext : DbContext
 
             // Índice para busca por CharacterId
             entity.HasIndex(e => e.CharacterId);
-        });
-
-        // Configura a entidade AccountCache
-        modelBuilder.Entity<AccountCache>(entity =>
-        {
-            entity.ToTable("AccountCaches");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
-            entity.Property(e => e.IsActive).IsRequired();
-            entity.Property(e => e.LastUpdatedAt).IsRequired();
         });
 
         base.OnModelCreating(modelBuilder);
