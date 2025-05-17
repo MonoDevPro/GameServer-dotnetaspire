@@ -6,8 +6,8 @@
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.ServiceDefaults/obj/Debug/net9.0/GameServer.ServiceDefaults.AssemblyInfoInputs.cache
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.ServiceDefaults/obj/Debug/net9.0/GameServer.ServiceDefaults.AssemblyInfo.cs
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.ServiceDefaults/obj/Debug/net9.0/GameServer.ServiceDefaults.csproj.CoreCompileInputs.cache
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.ServiceDefaults/obj/Debug/net9.0/GameServer.ServiceDefaults.sourcelink.json
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.ServiceDefaults/obj/Debug/net9.0/GameServer.ServiceDefaults.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.ServiceDefaults/obj/Debug/net9.0/refint/GameServer.ServiceDefaults.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.ServiceDefaults/obj/Debug/net9.0/GameServer.ServiceDefaults.pdb
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.ServiceDefaults/obj/Debug/net9.0/ref/GameServer.ServiceDefaults.dll
-/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.ServiceDefaults/obj/Debug/net9.0/GameServer.ServiceDefaults.sourcelink.json
