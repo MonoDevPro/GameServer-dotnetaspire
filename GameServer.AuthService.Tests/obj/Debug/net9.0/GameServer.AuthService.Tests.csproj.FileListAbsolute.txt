@@ -458,7 +458,6 @@
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService.Tests/bin/Debug/net9.0/Npgsql.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService.Tests/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService.Tests/bin/Debug/net9.0/System.Diagnostics.DiagnosticSource.dll
-/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService.Tests/bin/Debug/net9.0/Aspire.RabbitMQ.Client.dll
-/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService.Tests/bin/Debug/net9.0/HealthChecks.Rabbitmq.dll
-/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService.Tests/bin/Debug/net9.0/RabbitMQ.Client.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService.Tests/obj/Debug/net9.0/GameServer.AuthService.Tests.sourcelink.json
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService.Tests/bin/Debug/net9.0/Scrutor.dll
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService.Tests/bin/Debug/net9.0/Scrutor.AspNetCore.dll
