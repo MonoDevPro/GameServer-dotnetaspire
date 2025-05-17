@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "1H7ASRN9XWL34HRrbRjg0mDZXacv/mG0Stf33s0KmC0=",
+  "Source": "GameServer.WorldSimulationService",
+  "BasePath": "_content/GameServer.WorldSimulationService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

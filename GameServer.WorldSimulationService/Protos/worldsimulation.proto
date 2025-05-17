@@ -1,0 +1,167 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "GameServer.WorldSimulationService.Infrastructure.Adapters.In.Grpc";
+
+package worldsimulation;
+
+// The world simulation service definition
+service WorldSimulation {
+  // Add a player to the world
+  rpc AddPlayerToWorld (AddPlayerRequest) returns (PlayerResponse);
+  
+  // Update player position
+  rpc UpdatePlayerPosition (UpdatePositionRequest) returns (StatusResponse);
+  
+  // Update player rotation
+  rpc UpdatePlayerRotation (UpdateRotationRequest) returns (StatusResponse);
+  
+  // Add an NPC to the world
+  rpc AddNPC (AddNPCRequest) returns (NPCResponse);
+  
+  // Process interaction between entities
+  rpc ProcessInteraction (InteractionRequest) returns (StatusResponse);
+  
+  // Create a new world
+  rpc CreateWorld (CreateWorldRequest) returns (WorldResponse);
+  
+  // Add a region to a world
+  rpc AddRegion (AddRegionRequest) returns (RegionResponse);
+}
+
+// Position in 3D space
+message Position {
+  float x = 1;
+  float y = 2;
+  float z = 3;
+}
+
+// Rotation as quaternion
+message Rotation {
+  float x = 1;
+  float y = 2;
+  float z = 3;
+  float w = 4;
+}
+
+// 2D position for region placement
+message Vector2D {
+  float x = 1;
+  float y = 2;
+}
+
+// Request to add a player to the world
+message AddPlayerRequest {
+  string character_id = 1;
+  string accountid = 2;
+  string username = 3;
+  string name = 4;
+  Position position = 5;
+}
+
+// Response after adding a player
+message PlayerResponse {
+  sint64 player_id = 1;
+  string character_id = 2;
+  string account_id = 3;
+  string username = 4;
+  string name = 5;
+  int32 health = 6;
+  int32 max_health = 7;
+  bool is_online = 8;
+  Position position = 9;
+  bool is_active = 10;
+}
+
+// Request to update entity position
+message UpdatePositionRequest {
+  sint64 entity_id = 1;
+  Position position = 2;
+}
+
+// Request to update entity rotation
+message UpdateRotationRequest {
+  sint64 entity_id = 1;
+  Rotation rotation = 2;
+}
+
+// Status response for operations
+message StatusResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// NPC types
+enum NPCType {
+  FRIENDLY = 0;
+  NEUTRAL = 1;
+  HOSTILE = 2;
+}
+
+// Request to add an NPC to the world
+message AddNPCRequest {
+  string name = 1;
+  Position position = 2;
+  NPCType type = 3;
+  int32 max_health = 4;
+  bool is_interactable = 5;
+  string dialogue = 6;
+}
+
+// Response after adding an NPC
+message NPCResponse {
+  sint64 npc_id = 1;
+  string name = 2;
+  NPCType type = 3;
+  int32 health = 4;
+  int32 max_health = 5;
+  bool is_interactable = 6;
+  string dialogue = 7;
+  Position position = 8;
+  bool is_active = 9;
+}
+
+// Request to process an interaction between entities
+message InteractionRequest {
+  sint64 initiator_id = 1;
+  sint64 target_id = 2;
+  string interaction_type = 3;
+}
+
+// Request to create a new world
+message CreateWorldRequest {
+  string name = 1;
+  string description = 2;
+}
+
+// Response after creating a world
+message WorldResponse {
+  sint64 world_id = 1;
+  string name = 2;
+  string description = 3;
+  bool is_active = 4;
+  google.protobuf.Timestamp created_at = 5;
+}
+
+// Request to add a region to a world
+message AddRegionRequest {
+  sint64 world_id = 1;
+  string name = 2;
+  string description = 3;
+  float width = 4;
+  float height = 5;
+  Vector2D world_position = 6;
+}
+
+// Response after adding a region
+message RegionResponse {
+  sint64 region_id = 1;
+  string name = 2;
+  string description = 3;
+  float width = 4;
+  float height = 5;
+  Vector2D world_position = 6;
+  bool is_active = 7;
+  google.protobuf.Timestamp created_at = 8;
+}

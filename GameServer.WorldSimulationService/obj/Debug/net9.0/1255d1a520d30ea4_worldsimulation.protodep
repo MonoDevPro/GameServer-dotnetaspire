@@ -1,0 +1,3 @@
+obj/Debug/net9.0/Protos/Worldsimulation.cs \
+obj/Debug/net9.0/Protos/WorldsimulationGrpc.cs: /home/filipe/.nuget/packages/grpc.tools/2.72.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/worldsimulation.proto
