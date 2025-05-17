@@ -176,7 +176,6 @@
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/Aspire.RabbitMQ.Client.dll
-/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/HealthChecks.Rabbitmq.dll
-/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/RabbitMQ.Client.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/obj/Debug/net9.0/GameServer.AuthService.sourcelink.json
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/Scrutor.dll
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/bin/Debug/net9.0/Scrutor.AspNetCore.dll
