@@ -122,3 +122,7 @@
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/GameServer.Web.pdb
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/GameServer.Web.genruntimeconfig.cache
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/ref/GameServer.Web.dll
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/bin/Debug/net9.0/Scrutor.dll
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/bin/Debug/net9.0/Scrutor.AspNetCore.dll
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Web/obj/Debug/net9.0/GameServer.Web.MvcApplicationPartsAssemblyInfo.cs
