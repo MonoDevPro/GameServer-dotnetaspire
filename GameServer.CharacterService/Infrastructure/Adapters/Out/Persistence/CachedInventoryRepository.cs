@@ -70,28 +70,27 @@ public class CachedInventoryRepository : IInventoryRepository
         return items;
     }
 
-    public async Task<bool> AddAsync(InventoryItem item)
+    public async Task<InventoryItem?> AddAsync(InventoryItem item)
     {
         // Cria o item no repositório
         var createdItemResult = await _repository.AddAsync(item);
 
         // Armazena no cache
-        if (createdItemResult)
+        if (createdItemResult != null)
         {
-            await _cache.SetInventoryItemAsync(item);
-            _logger.LogDebug("Item de inventário {ItemId} criado e armazenado no cache", item.Id);
+            await _cache.SetInventoryItemAsync(createdItemResult);
+            _logger.LogDebug("Item de inventário {ItemId} criado e armazenado no cache", createdItemResult.Id);
         }
-        
         return createdItemResult;
     }
 
-    public async Task<bool> UpdateAsync(InventoryItem item)
+    public async Task<InventoryItem?> UpdateAsync(InventoryItem item)
     {
         // Atualiza o item no repositório
         var updated = await _repository.UpdateAsync(item);
         
         // Se foi atualizado com sucesso, atualiza também no cache
-        if (updated)
+        if (updated == null)
         {
             await _cache.SetInventoryItemAsync(item);
             _logger.LogDebug("Item de inventário {ItemId} atualizado no cache", item.Id);

@@ -112,10 +112,17 @@ public class CachedCharacterRepository : ICharacterRepository
         return characters;
     }
 
-    public async Task<Character> CreateAsync(Character character)
+    public async Task<Character?> CreateAsync(Character character)
     {
         // Cria o personagem no repositório
         var createdCharacter = await _repository.CreateAsync(character);
+
+        // Se não foi criado, retorna null
+        if (createdCharacter == null)
+        {
+            _logger.LogWarning("Falha ao criar personagem");
+            return null;
+        }
 
         // Armazena no cache
         await _cache.SetCharacterAsync(createdCharacter);
@@ -124,13 +131,13 @@ public class CachedCharacterRepository : ICharacterRepository
         return createdCharacter;
     }
 
-    public async Task<bool> UpdateAsync(Character character)
+    public async Task<Character?> UpdateAsync(Character character)
     {
         // Atualiza o personagem no repositório
         var updated = await _repository.UpdateAsync(character);
 
         // Se foi atualizado com sucesso, atualiza também no cache
-        if (updated)
+        if (updated != null)
         {
             await _cache.SetCharacterAsync(character);
             _logger.LogDebug("Personagem {CharacterId} atualizado no cache", character.Id);

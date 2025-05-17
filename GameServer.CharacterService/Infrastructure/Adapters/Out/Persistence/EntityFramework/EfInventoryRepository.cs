@@ -18,7 +18,7 @@ public class EfInventoryRepository : IInventoryRepository
         _logger = logger;
     }
 
-    public async Task<InventoryItem> AddAsync(InventoryItem item)
+    public async Task<InventoryItem?> AddAsync(InventoryItem item)
     {
         try
         {
@@ -106,7 +106,7 @@ public class EfInventoryRepository : IInventoryRepository
         }
     }
 
-    public async Task<InventoryItem> UpdateAsync(InventoryItem item)
+    public async Task<InventoryItem?> UpdateAsync(InventoryItem item)
     {
         try
         {

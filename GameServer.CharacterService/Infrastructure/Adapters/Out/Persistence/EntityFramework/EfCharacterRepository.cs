@@ -18,7 +18,7 @@ public class EfCharacterRepository : ICharacterRepository
         _logger = logger;
     }
 
-    public async Task<Character> CreateAsync(Character character)
+    public async Task<Character?> CreateAsync(Character character)
     {
         try
         {
@@ -73,6 +73,19 @@ public class EfCharacterRepository : ICharacterRepository
         }
     }
 
+    public async Task<Character?> GetByNameAsync(string name)
+    {
+        try
+        {
+            return await _dbContext.Characters.FirstOrDefaultAsync(c => c.Name == name);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Erro ao obter personagem por nome {CharacterName}: {Message}", name, ex.Message);
+            throw;
+        }
+    }
+
     public async Task<IEnumerable<Character>> GetByUserIdAsync(Guid accountId)
     {
         try
@@ -118,7 +131,7 @@ public class EfCharacterRepository : ICharacterRepository
         }
     }
 
-    public async Task<Character> UpdateAsync(Character character)
+    public async Task<Character?> UpdateAsync(Character character)
     {
         try
         {

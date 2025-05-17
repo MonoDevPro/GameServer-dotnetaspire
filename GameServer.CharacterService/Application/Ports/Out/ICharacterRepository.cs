@@ -32,12 +32,12 @@ public interface ICharacterRepository
     /// <summary>
     /// Cria um novo personagem
     /// </summary>
-    Task<Character> CreateAsync(Character character);
+    Task<Character?> CreateAsync(Character character);
     
     /// <summary>
     /// Atualiza um personagem existente
     /// </summary>
-    Task<bool> UpdateAsync(Character character);
+    Task<Character?> UpdateAsync(Character character);
     
     /// <summary>
     /// Exclui um personagem (exclusão física ou lógica)

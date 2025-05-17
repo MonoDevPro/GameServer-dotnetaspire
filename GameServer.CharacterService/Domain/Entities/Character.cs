@@ -15,6 +15,8 @@ public class Character
     public bool IsActive { get; private set; }
     public virtual List<InventoryItem> Inventory { get; private set; } = [];
 
+    // Propriedades de navegação
+
     // Construtor privado para EF Core
     private Character() { }
 

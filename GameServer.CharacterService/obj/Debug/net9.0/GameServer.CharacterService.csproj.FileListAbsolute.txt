@@ -176,3 +176,5 @@
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/GameServer.CharacterService.pdb
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/GameServer.CharacterService.genruntimeconfig.cache
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/obj/Debug/net9.0/ref/GameServer.CharacterService.dll
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/bin/Debug/net9.0/Scrutor.dll
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.CharacterService/bin/Debug/net9.0/Scrutor.AspNetCore.dll
