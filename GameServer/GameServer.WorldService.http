@@ -1,6 +1,0 @@
-@GameServer.WorldService_HostAddress = http://localhost:5070
-
-GET {{GameServer.WorldService_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
