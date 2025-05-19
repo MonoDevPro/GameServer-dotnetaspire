@@ -1,7 +1,7 @@
-using System;
 using System.Numerics;
+using GameServer.WorldService.Domain.Entities;
 
-namespace GameServer.WorldService.Domain.Entities
+namespace GameServer.WorldSimulationService.Domain.Entities
 {
     public enum NPCType
     {
@@ -24,10 +24,6 @@ namespace GameServer.WorldService.Domain.Entities
         // Área de patrulha/movimento do NPC
         public Vector3 MovementCenter { get; private set; }
         public float MovementRadius { get; private set; }
-        
-        // Foreign key to region (optional)
-        public long RegionId { get; set; }
-        public Region Region { get; set; } = null!;
 
         public NPC(
             string name,
@@ -35,19 +31,26 @@ namespace GameServer.WorldService.Domain.Entities
             Quaternion rotation,
             Vector3 scale,
             NPCType type,
+            int health,
             int maxHealth,
             bool isInteractable,
             string dialogue = "",
-            Vector3? movementCenter = null,
-            float movementRadius = 0)
-            : base(name, position, rotation, scale)
+            Vector3 movementCenter = default,
+            float movementRadius = 0,
+            
+            // Base
+            long id = 0,
+            bool isActive = true,
+            DateTime createdAt = default,
+            DateTime lastUpdated = default
+            ) : base(name, position, rotation, scale, isActive, createdAt, lastUpdated, id)
         {
             Type = type;
+            Health = health;
             MaxHealth = maxHealth;
-            Health = maxHealth;
             IsInteractable = isInteractable;
             Dialogue = dialogue;
-            MovementCenter = movementCenter ?? position;
+            MovementCenter = movementCenter == default ? position : movementCenter;
             MovementRadius = movementRadius;
         }
 

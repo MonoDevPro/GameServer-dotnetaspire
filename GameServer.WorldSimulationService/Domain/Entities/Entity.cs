@@ -5,7 +5,7 @@ namespace GameServer.WorldSimulationService.Domain.Entities;
 
 public abstract class Entity
 {
-    public long Id { get; } // identidade :contentReference[oaicite:8]{index=8}
+    public long Id { get; private set; } // identidade :contentReference[oaicite:8]{index=8}
 
     private readonly List<DomainEvent> _domainEvents = []; // eventos de domínio :contentReference[oaicite:9]{index=9}
     public IReadOnlyCollection<DomainEvent> DomainEvents => _domainEvents;

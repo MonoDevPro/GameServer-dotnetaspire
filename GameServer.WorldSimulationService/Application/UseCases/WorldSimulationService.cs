@@ -103,7 +103,7 @@ public class WorldSimulationService : IWorldSimulationUseCase
         return await _worldRepository.UpdatePlayerAsync(player);
     }
 
-    public async Task<NPC?> AddNPCToWorldAsync(string name, Vector3 position, NPCType type, int maxHealth, bool isInteractable, string dialogue)
+    public async Task<NPC?> AddNPCToWorldAsync(string name, Vector3 position, NPCType type, int health, int maxHealth, bool isInteractable, string dialogue)
     {
         // Default values for a new NPC
         Quaternion defaultRotation = Quaternion.Identity;
@@ -118,6 +118,7 @@ public class WorldSimulationService : IWorldSimulationUseCase
             defaultRotation,
             defaultScale,
             type,
+            health,
             maxHealth,
             isInteractable,
             dialogue,
@@ -134,9 +135,7 @@ public class WorldSimulationService : IWorldSimulationUseCase
         var npc = await _worldRepository.GetNPCByIdAsync(npcId);
         if (npc == null)
             return false;
-        if (npc.Region == null)
-            return false;
-        if (npc.Region.World == null)
+        if (npc.Region == null || npc.Region.World == null)
             return false;
         var world = npc.Region.World;
 

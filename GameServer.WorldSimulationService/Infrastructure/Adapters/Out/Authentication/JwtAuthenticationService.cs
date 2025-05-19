@@ -6,15 +6,6 @@ using Microsoft.Extensions.Options;
 
 namespace GameServer.WorldSimulationService.Infrastructure.Adapters.Out.Authentication
 {
-    public class JwtSettings
-    {
-        public const string SectionName = "JwtSettings";
-        public string Key { get; set; } = String.Empty;
-        public string Issuer { get; set; } = String.Empty;
-        public string Audience { get; set; } = String.Empty;
-        public int ExpiryInMinutes { get; set; }
-    }
-
     public class JwtAuthenticationService : IAuthenticationService
     {
         private readonly ILogger<JwtAuthenticationService> _logger;

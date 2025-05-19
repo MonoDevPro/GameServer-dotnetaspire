@@ -17,7 +17,7 @@ namespace GameServer.WorldSimulationService.Application.Ports.In
         Task<Player?> GetPlayerByIdAsync(long playerId);
         
         // NPC management
-        Task<NPC?> AddNPCToWorldAsync(string name, Vector3 position, NPCType type, int maxHealth, bool isInteractable, string dialogue);
+        Task<NPC?> AddNPCToWorldAsync(string name, Vector3 position, NPCType type, int health, int maxHealth, bool isInteractable, string dialogue);
         Task<bool> UpdateNPCPositionAsync(long npcId, Vector3 newPosition);
         Task<NPC?> GetNPCByIdAsync(long npcId);
         

@@ -1,7 +1,7 @@
-using System;
 using System.Numerics;
+using GameServer.WorldService.Domain.Entities;
 
-namespace GameServer.WorldService.Domain.Entities
+namespace GameServer.WorldSimulationService.Domain.Entities
 {
     /// <summary>
     /// Representa um jogador no mundo do jogo
@@ -15,10 +15,6 @@ namespace GameServer.WorldService.Domain.Entities
         public int MaxHealth { get; private set; }
         public DateTime LastLogin { get; private set; }
         public bool IsOnline { get; private set; }
-
-        // Foreign key to region (optional)
-        public long RegionId { get; set; }
-        public Region Region { get; set; } = null!;
 
         public Player(
             Guid characterId,

@@ -1,14 +1,12 @@
-using System;
-using System.Collections.Generic;
 using System.Numerics;
-using GameServer.WorldSimulationService.Domain.Entities;
+using GameServer.WorldService.Domain.Entities;
 
-namespace GameServer.WorldService.Domain.Entities
+namespace GameServer.WorldSimulationService.Domain.Entities
 {
     /// <summary>
     /// Representa uma região do mundo, com suas características específicas e entidades presentes
     /// </summary>
-    public sealed class Region : Entity
+    public class Region : Entity
     {
         public string Name { get; private set; }
         public string Description { get; private set; }
@@ -24,7 +22,7 @@ namespace GameServer.WorldService.Domain.Entities
 
         // Foreign key to world (optional)
         public long WorldId { get; set; }
-        public World World { get; set; } = null!;
+        public virtual World? World { get; set; }
         
         public Region(string name, string description, float width, float height, Vector2 worldPosition)
         {

@@ -129,12 +129,13 @@ namespace GameServer.WorldSimulationService.Infrastructure.Adapters.In.Grpc
                 var position = new Vector3(request.Position.X, request.Position.Y, request.Position.Z);
 
                 // Convert the NPCType from the proto enum to our domain enum
-                var npcType = (WorldService.Domain.Entities.NPCType)request.Type;
+                var npcType = (Domain.Entities.NPCType)request.Type;
 
                 var npc = await _worldSimulationUseCase.AddNPCToWorldAsync(
                     request.Name,
                     position,
                     npcType,
+                    request.MaxHealth, // Assuming MaxHealth is a property in the domain entity
                     request.MaxHealth,
                     request.IsInteractable,
                     request.Dialogue);

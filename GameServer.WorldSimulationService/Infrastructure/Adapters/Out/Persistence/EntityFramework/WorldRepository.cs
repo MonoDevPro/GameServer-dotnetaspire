@@ -1,6 +1,7 @@
 using System.Numerics;
 using GameServer.WorldService.Domain.Entities;
 using GameServer.WorldSimulationService.Application.Ports.Out;
+using GameServer.WorldSimulationService.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace GameServer.WorldSimulationService.Infrastructure.Adapters.Out.Persistence.EntityFramework

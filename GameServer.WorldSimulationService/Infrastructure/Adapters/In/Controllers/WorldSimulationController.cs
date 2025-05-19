@@ -1,6 +1,7 @@
 using System.Numerics;
 using GameServer.WorldService.Domain.Entities;
 using GameServer.WorldSimulationService.Application.Ports.In;
+using GameServer.WorldSimulationService.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -326,6 +327,7 @@ public class WorldSimulationController : ControllerBase
                 addNPCDto.Name,
                 addNPCDto.Position,
                 addNPCDto.Type,
+                addNPCDto.MaxHealth, // Assuming this is the correct property
                 addNPCDto.MaxHealth,
                 addNPCDto.IsInteractable,
                 addNPCDto.Dialogue);
