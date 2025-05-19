@@ -142,3 +142,4 @@
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/ref/GameServer.AppHost.dll
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/Aspire/references/GameServer_CharacterService.ProjectMetadata.g.cs
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/Aspire/references/GameServer_Web.ProjectMetadata.g.cs
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/Aspire/references/GameServer_WorldSimulationService.ProjectMetadata.g.cs
