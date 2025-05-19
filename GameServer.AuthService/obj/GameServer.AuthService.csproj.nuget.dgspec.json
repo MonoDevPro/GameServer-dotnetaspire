@@ -49,9 +49,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "FluentValidation": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -63,6 +71,10 @@
               "target": "Package",
               "version": "[9.0.5, )"
             },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
             "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
               "version": "[10.0.0-preview.4.25258.110, )"
@@ -71,21 +83,13 @@
               "target": "Package",
               "version": "[9.0.4, )"
             },
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+            "OpenIddict.AspNetCore": {
               "target": "Package",
-              "version": "[1.12.0, )"
+              "version": "[6.3.0, )"
             },
-            "OpenTelemetry.Extensions.Hosting": {
+            "OpenIddict.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[1.12.0, )"
-            },
-            "OpenTelemetry.Instrumentation.AspNetCore": {
-              "target": "Package",
-              "version": "[1.12.0, )"
-            },
-            "OpenTelemetry.Instrumentation.Http": {
-              "target": "Package",
-              "version": "[1.12.0, )"
+              "version": "[6.3.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

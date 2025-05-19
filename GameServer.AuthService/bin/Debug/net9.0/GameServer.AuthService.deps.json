@@ -9,16 +9,16 @@
       "GameServer.AuthService/1.0.0": {
         "dependencies": {
           "GameServer.ServiceDefaults": "1.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.4",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.5",
           "Microsoft.AspNetCore.OpenApi": "9.0.3",
           "Microsoft.EntityFrameworkCore.Design": "9.0.5",
+          "Microsoft.EntityFrameworkCore.InMemory": "9.0.5",
           "Microsoft.Extensions.Caching.Memory": "10.0.0-preview.4.25258.110",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
-          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.12.0",
-          "OpenTelemetry.Extensions.Hosting": "1.12.0",
-          "OpenTelemetry.Instrumentation.AspNetCore": "1.12.0",
-          "OpenTelemetry.Instrumentation.Http": "1.12.0",
-          "Swashbuckle.AspNetCore": "8.1.1"
+          "OpenIddict.AspNetCore": "6.3.0",
+          "OpenIddict.EntityFrameworkCore": "6.3.0",
+          "Swashbuckle.AspNetCore": "8.1.1",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.5.0"
         },
         "runtime": {
           "GameServer.AuthService.dll": {}
@@ -46,17 +46,6 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0"
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.4": {
-        "dependencies": {
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.0.1"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
-            "assemblyVersion": "9.0.4.0",
-            "fileVersion": "9.0.425.16403"
-          }
-        }
-      },
       "Microsoft.AspNetCore.Authorization/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "10.0.0-preview.4.25258.110",
@@ -67,6 +56,25 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Authorization": "2.2.0"
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.Internal/9.0.5": {
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.525.22904"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/9.0.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.Internal": "9.0.5"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.525.22904"
+          }
         }
       },
       "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
@@ -88,7 +96,7 @@
           "Microsoft.AspNetCore.WebUtilities": "2.2.0",
           "Microsoft.Extensions.ObjectPool": "9.0.4",
           "Microsoft.Extensions.Options": "10.0.0-preview.4.25258.110",
-          "Microsoft.Net.Http.Headers": "2.2.0"
+          "Microsoft.Net.Http.Headers": "9.0.2"
         }
       },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
@@ -101,7 +109,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "9.0.4",
-          "Microsoft.Net.Http.Headers": "2.2.0",
+          "Microsoft.Net.Http.Headers": "9.0.2",
           "System.Buffers": "4.5.0"
         }
       },
@@ -110,10 +118,22 @@
           "Microsoft.Extensions.Primitives": "10.0.0-preview.4.25258.110"
         }
       },
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.5",
+          "Microsoft.Extensions.Identity.Stores": "9.0.5"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
+            "assemblyVersion": "9.0.5.0",
+            "fileVersion": "9.0.525.22904"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Routing.Abstractions": "2.2.0",
-          "Microsoft.Net.Http.Headers": "2.2.0"
+          "Microsoft.Net.Http.Headers": "9.0.2"
         }
       },
       "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
@@ -167,7 +187,7 @@
       },
       "Microsoft.AspNetCore.WebUtilities/2.2.0": {
         "dependencies": {
-          "Microsoft.Net.Http.Headers": "2.2.0",
+          "Microsoft.Net.Http.Headers": "9.0.2",
           "System.Text.Encodings.Web": "4.5.0"
         }
       },
@@ -513,6 +533,19 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/9.0.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.5",
+          "Microsoft.Extensions.Caching.Memory": "10.0.0-preview.4.25258.110",
+          "Microsoft.Extensions.Logging": "9.0.5"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "9.0.5.0",
+            "fileVersion": "9.0.525.21604"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/9.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.5",
@@ -745,6 +778,19 @@
           }
         }
       },
+      "Microsoft.Extensions.Http.Polly/9.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.4",
+          "Polly": "7.2.4",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "assemblyVersion": "9.0.2.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
       "Microsoft.Extensions.Http.Resilience/9.4.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Binder": "9.0.4",
@@ -756,6 +802,32 @@
           "lib/net9.0/Microsoft.Extensions.Http.Resilience.dll": {
             "assemblyVersion": "9.4.0.0",
             "fileVersion": "9.400.25.20705"
+          }
+        }
+      },
+      "Microsoft.Extensions.Identity.Core/9.0.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "9.0.5",
+          "Microsoft.Extensions.Logging": "9.0.5",
+          "Microsoft.Extensions.Options": "10.0.0-preview.4.25258.110"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Identity.Core.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.525.22904"
+          }
+        }
+      },
+      "Microsoft.Extensions.Identity.Stores/9.0.5": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "10.0.0-preview.4.25258.110",
+          "Microsoft.Extensions.Identity.Core": "9.0.5",
+          "Microsoft.Extensions.Logging": "9.0.5"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Identity.Stores.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.525.22904"
           }
         }
       },
@@ -926,74 +998,68 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Abstractions/8.0.1": {
+      "Microsoft.IdentityModel.Abstractions/8.4.0": {
         "runtime": {
           "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.1.50722"
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.60207"
           }
         }
       },
-      "Microsoft.IdentityModel.JsonWebTokens/8.0.1": {
+      "Microsoft.IdentityModel.JsonWebTokens/8.4.0": {
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "8.0.1"
+          "Microsoft.IdentityModel.Tokens": "8.4.0"
         },
         "runtime": {
           "lib/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.1.50722"
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.60207"
           }
         }
       },
-      "Microsoft.IdentityModel.Logging/8.0.1": {
+      "Microsoft.IdentityModel.Logging/8.4.0": {
         "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "8.0.1"
+          "Microsoft.IdentityModel.Abstractions": "8.4.0"
         },
         "runtime": {
           "lib/net9.0/Microsoft.IdentityModel.Logging.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.1.50722"
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.60207"
           }
         }
       },
-      "Microsoft.IdentityModel.Protocols/8.0.1": {
+      "Microsoft.IdentityModel.Protocols/8.4.0": {
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "8.0.1"
+          "Microsoft.IdentityModel.Tokens": "8.4.0"
         },
         "runtime": {
           "lib/net9.0/Microsoft.IdentityModel.Protocols.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.1.50722"
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.60207"
           }
         }
       },
-      "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.0.1": {
+      "Microsoft.IdentityModel.Tokens/8.4.0": {
         "dependencies": {
-          "Microsoft.IdentityModel.Protocols": "8.0.1",
-          "System.IdentityModel.Tokens.Jwt": "8.0.1"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.1.50722"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Tokens/8.0.1": {
-        "dependencies": {
-          "Microsoft.IdentityModel.Logging": "8.0.1"
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-preview.4.25258.110",
+          "Microsoft.IdentityModel.Logging": "8.4.0"
         },
         "runtime": {
           "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.1.50722"
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.60207"
           }
         }
       },
-      "Microsoft.Net.Http.Headers/2.2.0": {
+      "Microsoft.Net.Http.Headers/9.0.2": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "10.0.0-preview.4.25258.110",
-          "System.Buffers": "4.5.0"
+          "Microsoft.Extensions.Primitives": "10.0.0-preview.4.25258.110"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Net.Http.Headers.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
         }
       },
       "Microsoft.OpenApi/1.6.23": {
@@ -1039,97 +1105,348 @@
           }
         }
       },
-      "OpenTelemetry/1.12.0": {
+      "OpenIddict/6.3.0": {
+        "dependencies": {
+          "OpenIddict.Abstractions": "6.3.0",
+          "OpenIddict.Client": "6.3.0",
+          "OpenIddict.Client.SystemIntegration": "6.3.0",
+          "OpenIddict.Client.SystemNetHttp": "6.3.0",
+          "OpenIddict.Client.WebIntegration": "6.3.0",
+          "OpenIddict.Core": "6.3.0",
+          "OpenIddict.Server": "6.3.0",
+          "OpenIddict.Validation": "6.3.0",
+          "OpenIddict.Validation.ServerIntegration": "6.3.0",
+          "OpenIddict.Validation.SystemNetHttp": "6.3.0"
+        }
+      },
+      "OpenIddict.Abstractions/6.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-preview.4.25258.110",
+          "Microsoft.Extensions.Primitives": "10.0.0-preview.4.25258.110",
+          "Microsoft.IdentityModel.Tokens": "8.4.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Abstractions.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.AspNetCore/6.3.0": {
+        "dependencies": {
+          "OpenIddict": "6.3.0",
+          "OpenIddict.Client.AspNetCore": "6.3.0",
+          "OpenIddict.Client.DataProtection": "6.3.0",
+          "OpenIddict.Server.AspNetCore": "6.3.0",
+          "OpenIddict.Server.DataProtection": "6.3.0",
+          "OpenIddict.Validation.AspNetCore": "6.3.0",
+          "OpenIddict.Validation.DataProtection": "6.3.0"
+        }
+      },
+      "OpenIddict.Client/6.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "9.0.5",
+          "Microsoft.IdentityModel.JsonWebTokens": "8.4.0",
+          "Microsoft.IdentityModel.Protocols": "8.4.0",
+          "OpenIddict.Abstractions": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Client.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Client.AspNetCore/6.3.0": {
+        "dependencies": {
+          "OpenIddict.Client": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Client.AspNetCore.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Client.DataProtection/6.3.0": {
+        "dependencies": {
+          "OpenIddict.Client": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Client.DataProtection.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Client.SystemIntegration/6.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Hosting.Abstractions": "9.0.4",
+          "Microsoft.Net.Http.Headers": "9.0.2",
+          "OpenIddict.Client": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Client.SystemIntegration.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Client.SystemNetHttp/6.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Http.Polly": "9.0.2",
+          "Microsoft.Extensions.Http.Resilience": "9.4.0",
+          "OpenIddict.Client": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Client.SystemNetHttp.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Client.WebIntegration/6.3.0": {
+        "dependencies": {
+          "OpenIddict.Client": "6.3.0",
+          "OpenIddict.Client.SystemNetHttp": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Client.WebIntegration.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Core/6.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "10.0.0-preview.4.25258.110",
+          "Microsoft.Extensions.Logging": "9.0.5",
+          "Microsoft.Extensions.Options": "10.0.0-preview.4.25258.110",
+          "OpenIddict.Abstractions": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Core.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.EntityFrameworkCore/6.3.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.5",
+          "OpenIddict.Core": "6.3.0",
+          "OpenIddict.EntityFrameworkCore.Models": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.EntityFrameworkCore.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.EntityFrameworkCore.Models/6.3.0": {
+        "runtime": {
+          "lib/net9.0/OpenIddict.EntityFrameworkCore.Models.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Server/6.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "9.0.5",
+          "Microsoft.IdentityModel.JsonWebTokens": "8.4.0",
+          "OpenIddict.Abstractions": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Server.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Server.AspNetCore/6.3.0": {
+        "dependencies": {
+          "OpenIddict.Server": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Server.AspNetCore.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Server.DataProtection/6.3.0": {
+        "dependencies": {
+          "OpenIddict.Server": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Server.DataProtection.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Validation/6.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "9.0.5",
+          "Microsoft.IdentityModel.JsonWebTokens": "8.4.0",
+          "Microsoft.IdentityModel.Protocols": "8.4.0",
+          "OpenIddict.Abstractions": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Validation.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Validation.AspNetCore/6.3.0": {
+        "dependencies": {
+          "OpenIddict.Validation": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Validation.AspNetCore.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Validation.DataProtection/6.3.0": {
+        "dependencies": {
+          "OpenIddict.Validation": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Validation.DataProtection.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Validation.ServerIntegration/6.3.0": {
+        "dependencies": {
+          "OpenIddict.Server": "6.3.0",
+          "OpenIddict.Validation": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Validation.ServerIntegration.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenIddict.Validation.SystemNetHttp/6.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Http.Polly": "9.0.2",
+          "Microsoft.Extensions.Http.Resilience": "9.4.0",
+          "OpenIddict.Validation": "6.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/OpenIddict.Validation.SystemNetHttp.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.300.25.26476"
+          }
+        }
+      },
+      "OpenTelemetry/1.11.2": {
         "dependencies": {
           "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.4",
           "Microsoft.Extensions.Logging.Configuration": "9.0.4",
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.12.0"
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.11.2"
         },
         "runtime": {
           "lib/net9.0/OpenTelemetry.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.12.0.1644"
+            "fileVersion": "1.11.2.1586"
           }
         }
       },
-      "OpenTelemetry.Api/1.12.0": {
+      "OpenTelemetry.Api/1.11.2": {
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "10.0.0-preview.4.25258.110"
         },
         "runtime": {
           "lib/net9.0/OpenTelemetry.Api.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.12.0.1644"
+            "fileVersion": "1.11.2.1586"
           }
         }
       },
-      "OpenTelemetry.Api.ProviderBuilderExtensions/1.12.0": {
+      "OpenTelemetry.Api.ProviderBuilderExtensions/1.11.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-preview.4.25258.110",
-          "OpenTelemetry.Api": "1.12.0"
+          "OpenTelemetry.Api": "1.11.2"
         },
         "runtime": {
           "lib/net9.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.12.0.1644"
+            "fileVersion": "1.11.2.1586"
           }
         }
       },
-      "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.12.0": {
+      "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.11.2": {
         "dependencies": {
-          "OpenTelemetry": "1.12.0"
+          "OpenTelemetry": "1.11.2"
         },
         "runtime": {
           "lib/net9.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.12.0.1644"
+            "fileVersion": "1.11.2.1586"
           }
         }
       },
-      "OpenTelemetry.Extensions.Hosting/1.12.0": {
+      "OpenTelemetry.Extensions.Hosting/1.11.2": {
         "dependencies": {
           "Microsoft.Extensions.Hosting.Abstractions": "9.0.4",
-          "OpenTelemetry": "1.12.0"
+          "OpenTelemetry": "1.11.2"
         },
         "runtime": {
           "lib/net9.0/OpenTelemetry.Extensions.Hosting.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.12.0.1644"
+            "fileVersion": "1.11.2.1586"
           }
         }
       },
-      "OpenTelemetry.Instrumentation.AspNetCore/1.12.0": {
+      "OpenTelemetry.Instrumentation.AspNetCore/1.11.1": {
         "dependencies": {
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.12.0"
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.11.2"
         },
         "runtime": {
           "lib/net8.0/OpenTelemetry.Instrumentation.AspNetCore.dll": {
-            "assemblyVersion": "1.12.0.490",
-            "fileVersion": "1.12.0.490"
+            "assemblyVersion": "1.11.1.401",
+            "fileVersion": "1.11.1.401"
           }
         }
       },
-      "OpenTelemetry.Instrumentation.Http/1.12.0": {
+      "OpenTelemetry.Instrumentation.Http/1.11.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "9.0.4",
           "Microsoft.Extensions.Options": "10.0.0-preview.4.25258.110",
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.12.0"
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.11.2"
         },
         "runtime": {
           "lib/net8.0/OpenTelemetry.Instrumentation.Http.dll": {
-            "assemblyVersion": "1.12.0.493",
-            "fileVersion": "1.12.0.493"
+            "assemblyVersion": "1.11.1.407",
+            "fileVersion": "1.11.1.407"
           }
         }
       },
       "OpenTelemetry.Instrumentation.Runtime/1.11.1": {
         "dependencies": {
-          "OpenTelemetry.Api": "1.12.0"
+          "OpenTelemetry.Api": "1.11.2"
         },
         "runtime": {
           "lib/net8.0/OpenTelemetry.Instrumentation.Runtime.dll": {
             "assemblyVersion": "1.11.1.410",
             "fileVersion": "1.11.1.410"
+          }
+        }
+      },
+      "Polly/7.2.4": {
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.4.982"
           }
         }
       },
@@ -1151,6 +1468,17 @@
           "lib/net8.0/Polly.Extensions.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.4.2.3950"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "dependencies": {
+          "Polly": "7.2.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
           }
         }
       },
@@ -1307,18 +1635,6 @@
           }
         }
       },
-      "System.IdentityModel.Tokens.Jwt/8.0.1": {
-        "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "8.0.1",
-          "Microsoft.IdentityModel.Tokens": "8.0.1"
-        },
-        "runtime": {
-          "lib/net9.0/System.IdentityModel.Tokens.Jwt.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.1.50722"
-          }
-        }
-      },
       "System.IO.Pipelines/9.0.4": {
         "runtime": {
           "lib/net9.0/System.IO.Pipelines.dll": {
@@ -1349,10 +1665,10 @@
         "dependencies": {
           "Microsoft.Extensions.Http.Resilience": "9.4.0",
           "Microsoft.Extensions.ServiceDiscovery": "9.2.1",
-          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.12.0",
-          "OpenTelemetry.Extensions.Hosting": "1.12.0",
-          "OpenTelemetry.Instrumentation.AspNetCore": "1.12.0",
-          "OpenTelemetry.Instrumentation.Http": "1.12.0",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.11.2",
+          "OpenTelemetry.Extensions.Hosting": "1.11.2",
+          "OpenTelemetry.Instrumentation.AspNetCore": "1.11.1",
+          "OpenTelemetry.Instrumentation.Http": "1.11.1",
           "OpenTelemetry.Instrumentation.Runtime": "1.11.1",
           "Scrutor.AspNetCore": "3.3.0"
         },
@@ -1360,6 +1676,14 @@
           "GameServer.ServiceDefaults.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.5.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "9.0.5.0",
+            "fileVersion": "9.0.525.22904"
           }
         }
       }
@@ -1392,13 +1716,6 @@
       "path": "microsoft.aspnetcore.authentication.core/2.2.0",
       "hashPath": "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0HgfWPfnjlzWFbW4pw6FYNuIMV8obVU+MUkiZ33g4UOpvZcmdWzdayfheKPZ5+EUly8SvfgW0dJwwIrW4IVLZQ==",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/9.0.4",
-      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.9.0.4.nupkg.sha512"
-    },
     "Microsoft.AspNetCore.Authorization/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1412,6 +1729,20 @@
       "sha512": "sha512-aJCo6niDRKuNg2uS2WMEmhJTooQUGARhV2ENQ2tO5443zVHUo19MSgrgGo9FIrfD+4yKPF8Q+FF33WkWfPbyKw==",
       "path": "microsoft.aspnetcore.authorization.policy/2.2.0",
       "hashPath": "microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.Internal/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fz9zLxzIpUVfuQv0eMzL5Hi1xIVp7g4u4I7JuTOA3orR/6A0XpDA24gAl1HMaD9fhAQUf6JH8w1mxmEZwE3OIw==",
+      "path": "microsoft.aspnetcore.cryptography.internal/9.0.5",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.9.0.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6C2od1EVKYeoofE8pLa9Jtat4H9zVeuM0qdb50Nn1rLY33k6x6vR24nHUTuuXrhyW0Mu40C4eZSfto83UjQUaA==",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/9.0.5",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.9.0.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
       "type": "package",
@@ -1454,6 +1785,13 @@
       "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
       "path": "microsoft.aspnetcore.http.features/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SJcjUt+vTK3VpltheGY53IzYxVjYt63gPk1bc+NGm6A37gGe6BzRcSJF62wL4PsAW4MZiClA6IwVo/aDBVCk/g==",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/9.0.5",
+      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.9.0.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
       "type": "package",
@@ -1594,6 +1932,13 @@
       "sha512": "sha512-xOVWCGRF8DpOIoZ196/g7bdghc2e7Fp6R2vZPKndWv8A64bSDSaS7F2CUoqZpmSphUeT+1HDRpNYFRBQd8H71g==",
       "path": "microsoft.entityframeworkcore.design/9.0.5",
       "hashPath": "microsoft.entityframeworkcore.design.9.0.5.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+nC0uyM5ztN3rV7yUraTlQhXZMV98MP1ZEn4OLlz4c0l5bOGbvHIcvsHA5RitzJTsP5UX/rwfpc3aOsTBS02jA==",
+      "path": "microsoft.entityframeworkcore.inmemory/9.0.5",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.9.0.5.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/9.0.5": {
       "type": "package",
@@ -1742,12 +2087,33 @@
       "path": "microsoft.extensions.http.diagnostics/9.4.0",
       "hashPath": "microsoft.extensions.http.diagnostics.9.4.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Http.Polly/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2y5a9Iijc9iTUN1M7rH2+kUMJPuuxTgfUyL9iAOqe4ueuWtTfG1SVX/oAj35q46OV4kSgCeJC82dLQ96xOo/RQ==",
+      "path": "microsoft.extensions.http.polly/9.0.2",
+      "hashPath": "microsoft.extensions.http.polly.9.0.2.nupkg.sha512"
+    },
     "Microsoft.Extensions.Http.Resilience/9.4.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-sml3XlyLrAnxYFTn96KaHzrzcnbkSZpxWzDffE9qs3QXloLepOa0nUjsgvhDg9InCNrd/KAuRLUzE6LCPa7r/g==",
       "path": "microsoft.extensions.http.resilience/9.4.0",
       "hashPath": "microsoft.extensions.http.resilience.9.4.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Identity.Core/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7Mhz5D8piBrlpuehE8xABMJTibOC8FvJyUVTs7tqPP2wRO3Ldb9tFSCepvuHBzpBycJbNpd1L7ECUFTwRAUkgA==",
+      "path": "microsoft.extensions.identity.core/9.0.5",
+      "hashPath": "microsoft.extensions.identity.core.9.0.5.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Identity.Stores/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8OXDgPHIAQTo6PCRg8eCnfsTbmklXvsITb+N3jqsckQQZ3cBr4drp4igdlJAkAiM1XldbBE9S3MI1XBoAwe20A==",
+      "path": "microsoft.extensions.identity.stores/9.0.5",
+      "hashPath": "microsoft.extensions.identity.stores.9.0.5.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/9.0.5": {
       "type": "package",
@@ -1833,54 +2199,47 @@
       "path": "microsoft.extensions.telemetry.abstractions/9.4.0",
       "hashPath": "microsoft.extensions.telemetry.abstractions.9.4.0.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.Abstractions/8.0.1": {
+    "Microsoft.IdentityModel.Abstractions/8.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OtlIWcyX01olfdevPKZdIPfBEvbcioDyBiE/Z2lHsopsMD7twcKtlN9kMevHmI5IIPhFpfwCIiR6qHQz1WHUIw==",
-      "path": "microsoft.identitymodel.abstractions/8.0.1",
-      "hashPath": "microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512"
+      "sha512": "sha512-4dDpw7DJ2yx2vFM/w0sceXoByUhrU68eMdlXyzsPTWPtAfgCbkuMl7jfLBLegmgerbOzGNMm7zq5xwr4+7yTSg==",
+      "path": "microsoft.identitymodel.abstractions/8.4.0",
+      "hashPath": "microsoft.identitymodel.abstractions.8.4.0.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.JsonWebTokens/8.0.1": {
+    "Microsoft.IdentityModel.JsonWebTokens/8.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-s6++gF9x0rQApQzOBbSyp4jUaAlwm+DroKfL8gdOHxs83k8SJfUXhuc46rDB3rNXBQ1MVRxqKUrqFhO/M0E97g==",
-      "path": "microsoft.identitymodel.jsonwebtokens/8.0.1",
-      "hashPath": "microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512"
+      "sha512": "sha512-lyMsODXEMNvV0oTUehuz6wkohldFqQg5su/2Hdzr2xS1kdvilqyywkoVnpbJVb7zYr7TA+6rVCTRV/0f2uSBPQ==",
+      "path": "microsoft.identitymodel.jsonwebtokens/8.4.0",
+      "hashPath": "microsoft.identitymodel.jsonwebtokens.8.4.0.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.Logging/8.0.1": {
+    "Microsoft.IdentityModel.Logging/8.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UCPF2exZqBXe7v/6sGNiM6zCQOUXXQ9+v5VTb9gPB8ZSUPnX53BxlN78v2jsbIvK9Dq4GovQxo23x8JgWvm/Qg==",
-      "path": "microsoft.identitymodel.logging/8.0.1",
-      "hashPath": "microsoft.identitymodel.logging.8.0.1.nupkg.sha512"
+      "sha512": "sha512-vIKIBDMD6l2MeCwkdeh1XHSHNVz9C/qp9PaHMG6SF3OUSAh/2XMVj2zaVc2hs27QRfhh5xR3tvMSs8R96WS2IA==",
+      "path": "microsoft.identitymodel.logging/8.4.0",
+      "hashPath": "microsoft.identitymodel.logging.8.4.0.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.Protocols/8.0.1": {
+    "Microsoft.IdentityModel.Protocols/8.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uA2vpKqU3I2mBBEaeJAWPTjT9v1TZrGWKdgK6G5qJd03CLx83kdiqO9cmiK8/n1erkHzFBwU/RphP83aAe3i3g==",
-      "path": "microsoft.identitymodel.protocols/8.0.1",
-      "hashPath": "microsoft.identitymodel.protocols.8.0.1.nupkg.sha512"
+      "sha512": "sha512-cDvZZ8JYto6L1I64sWW17JGwYGuFZ5Qm+WZG+wLk0QHjtuSosujDVAc4nr/sx6+n88q1mdW93rGEl7TCniNp5Q==",
+      "path": "microsoft.identitymodel.protocols/8.4.0",
+      "hashPath": "microsoft.identitymodel.protocols.8.4.0.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.0.1": {
+    "Microsoft.IdentityModel.Tokens/8.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AQDbfpL+yzuuGhO/mQhKNsp44pm5Jv8/BI4KiFXR7beVGZoSH35zMV3PrmcfvSTsyI6qrcR898NzUauD6SRigg==",
-      "path": "microsoft.identitymodel.protocols.openidconnect/8.0.1",
-      "hashPath": "microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512"
+      "sha512": "sha512-n/wBvhj7oq3rZyImUhkUv6bUjwPWK+jG1R3BsCfahLtwoOzIWSPLmzMQ61HCtd1BiCU43IdkX9M+cD1xMmE3xQ==",
+      "path": "microsoft.identitymodel.tokens/8.4.0",
+      "hashPath": "microsoft.identitymodel.tokens.8.4.0.nupkg.sha512"
     },
-    "Microsoft.IdentityModel.Tokens/8.0.1": {
+    "Microsoft.Net.Http.Headers/9.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kDimB6Dkd3nkW2oZPDkMkVHfQt3IDqO5gL0oa8WVy3OP4uE8Ij+8TXnqg9TOd9ufjsY3IDiGz7pCUbnfL18tjg==",
-      "path": "microsoft.identitymodel.tokens/8.0.1",
-      "hashPath": "microsoft.identitymodel.tokens.8.0.1.nupkg.sha512"
-    },
-    "Microsoft.Net.Http.Headers/2.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-iZNkjYqlo8sIOI0bQfpsSoMTmB/kyvmV2h225ihyZT33aTp48ZpF6qYnXxzSXmHt8DpBAwBTX+1s1UFLbYfZKg==",
-      "path": "microsoft.net.http.headers/2.2.0",
-      "hashPath": "microsoft.net.http.headers.2.2.0.nupkg.sha512"
+      "sha512": "sha512-DJHjP1cTSu+sMt0vdNFLH9/wLHkq3EZk6BPZKI/R9anry41Ng/TOOZM0iXo+stXlY3LivTW/70Y26oMVGgTsTg==",
+      "path": "microsoft.net.http.headers/9.0.2",
+      "hashPath": "microsoft.net.http.headers.9.0.2.nupkg.sha512"
     },
     "Microsoft.OpenApi/1.6.23": {
       "type": "package",
@@ -1910,54 +2269,194 @@
       "path": "npgsql.entityframeworkcore.postgresql/9.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
     },
-    "OpenTelemetry/1.12.0": {
+    "OpenIddict/6.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aIEu2O3xFOdwIVH0AJsIHPIMH1YuX18nzu7BHyaDNQ6NWSk4Zyrs9Pp6y8SATuSbvdtmvue4mj/QZ3838srbwA==",
-      "path": "opentelemetry/1.12.0",
-      "hashPath": "opentelemetry.1.12.0.nupkg.sha512"
+      "sha512": "sha512-nyfBn2TSlsom94W81g6RtrL0eV3p7P8SZcO3lpo5U9hJMY1NZ2+78e+gyqgJzzf8y05XzUifP131qX1wFLJwNA==",
+      "path": "openiddict/6.3.0",
+      "hashPath": "openiddict.6.3.0.nupkg.sha512"
     },
-    "OpenTelemetry.Api/1.12.0": {
+    "OpenIddict.Abstractions/6.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Xt0qldi+iE2szGrM3jAqzEMEJd48YBtqI6mge0+ArXTZg3aTpRmyhL6CKKl3bLioaFSSVbBpEbPin8u6Z46Yrw==",
-      "path": "opentelemetry.api/1.12.0",
-      "hashPath": "opentelemetry.api.1.12.0.nupkg.sha512"
+      "sha512": "sha512-eyXihbSmFeQ0B7wk1owg+vHqkay16L3K2MVXb8SCW0HMGrSrizrmNFDAak95uj/Tzi2XXgTaQpYrO/leQF1bJQ==",
+      "path": "openiddict.abstractions/6.3.0",
+      "hashPath": "openiddict.abstractions.6.3.0.nupkg.sha512"
     },
-    "OpenTelemetry.Api.ProviderBuilderExtensions/1.12.0": {
+    "OpenIddict.AspNetCore/6.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-t6Vk1143BfiisCWYbRcyzkAuN6Aq5RkYtfOSMoqCIRMvtN9p1e1xzc0nWQ+fccNGOVgHn3aMK5xFn2+iWMcr8A==",
-      "path": "opentelemetry.api.providerbuilderextensions/1.12.0",
-      "hashPath": "opentelemetry.api.providerbuilderextensions.1.12.0.nupkg.sha512"
+      "sha512": "sha512-phBXcKWtm3CVPp0j7YqkgHA78pLPz9H3XZT1z1oohS9g0NzmwPABaclkhJb4KsYtln+lobFuQyRwpDR/NccUVg==",
+      "path": "openiddict.aspnetcore/6.3.0",
+      "hashPath": "openiddict.aspnetcore.6.3.0.nupkg.sha512"
     },
-    "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.12.0": {
+    "OpenIddict.Client/6.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7LzQSPhz5pNaL4xZgT3wkZODA1NLrEq3bet8KDHgtaJ9q+VNP7wmiZky8gQfMkB4FXuI/pevT8ZurL4p5997WA==",
-      "path": "opentelemetry.exporter.opentelemetryprotocol/1.12.0",
-      "hashPath": "opentelemetry.exporter.opentelemetryprotocol.1.12.0.nupkg.sha512"
+      "sha512": "sha512-qQvAQMe/aStjZ+VM9becrtVQQldnf0pebZLcdbMJeQxqv/JifE5w2DzAbhxsLCE3W+ERmzFPhB58SZTdPg55Yw==",
+      "path": "openiddict.client/6.3.0",
+      "hashPath": "openiddict.client.6.3.0.nupkg.sha512"
     },
-    "OpenTelemetry.Extensions.Hosting/1.12.0": {
+    "OpenIddict.Client.AspNetCore/6.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6/8O6rsJRwslg5/Fm3bscBelw4Yh9T9CN24p7cAsuEFkrmmeSO9gkYUCK02Qi+CmPM2KHYTLjKi0lJaCsDMWQA==",
-      "path": "opentelemetry.extensions.hosting/1.12.0",
-      "hashPath": "opentelemetry.extensions.hosting.1.12.0.nupkg.sha512"
+      "sha512": "sha512-8aE7TTexWP/BT1GSiGy1tO11GrMbtctMGHZQ2ZBhSjNPzr/sK/4t4qKR8IbwFngjLvfmkzYDENctUwHly1MYjg==",
+      "path": "openiddict.client.aspnetcore/6.3.0",
+      "hashPath": "openiddict.client.aspnetcore.6.3.0.nupkg.sha512"
     },
-    "OpenTelemetry.Instrumentation.AspNetCore/1.12.0": {
+    "OpenIddict.Client.DataProtection/6.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-r+Mzggd2P4N0Y34QIO6kakVPBOKFYSHnLkTrXXM+r37ABp+iaUvVUe+u/uxszsi5f7P5mrG0uYYaJ1QGHvzo3A==",
-      "path": "opentelemetry.instrumentation.aspnetcore/1.12.0",
-      "hashPath": "opentelemetry.instrumentation.aspnetcore.1.12.0.nupkg.sha512"
+      "sha512": "sha512-EK9Irg8bW5k+S+wzQzIP4yT3PSyTwpuxyj1jCKClTy6YNMzcQ6PS5EQe0WZufLT3ZzzqJ2wqNjEWXdJDT9pnag==",
+      "path": "openiddict.client.dataprotection/6.3.0",
+      "hashPath": "openiddict.client.dataprotection.6.3.0.nupkg.sha512"
     },
-    "OpenTelemetry.Instrumentation.Http/1.12.0": {
+    "OpenIddict.Client.SystemIntegration/6.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0rW+MbHgUQAdbvBtRxPYoQBosbNdWegL7cYkRlxq+KQ/VFyU8itt4pWTccmu1/FWmTgqJyT3LaujyDZoRrm8Yg==",
-      "path": "opentelemetry.instrumentation.http/1.12.0",
-      "hashPath": "opentelemetry.instrumentation.http.1.12.0.nupkg.sha512"
+      "sha512": "sha512-AQZr1khEKvTESkl8RZiuqPAe4x/MvniqNlMOIv0i5Gev/lnZqEEViPZfcRpu7cbdf3DotMNc7gT3KsYlY+ki5A==",
+      "path": "openiddict.client.systemintegration/6.3.0",
+      "hashPath": "openiddict.client.systemintegration.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Client.SystemNetHttp/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YSMi/VN0PaKyig0fEKKPx/Dk40Nwxi3YHMW6glNsuFpqJfZ0CM9Yzu3Zu8T1KkSR4kvPlARpS88v+XI6ZmRp2Q==",
+      "path": "openiddict.client.systemnethttp/6.3.0",
+      "hashPath": "openiddict.client.systemnethttp.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Client.WebIntegration/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iADelJ1xYOY1lEkiqLWOaxMzP6mbhnsWTkS4eGgoH4FmHzdqGCiFDI/0905W42rJwi3h5ANIhnwOGXraxYDx+w==",
+      "path": "openiddict.client.webintegration/6.3.0",
+      "hashPath": "openiddict.client.webintegration.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Core/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-opy9qFIv6O+c3iAO0BZKlXSi5DHjo8L0mhvFHWgA4Ml3X/1kQdMflkj1R5kKjBa+39cDRLRNX68fWjt1U2TUiA==",
+      "path": "openiddict.core/6.3.0",
+      "hashPath": "openiddict.core.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.EntityFrameworkCore/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fCPKXyogb4gWIT08HC3ve1dtxynTS4g42knC0iuluvcA6j+iHW2kSEKIzNNibSmCmcb6M405aoaobSmgZsLpmA==",
+      "path": "openiddict.entityframeworkcore/6.3.0",
+      "hashPath": "openiddict.entityframeworkcore.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.EntityFrameworkCore.Models/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WJ2Nl8Kg9bflUV2zwg90dmpGfKhum4kFgvQ2wmi1UCDyQ65ot+metiBqVXCY0XzwI/txPHLfJk1FHwKrOhZciA==",
+      "path": "openiddict.entityframeworkcore.models/6.3.0",
+      "hashPath": "openiddict.entityframeworkcore.models.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Server/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PAhRI+4eVrGuA3HPkqghjsbqzq/p7FdPoo1ggbUvhaP6hjZ5x6lUIyUinQB1TymmzoY93mUEOISQV3D+yzOuZQ==",
+      "path": "openiddict.server/6.3.0",
+      "hashPath": "openiddict.server.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Server.AspNetCore/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KY17nH6K64zEwQCPl6gLB3TU85FaPhq+StjBXkNcQBN4UVdOni7NZ1Qpnvq9/WsgGuClTsLNOG3MT6oBygDnFQ==",
+      "path": "openiddict.server.aspnetcore/6.3.0",
+      "hashPath": "openiddict.server.aspnetcore.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Server.DataProtection/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kXk0hXlktMcXGY8tiuADUAMc2afASQgKxbXlOQ6t+G8P7ioIGTd/bQ2qWFfEW3UZlBcXB3frYfvxElc9SM2lLQ==",
+      "path": "openiddict.server.dataprotection/6.3.0",
+      "hashPath": "openiddict.server.dataprotection.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Validation/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VnkpARhLYuj51YamnlnSBupjvELP0VL9ii+Cyh35xAYdwII0BFmM5R9ghDvFxcOnow1pIJeR3SXwxHYZPxwsaw==",
+      "path": "openiddict.validation/6.3.0",
+      "hashPath": "openiddict.validation.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Validation.AspNetCore/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Il+XCrVri10Ymwky3cDWMT5EhoLbOF8+n260xc45lprXT0S/4PFlkP2dtTPv98YOKOzQ54+MymxQJyyfizIjGw==",
+      "path": "openiddict.validation.aspnetcore/6.3.0",
+      "hashPath": "openiddict.validation.aspnetcore.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Validation.DataProtection/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TJX1FwcxJSkXbf71ONCNtWREjJZII243jS4vWOwjNj5yIkdMDr5inxF3HT6m0R22NwFQwNRMA2cH1/DFQTN0EA==",
+      "path": "openiddict.validation.dataprotection/6.3.0",
+      "hashPath": "openiddict.validation.dataprotection.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Validation.ServerIntegration/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MTQ9TmIb0T+i3zfpzuPArNMe+yvN9xmIr6STmRNvBl7OYU7HBqXkq8cYcX0nBxdUiVBJBtvL/z1Fu3/lZELYTA==",
+      "path": "openiddict.validation.serverintegration/6.3.0",
+      "hashPath": "openiddict.validation.serverintegration.6.3.0.nupkg.sha512"
+    },
+    "OpenIddict.Validation.SystemNetHttp/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CSHwd16LPbfdeZX8Rr3m4cPk1UR6UOxk0VWprNfA9NZy/RlGzVjpMW1GuDneLaJDZVyqNzdN8nkRS3LRqdieHw==",
+      "path": "openiddict.validation.systemnethttp/6.3.0",
+      "hashPath": "openiddict.validation.systemnethttp.6.3.0.nupkg.sha512"
+    },
+    "OpenTelemetry/1.11.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FwonkaCVW8M9DLTHmAeJ+znsQCeOVvF4vSBworyq6f55RJB62LFmK7h7SG2aNERTknxP5RoGSwGOBPcVEgC07w==",
+      "path": "opentelemetry/1.11.2",
+      "hashPath": "opentelemetry.1.11.2.nupkg.sha512"
+    },
+    "OpenTelemetry.Api/1.11.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jgSd/FvtxPPc6nLaZnFj+bulHM2iQjy+NBCY5MbQjH6vkW/SfcXD9NMP3pKCmdF+SbZpgL+EoLQc+PmcnYYLlA==",
+      "path": "opentelemetry.api/1.11.2",
+      "hashPath": "opentelemetry.api.1.11.2.nupkg.sha512"
+    },
+    "OpenTelemetry.Api.ProviderBuilderExtensions/1.11.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y1aag4WT9f3rF8jQWwub5DsFVXpM/5NQsfYg6lmsNQrtJ6TcRqQu2PubcHXeIX2N6TA7XF3ffQAgeJklsSLeoQ==",
+      "path": "opentelemetry.api.providerbuilderextensions/1.11.2",
+      "hashPath": "opentelemetry.api.providerbuilderextensions.1.11.2.nupkg.sha512"
+    },
+    "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.11.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-37dQ85HHU+szAJY9ePSSXl5TNQp7iZm4Q+Dr9gQ8kOyJiHk7xsQUSjZrFA0Mzu74Jmi2WWPZ4p13BCcHXzFolg==",
+      "path": "opentelemetry.exporter.opentelemetryprotocol/1.11.2",
+      "hashPath": "opentelemetry.exporter.opentelemetryprotocol.1.11.2.nupkg.sha512"
+    },
+    "OpenTelemetry.Extensions.Hosting/1.11.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X0SZcZM9nv7+/WreH3q5McgxeaLBwN3ohsH/R58uAKeiuieqDxoAVFyQSQaRkpkrqIZSTTab6NHDQXglIreG0Q==",
+      "path": "opentelemetry.extensions.hosting/1.11.2",
+      "hashPath": "opentelemetry.extensions.hosting.1.11.2.nupkg.sha512"
+    },
+    "OpenTelemetry.Instrumentation.AspNetCore/1.11.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KAzLOcCGi6TviuJWx0+QSgjVCrEnWDayN3aFSHoKzINPx/Tfwd9MIePUUDXQ+xHzrwon8IfExIDT1+UyIf3hoA==",
+      "path": "opentelemetry.instrumentation.aspnetcore/1.11.1",
+      "hashPath": "opentelemetry.instrumentation.aspnetcore.1.11.1.nupkg.sha512"
+    },
+    "OpenTelemetry.Instrumentation.Http/1.11.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hyZ3H8HxtQPvipBPdkN6tJWSCvY06XVyLbKlHuJlPrlV/lQJ/QuEBKYTXqcSa21LE/Th4HV+Choxi8eTu74xyw==",
+      "path": "opentelemetry.instrumentation.http/1.11.1",
+      "hashPath": "opentelemetry.instrumentation.http.1.11.1.nupkg.sha512"
     },
     "OpenTelemetry.Instrumentation.Runtime/1.11.1": {
       "type": "package",
@@ -1965,6 +2464,13 @@
       "sha512": "sha512-fSAeBd8SEiWGAeCV9+p4y3QaUEn+1qOhp+VEOAEIQl2lh2j5rUM0sPRiI6PBhPjmWRn+Cm6heqXx5dsQTpBBXw==",
       "path": "opentelemetry.instrumentation.runtime/1.11.1",
       "hashPath": "opentelemetry.instrumentation.runtime.1.11.1.nupkg.sha512"
+    },
+    "Polly/7.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bw00Ck5sh6ekduDE3mnCo1ohzuad946uslCDEENu3091+6UKnBuKLo4e+yaNcCzXxOZCXWY2gV4a35+K1d4LDA==",
+      "path": "polly/7.2.4",
+      "hashPath": "polly.7.2.4.nupkg.sha512"
     },
     "Polly.Core/8.4.2": {
       "type": "package",
@@ -1979,6 +2485,13 @@
       "sha512": "sha512-GZ9vRVmR0jV2JtZavt+pGUsQ1O1cuRKG7R7VOZI6ZDy9y6RNPvRvXK1tuS4ffUrv8L0FTea59oEuQzgS0R7zSA==",
       "path": "polly.extensions/8.4.2",
       "hashPath": "polly.extensions.8.4.2.nupkg.sha512"
+    },
+    "Polly.Extensions.Http/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-drrG+hB3pYFY7w1c3BD+lSGYvH2oIclH8GRSehgfyP5kjnFnHKQuuBhuHLv+PWyFuaTDyk/vfRpnxOzd11+J8g==",
+      "path": "polly.extensions.http/3.0.0",
+      "hashPath": "polly.extensions.http.3.0.0.nupkg.sha512"
     },
     "Polly.RateLimiting/8.4.2": {
       "type": "package",
@@ -2099,13 +2612,6 @@
       "path": "system.diagnostics.diagnosticsource/10.0.0-preview.4.25258.110",
       "hashPath": "system.diagnostics.diagnosticsource.10.0.0-preview.4.25258.110.nupkg.sha512"
     },
-    "System.IdentityModel.Tokens.Jwt/8.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-GJw3bYkWpOgvN3tJo5X4lYUeIFA2HD293FPUhKmp7qxS+g5ywAb34Dnd3cDAFLkcMohy5XTpoaZ4uAHuw0uSPQ==",
-      "path": "system.identitymodel.tokens.jwt/8.0.1",
-      "hashPath": "system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512"
-    },
     "System.IO.Pipelines/9.0.4": {
       "type": "package",
       "serviceable": true,
@@ -2164,6 +2670,11 @@
     },
     "GameServer.ServiceDefaults/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.5.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
