@@ -1,23 +1,23 @@
 ﻿using System.Text.Json;
-using GameServer.AuthService.Service.Application.Data;
-using GameServer.AuthService.Service.Definitions.OpenIddict;
+using GameServer.AccountService.AccountManagement.Adapters.Out.Identity.OpenIddict;
+using GameServer.AccountService.Service.Definitions.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using OpenIddict.Server.AspNetCore;
 
-namespace GameServer.AuthService.Service.Definitions.Authorization;
+namespace GameServer.AccountService.Authentication.Infrastructure.Authorization;
 
 /// <summary>
 /// Authorization Policy registration
 /// </summary>
-public static class AuthorizationDefinition
+public static class AuthenticationExtension
 {
     /// <summary>
     /// Configure services for current microservice
     /// </summary>
     /// <param name="builder"></param>
-    public static void ConfigureServices(WebApplicationBuilder builder)
+    public static WebApplicationBuilder ConfigureAuthentication(this WebApplicationBuilder builder)
     {
         var url = builder.Configuration.GetSection("AuthServer").GetValue<string>("Url");
 
@@ -75,32 +75,17 @@ public static class AuthorizationDefinition
                 };
             });
         
-        // Configurar autorização
-        builder.Services.AddAuthorization(options =>
-        {
-            options.AddPolicy(AppData.PolicyDefaultName, policy =>
-            {
-                policy.RequireAuthenticatedUser();
-                policy.RequireClaim("scope", "api");
-            });
-        });
-
-        builder.Services.AddSingleton<IAuthorizationPolicyProvider, AuthorizationPolicyProvider>();
-        builder.Services.AddSingleton<IAuthorizationHandler, AppPermissionHandler>();
+        return builder;
     }
 
     /// <summary>
     /// Configure application for current microservice
     /// </summary>
     /// <param name="app"></param>
-    public static void ConfigureApplication(WebApplication app)
+    public static WebApplication UseApplicationAuthentication(this WebApplication app)
     {
-        app.UseRouting();
-        app.UseCors(AppData.CorsPolicyName);
         app.UseAuthentication();
-        app.UseAuthorization();
-
-        // registering UserIdentity helper as singleton
-        UserIdentity.Instance.Configure(app.Services.GetService<IHttpContextAccessor>()!);
+        
+        return app;
     }
 }

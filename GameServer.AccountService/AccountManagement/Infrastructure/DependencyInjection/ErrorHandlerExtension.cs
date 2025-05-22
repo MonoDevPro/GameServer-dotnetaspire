@@ -3,18 +3,18 @@ using System.Net;
 using System.Security.Authentication;
 using Microsoft.AspNetCore.Diagnostics;
 
-namespace GameServer.AuthService.Service.Definitions.ErrorHandler;
+namespace GameServer.AccountService.AccountManagement.Infrastructure.DependencyInjection;
 
 /// <summary>
 /// Custom Error handling
 /// </summary>
-public class ErrorHandlingDefinition
+public static class ErrorHandlerExtension
 {
     /// <summary>
     /// Configure application for current application
     /// </summary>
     /// <param name="app"></param>
-    public static void ConfigureApplication(WebApplication app)
+    public static WebApplication UseApplicationErrorHandler(this WebApplication app)
     {
         app.UseExceptionHandler(error => error.Run(async context =>
         {
@@ -22,7 +22,7 @@ public class ErrorHandlingDefinition
             var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
             if (contextFeature is not null)
             {
-                var logger = app.Services.GetService<ILogger<ErrorHandlingDefinition>>();
+                var logger = app.Services.GetService<ILogger<WebApplication>>();
 
                 // handling all another errors
                 logger?.LogError($"Something went wrong in the {contextFeature.Error}");
@@ -38,6 +38,8 @@ public class ErrorHandlingDefinition
                 }
             }
         }));
+        
+        return app;
     }
 
     private static HttpStatusCode GetErrorCode(Exception e)

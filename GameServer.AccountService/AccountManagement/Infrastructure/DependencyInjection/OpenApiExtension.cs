@@ -1,13 +1,14 @@
-﻿using GameServer.AuthService.Service.Application.Data;
+﻿using GameServer.AccountService.AccountManagement.Adapters.Out.OpenApi;
+using GameServer.AccountService.Service.Application;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
-namespace GameServer.AuthService.Service.Definitions.OpenApi;
+namespace GameServer.AccountService.AccountManagement.Infrastructure.DependencyInjection;
 
 /// <summary>
 /// Swagger definition for application
 /// </summary>
-public static class OpenApiDefinition
+public static class OpenApiExtension
 {
     // -------------------------------------------------------
     // ATTENTION!
@@ -20,7 +21,7 @@ public static class OpenApiDefinition
     public const string AppVersion = "9.0.6";
     private const string OpenApiConfig = "/openapi/v1.json";
     
-    public static void ConfigureServices(WebApplicationBuilder builder)
+    public static WebApplicationBuilder ConfigureOpenApi(this WebApplicationBuilder builder)
     {
         builder.Services.Configure<ApiBehaviorOptions>(options => { options.SuppressModelStateInvalidFilter = true; });
         builder.Services.AddEndpointsApiExplorer();
@@ -28,11 +29,13 @@ public static class OpenApiDefinition
         {
             options.AddDocumentTransformer<OAuth2SecuritySchemeTransformer>();
         });
+
+        return builder;
     }
 
-    public static void ConfigureApplication(WebApplication app)
+    public static WebApplication UseApplicationOpenApi(this WebApplication app)
     {
-        if (!app.Environment.IsDevelopment()) return;
+        if (!app.Environment.IsDevelopment()) return app;
         
         app.MapOpenApi();
         app.UseSwagger();
@@ -40,7 +43,7 @@ public static class OpenApiDefinition
         {
             options.SwaggerEndpoint("/swagger/v1/swagger.json", "GameServer Auth API V1");
         
-            options.DocumentTitle = $"{AppData.ServiceName}";
+            options.DocumentTitle = $"{AccountServicesExtension.ServiceName}";
             options.DefaultModelExpandDepth(0);
             options.DefaultModelRendering(ModelRendering.Model);
             options.DefaultModelsExpandDepth(0);
@@ -49,8 +52,10 @@ public static class OpenApiDefinition
             options.OAuthClientId("client-id-code");
             options.OAuthClientSecret("client-secret-code");
             options.DisplayRequestDuration();
-            options.OAuthAppName(AppData.ServiceName);
+            options.OAuthAppName(AccountServicesExtension.ServiceName);
             options.OAuthUsePkce();
         });
+        
+        return app;
     }
 }

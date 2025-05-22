@@ -1,21 +1,21 @@
-﻿using GameServer.AuthService.Service.Application.Data;
+﻿using GameServer.AccountService.Service.Application;
 
-namespace GameServer.AuthService.Service.Definitions.Cors;
+namespace GameServer.AccountService.AccountManagement.Infrastructure.DependencyInjection;
 
 /// <summary>
 /// Cors configurations
 /// </summary>
-public static class CorsDefinition
+public static class CorsExtension
 {
     /// <summary>
     /// Configure services for current application
     /// </summary>
     /// <param name="builder"></param>
-    public static void ConfigureServices(WebApplicationBuilder builder)
+    public static WebApplicationBuilder ConfigureCors(this WebApplicationBuilder builder)
     {
         builder.Services.AddCors(options =>
         {
-            options.AddPolicy(AppData.CorsPolicyName, policyBuilder =>
+            options.AddPolicy(AccountServicesExtension.CorsPolicyName, policyBuilder =>
             {
                 var buildServiceProvider = builder.Services.BuildServiceProvider();
                 policyBuilder.WithOrigins(buildServiceProvider
@@ -26,10 +26,14 @@ public static class CorsDefinition
                     .AllowCredentials();
             });
         });
+        
+        return builder;
     }
     
-    public static void ConfigureApplication(WebApplication app)
+    public static WebApplication UseCorsApplication(this WebApplication app)
     {
-        app.UseCors(AppData.CorsPolicyName);
+        app.UseCors(AccountServicesExtension.CorsPolicyName);
+        
+        return app;
     }
 }

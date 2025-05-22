@@ -1,18 +1,18 @@
 ﻿using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GameServer.AuthService.Service.Definitions.FluentValidating;
+namespace GameServer.AccountService.AccountManagement.Infrastructure.DependencyInjection;
 
 /// <summary>
 /// FluentValidation registration as MicroserviceDefinition
 /// </summary>
-public static class FluentValidationDefinition
+public static class FluentValidationExtension
 {
     /// <summary>
     /// Configure services for current microservice
     /// </summary>
     /// <param name="builder"></param>
-    public static void ConfigureServices(WebApplicationBuilder builder)
+    public static WebApplicationBuilder ConfigureFluentValidation(this WebApplicationBuilder builder)
     {
         builder.Services.Configure<ApiBehaviorOptions>(options =>
         {
@@ -20,5 +20,7 @@ public static class FluentValidationDefinition
         });
 
         builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
+        
+        return builder;
     }
 }

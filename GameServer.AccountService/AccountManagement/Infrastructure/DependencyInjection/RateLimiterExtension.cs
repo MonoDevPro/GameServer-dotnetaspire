@@ -1,10 +1,10 @@
 using System.Threading.RateLimiting;
 
-namespace GameServer.AuthService.Service.Definitions.RateLimiter;
+namespace GameServer.AccountService.AccountManagement.Infrastructure.DependencyInjection;
 
-public static class RateLimiterDefinition
+public static class RateLimiterExtension
 {
-    public static WebApplicationBuilder ConfigureServices(WebApplicationBuilder builder)
+    public static WebApplicationBuilder ConfigureRateLimiter(this WebApplicationBuilder builder)
     {
         // Adicionar Rate Limiting para prevenir abusos na autenticação
         builder.Services.AddRateLimiter(options =>
@@ -36,7 +36,7 @@ public static class RateLimiterDefinition
         return builder;
     }
     
-    public static WebApplication ConfigureApplication(WebApplication app)
+    public static WebApplication UseApplicationRateLimiter(this WebApplication app)
     {
         // Adicionar o middleware de Rate Limiting
         app.UseRateLimiter();
