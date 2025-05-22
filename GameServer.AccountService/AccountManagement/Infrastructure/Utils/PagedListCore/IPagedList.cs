@@ -1,4 +1,4 @@
-namespace GameServer.AuthService.Service.Infrastructure.PagedListCore;
+namespace GameServer.AccountService.Service.Infrastructure.PagedListCore;
 
 /// <summary>
 /// Provides the interface(s) for paged list of any type.

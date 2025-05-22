@@ -1,4 +1,4 @@
-namespace GameServer.AuthService.Service.Infrastructure.PagedListCore;
+namespace GameServer.AccountService.Service.Infrastructure.PagedListCore;
 
 /// <summary>
     /// Provides the implementation of the <see cref="IPagedList{T}"/> and converter.

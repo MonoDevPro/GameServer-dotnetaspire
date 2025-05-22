@@ -1,4 +1,4 @@
-namespace GameServer.AuthService.Service.Infrastructure.PagedListCore;
+namespace GameServer.AccountService.Service.Infrastructure.PagedListCore;
 
 /// <summary>
     /// Represents the default implementation of the <see cref="IPagedList{T}"/> interface.

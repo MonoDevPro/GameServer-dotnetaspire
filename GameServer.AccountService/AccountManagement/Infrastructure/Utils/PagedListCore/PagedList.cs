@@ -1,4 +1,4 @@
-namespace GameServer.AuthService.Service.Infrastructure.PagedListCore;
+namespace GameServer.AccountService.Service.Infrastructure.PagedListCore;
 
 /// <summary>
     /// Provides some help methods for <see cref="IPagedList{T}"/> interface.
