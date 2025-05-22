@@ -34,12 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Service\" />
-    <Folder Include="Service\Application\Ports\In\" />
-    <Folder Include="Service\Application\Ports\Out\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Microsoft.AspNetCore.Authentication.JwtBearer">
       <HintPath>..\..\..\..\.nuget\packages\microsoft.aspnetcore.authentication.jwtbearer\9.0.5\lib\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll</HintPath>
     </Reference>
