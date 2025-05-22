@@ -1,8 +1,9 @@
+using GameServer.AccountService.AccountManagement.Adapters.Out.Persistence.UnityOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace GameServer.AuthService.Service.Infrastructure.UnityOfWork;
+namespace GameServer.AccountService.AccountManagement.Infrastructure.UnityOfWork;
 
 /// <summary>
 /// Defines the interface(s) for generic unit of work.

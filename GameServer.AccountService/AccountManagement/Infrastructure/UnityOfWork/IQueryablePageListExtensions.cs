@@ -1,7 +1,7 @@
-using GameServer.AuthService.Service.Infrastructure.PagedListCore;
+using GameServer.AccountService.Service.Infrastructure.PagedListCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace GameServer.AuthService.Service.Infrastructure.UnityOfWork;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence.UnityOfWork;
 
 /// <summary>
 /// Extensions for IPageList

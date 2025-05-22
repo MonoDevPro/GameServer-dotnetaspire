@@ -1,4 +1,4 @@
-namespace GameServer.AuthService.Service.Infrastructure.UnityOfWork;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence.UnityOfWork;
 
 /// <summary>
 /// Represent operation result for SaveChanges.

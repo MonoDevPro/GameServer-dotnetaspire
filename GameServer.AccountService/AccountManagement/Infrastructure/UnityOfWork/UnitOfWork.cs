@@ -1,9 +1,10 @@
+using GameServer.AccountService.AccountManagement.Infrastructure.UnityOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace GameServer.AuthService.Service.Infrastructure.UnityOfWork;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence.UnityOfWork;
 
 /// <summary>
 /// CALABONGA Warning: do not remove sealed

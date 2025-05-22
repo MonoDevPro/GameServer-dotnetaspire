@@ -1,10 +1,10 @@
 using System.Linq.Expressions;
-using GameServer.AuthService.Service.Infrastructure.PagedListCore;
+using GameServer.AccountService.Service.Infrastructure.PagedListCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Query;
 
-namespace GameServer.AuthService.Service.Infrastructure.UnityOfWork;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence.UnityOfWork;
 
 /// <summary>
 /// Defines the interfaces for generic repository.

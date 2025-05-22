@@ -1,12 +1,12 @@
 using System.Linq.Expressions;
 using System.Reflection;
-using GameServer.AuthService.Service.Infrastructure.PagedListCore;
+using GameServer.AccountService.Service.Infrastructure.PagedListCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Query;
 
-namespace GameServer.AuthService.Service.Infrastructure.UnityOfWork;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence.UnityOfWork;
 
 /// <summary>
 /// Represents a default generic repository implements the <see cref="IRepository{TEntity}"/> interface.

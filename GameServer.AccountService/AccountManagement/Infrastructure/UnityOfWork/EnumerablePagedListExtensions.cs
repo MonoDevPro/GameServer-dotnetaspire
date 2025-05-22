@@ -1,6 +1,6 @@
-using GameServer.AuthService.Service.Infrastructure.PagedListCore;
+using GameServer.AccountService.Service.Infrastructure.PagedListCore;
 
-namespace GameServer.AuthService.Service.Infrastructure.UnityOfWork;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence.UnityOfWork;
 
 /// <summary>
 /// Provides some extension methods for <see cref="IEnumerable{T}"/> to provide paging capability.

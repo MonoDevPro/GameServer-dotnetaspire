@@ -1,6 +1,7 @@
+using GameServer.AccountService.AccountManagement.Infrastructure.UnityOfWork;
 using Microsoft.EntityFrameworkCore;
 
-namespace GameServer.AuthService.Service.Infrastructure.UnityOfWork;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence.UnityOfWork;
 
 /// <summary>
 /// Extension methods for setting up unit of work related services in an <see cref="IServiceCollection"/>.
