@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 
-namespace GameServer.AuthService.Service.Definitions.OpenIddict;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Identity.OpenIddict;
 
 /// <summary>
 /// Policy provider

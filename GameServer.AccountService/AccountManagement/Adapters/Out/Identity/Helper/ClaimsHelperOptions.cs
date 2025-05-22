@@ -1,4 +1,4 @@
-namespace GameServer.AuthService.Service.Infrastructure.Helper;
+namespace GameServer.AccountService.Service.Infrastructure.Helper;
 
 public class ClaimsHelperOptions
 {

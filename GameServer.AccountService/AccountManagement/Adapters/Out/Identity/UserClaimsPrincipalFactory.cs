@@ -1,17 +1,17 @@
 ﻿using System.Security.Claims;
-using GameServer.AuthService.Service.Domain.Entities;
+using GameServer.AccountService.AccountManagement.Adapters.Out.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 
-namespace GameServer.AuthService.Service.Application.Factories;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Identity;
 
 /// <summary>
 /// User Claims Principal Factory override from Microsoft Identity framework
 /// </summary>
-public class ApplicationUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<ApplicationUser, ApplicationUserRole>
+public class UserClaimsPrincipalFactory : UserClaimsPrincipalFactory<ApplicationUser, ApplicationUserRole>
 {
     /// <inheritdoc />
-    public ApplicationUserClaimsPrincipalFactory(
+    public UserClaimsPrincipalFactory(
         UserManager<ApplicationUser> userManager,
         RoleManager<ApplicationUserRole> roleManager,
         IOptions<IdentityOptions> optionsAccessor)
@@ -25,31 +25,20 @@ public class ApplicationUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<
     public override async Task<ClaimsPrincipal> CreateAsync(ApplicationUser user)
     {
         var principal = await base.CreateAsync(user);
-
-        if (user.ApplicationUserProfile?.Permissions != null)
+        
+        if (!string.IsNullOrWhiteSpace(user.Id.ToString()))
         {
-            var permissions = user.ApplicationUserProfile.Permissions.ToList();
-            if (permissions.Any())
-            {
-                permissions.ForEach(x => ((ClaimsIdentity)principal.Identity!).AddClaim(new Claim(x.PolicyName, nameof(x.PolicyName).ToLower())));
-            }
+            ((ClaimsIdentity)principal.Identity!).AddClaim(new Claim(ClaimTypes.Sid, user.Id.ToString()));
         }
-
-        ((ClaimsIdentity)principal.Identity!).AddClaim(new Claim("framework", "nimble"));
 
         if (!string.IsNullOrWhiteSpace(user.UserName))
         {
             ((ClaimsIdentity)principal.Identity!).AddClaim(new Claim(ClaimTypes.Name, user.UserName));
         }
 
-        if (!string.IsNullOrWhiteSpace(user.FirstName))
+        if (!string.IsNullOrWhiteSpace(user.Email))
         {
-            ((ClaimsIdentity)principal.Identity!).AddClaim(new Claim(ClaimTypes.GivenName, user.FirstName));
-        }
-
-        if (!string.IsNullOrWhiteSpace(user.LastName))
-        {
-            ((ClaimsIdentity)principal.Identity!).AddClaim(new Claim(ClaimTypes.Surname, user.LastName));
+            ((ClaimsIdentity)principal.Identity!).AddClaim(new Claim(ClaimTypes.Email, user.Email));
         }
 
         return principal;

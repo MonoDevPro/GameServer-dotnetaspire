@@ -1,20 +1,17 @@
-using System.Reflection;
-using GameServer.AuthService.Service.Domain.Entities;
-using GameServer.AuthService.Service.Domain.Entities.Base;
-using GameServer.AuthService.Service.Infrastructure.UnityOfWork;
+using GameServer.AccountService.AccountManagement.Adapters.Out.Identity.Entities;
+using GameServer.AccountService.AccountManagement.Adapters.Out.Persistence.UnityOfWork;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace GameServer.AuthService.Service.Infrastructure.Adapters.Out.Persistence.EntityFramework;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence;
 
 /// <summary>
 /// Base DbContext with predefined configuration
 /// </summary>
-public abstract class DbContextBase : IdentityDbContext<ApplicationUser, ApplicationUserRole, Guid>
+public abstract class IdentityDbContextBase : IdentityDbContext<ApplicationUser, ApplicationUserRole, Guid>
 {
-    private const string DefaultUserName = "Anonymous";
-
-    protected DbContextBase(DbContextOptions options) : base(options)
+    protected IdentityDbContextBase(DbContextOptions options) : base(options)
     {
         LastSaveChangesResult = new SaveChangesResult();
     }
@@ -164,68 +161,19 @@ public abstract class DbContextBase : IdentityDbContext<ApplicationUser, Applica
         var createdEntries = ChangeTracker.Entries().Where(e => e.State == EntityState.Added);
         foreach (var entry in createdEntries)
         {
-            if (!(entry.Entity is IAuditable))
-            {
-                continue;
-            }
-
-            var creationDate = DateTime.Now.ToUniversalTime();
-            var userName = entry.Property("CreatedBy").CurrentValue == null
-                ? DefaultUserName
-                : entry.Property("CreatedBy").CurrentValue;
-            var updatedAt = entry.Property("UpdatedAt").CurrentValue;
-            var createdAt = entry.Property("CreatedAt").CurrentValue;
-            if (createdAt != null)
-            {
-                if (DateTime.Parse(createdAt.ToString() ?? "0001.01.01").Year > 1970)
-                {
-                    entry.Property("CreatedAt").CurrentValue = ((DateTime)createdAt).ToUniversalTime();
-                }
-                else
-                {
-                    entry.Property("CreatedAt").CurrentValue = creationDate;
-                }
-            }
-            else
-            {
-                entry.Property("CreatedAt").CurrentValue = creationDate;
-            }
-
-            if (updatedAt != null)
-            {
-                if (DateTime.Parse(updatedAt.ToString() ?? "0001.01.01").Year > 1970)
-                {
-                    entry.Property("UpdatedAt").CurrentValue = ((DateTime)updatedAt).ToUniversalTime();
-                }
-                else
-                {
-                    entry.Property("UpdatedAt").CurrentValue = creationDate;
-                }
-            }
-            else
-            {
-                entry.Property("UpdatedAt").CurrentValue = creationDate;
-            }
-
-            entry.Property("CreatedBy").CurrentValue = userName;
-            entry.Property("UpdatedBy").CurrentValue = userName;
-
             LastSaveChangesResult.AddMessage($"ChangeTracker has new entities: {entry.Entity.GetType()}");
         }
 
         var updatedEntries = ChangeTracker.Entries().Where(e => e.State == EntityState.Modified);
         foreach (var entry in updatedEntries)
         {
-            if (entry.Entity is IAuditable)
-            {
-                var userName = entry.Property("UpdatedBy").CurrentValue == null
-                    ? DefaultUserName
-                    : entry.Property("UpdatedBy").CurrentValue;
-                entry.Property("UpdatedAt").CurrentValue = DateTime.Now.ToUniversalTime();
-                entry.Property("UpdatedBy").CurrentValue = userName;
-            }
-
             LastSaveChangesResult.AddMessage($"ChangeTracker has modified entities: {entry.Entity.GetType()}");
+        }
+        
+        var deletedEntries = ChangeTracker.Entries().Where(e => e.State == EntityState.Deleted);
+        foreach (var entry in deletedEntries)
+        {
+            LastSaveChangesResult.AddMessage($"ChangeTracker has deleted entities: {entry.Entity.GetType()}");
         }
     }
 
@@ -238,21 +186,17 @@ public abstract class DbContextBase : IdentityDbContext<ApplicationUser, Applica
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-
-        var applyGenericMethod = typeof(ModelBuilder).GetMethods(BindingFlags.Instance | BindingFlags.Public).First(x => x.Name == "ApplyConfiguration");
-        foreach (var type in Assembly.GetExecutingAssembly().GetTypes().Where(c => c.IsClass && !c.IsAbstract && !c.ContainsGenericParameters))
-        {
-            foreach (var item in type.GetInterfaces())
-            {
-                if (!item.IsConstructedGenericType || item.GetGenericTypeDefinition() != typeof(IEntityTypeConfiguration<>))
-                {
-                    continue;
-                }
-
-                var applyConcreteMethod = applyGenericMethod.MakeGenericMethod(item.GenericTypeArguments[0]);
-                applyConcreteMethod.Invoke(builder, new[] { Activator.CreateInstance(type) });
-                break;
-            }
-        }
+        
+        // Configurações específicas do OpenIddict
+        builder.UseOpenIddict();
+        
+        // Renomear tabelas do Identity para manter consistência de nomenclatura
+        builder.Entity<IdentityUser>().ToTable("IdentityUsers");
+        builder.Entity<IdentityRole>().ToTable("IdentityRoles");
+        builder.Entity<IdentityUserRole<string>>().ToTable("IdentityUserRoles");
+        builder.Entity<IdentityUserClaim<string>>().ToTable("IdentityUserClaims");
+        builder.Entity<IdentityUserLogin<string>>().ToTable("IdentityUserLogins");
+        builder.Entity<IdentityRoleClaim<string>>().ToTable("IdentityRoleClaims");
+        builder.Entity<IdentityUserToken<string>>().ToTable("IdentityUserTokens");
     }
 }

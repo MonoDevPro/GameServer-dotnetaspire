@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 
-namespace GameServer.AuthService.Service.Definitions.OpenIddict;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Identity.OpenIddict;
 
 /// <summary>
 /// Permission requirement for user or service authorization

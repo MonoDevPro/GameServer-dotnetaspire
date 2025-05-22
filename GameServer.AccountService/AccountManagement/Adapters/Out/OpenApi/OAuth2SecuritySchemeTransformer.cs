@@ -1,10 +1,10 @@
-﻿using GameServer.AuthService.Service.Application.Data;
+﻿using GameServer.AccountService.AccountManagement.Infrastructure.DependencyInjection;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.OpenApi;
 using Microsoft.OpenApi.Models;
 using OpenIddict.Server.AspNetCore;
 
-namespace GameServer.AuthService.Service.Definitions.OpenApi;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.OpenApi;
 
 /// <summary>
 /// Swagger security configuration scheme
@@ -55,9 +55,9 @@ public sealed class OAuth2SecuritySchemeTransformer : IOpenApiDocumentTransforme
             document.Info = new()
             {
                 License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://mit-license.org/") },
-                Title = AppData.ServiceName,
-                Version = OpenApiDefinition.AppVersion,
-                Description = AppData.ServiceDescription,
+                Title = AccountServicesExtension.ServiceName,
+                Version = OpenApiExtension.AppVersion,
+                Description = AccountServicesExtension.ServiceDescription,
                 Contact = new() { Name = "Sergei Calabonga", Url = new("https://www.calabonga.net"), }
             };
         }

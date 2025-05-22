@@ -2,7 +2,7 @@ using System.ComponentModel;
 using System.Reflection;
 using System.Security.Claims;
 
-namespace GameServer.AuthService.Service.Infrastructure.Helper;
+namespace GameServer.AccountService.Service.Infrastructure.Helper;
 
 public class ClaimsHelper
 {

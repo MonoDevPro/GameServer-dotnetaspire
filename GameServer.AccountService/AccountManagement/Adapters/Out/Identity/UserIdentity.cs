@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
 using System.Security.Principal;
 
-namespace GameServer.AuthService.Service.Definitions.Authorization;
+namespace GameServer.AccountService.Service.Definitions.Authorization;
 
 /// <summary>
 /// Identity helper for Requests operations

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace GameServer.AuthService.Service.Domain.Entities
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Identity.Entities
 {
     /// <summary>
     /// Application role

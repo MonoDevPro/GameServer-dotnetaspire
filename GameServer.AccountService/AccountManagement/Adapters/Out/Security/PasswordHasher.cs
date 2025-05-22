@@ -1,33 +1,13 @@
 using System.Security.Cryptography;
+using GameServer.AccountService.AccountManagement.Ports.Out.Security;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
-namespace GameServer.AuthService.Service.Infrastructure.Security;
-
-/// <summary>
-/// Interface para serviço de hash de senhas
-/// </summary>
-public interface IPasswordHasher
-{
-    /// <summary>
-    /// Gera um hash da senha fornecida
-    /// </summary>
-    /// <param name="password">Senha em texto claro</param>
-    /// <returns>Hash da senha</returns>
-    string HashPassword(string password);
-    
-    /// <summary>
-    /// Verifica se uma senha corresponde ao hash fornecido
-    /// </summary>
-    /// <param name="password">Senha em texto claro</param>
-    /// <param name="hash">Hash armazenado</param>
-    /// <returns>Verdadeiro se a senha corresponde ao hash, falso caso contrário</returns>
-    bool VerifyPassword(string password, string hash);
-}
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Security;
 
 /// <summary>
 /// Implementação do serviço de hash de senhas usando PBKDF2
 /// </summary>
-public class Pbkdf2PasswordHasher : IPasswordHasher
+public class Pbkdf2PasswordHasher : IPasswordHashService
 {
     private const int IterationCount = 10000;
     private const int SaltSize = 16; // 128 bits
@@ -35,7 +15,7 @@ public class Pbkdf2PasswordHasher : IPasswordHasher
     private const char Delimiter = ':';
     
     /// <inheritdoc />
-    public string HashPassword(string password)
+    public string Hash(string password)
     {
         // Gerar um salt aleatório
         byte[] salt = new byte[SaltSize];
@@ -57,7 +37,7 @@ public class Pbkdf2PasswordHasher : IPasswordHasher
     }
     
     /// <inheritdoc />
-    public bool VerifyPassword(string password, string hashString)
+    public bool Verify(string password, string hashString)
     {
         // Extrair as partes do hash
         var parts = hashString.Split(Delimiter);

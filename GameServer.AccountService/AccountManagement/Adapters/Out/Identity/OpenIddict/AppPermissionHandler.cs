@@ -1,8 +1,8 @@
 ﻿using System.Security.Claims;
-using GameServer.AuthService.Service.Infrastructure.Helper;
+using GameServer.AccountService.Service.Infrastructure.Helper;
 using Microsoft.AspNetCore.Authorization;
 
-namespace GameServer.AuthService.Service.Definitions.OpenIddict;
+namespace GameServer.AccountService.AccountManagement.Adapters.Out.Identity.OpenIddict;
 
 /// <summary>
 /// Permission handler for custom authorization implementations
