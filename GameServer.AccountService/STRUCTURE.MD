@@ -1,32 +1,43 @@
-# Estrutura de Diretório para Microsserviço com Arquitetura Hexagonal
+# Estrutura de Diretório para Microsserviço com Arquitetura Hexagonal (.NET)
 
 ## Visão Geral da Arquitetura Hexagonal
 
-A arquitetura hexagonal (também conhecida como Ports & Adapters) separa a lógica de negócio das interações externas, permitindo que sua aplicação seja independente de tecnologias específicas.
+A arquitetura hexagonal (Ports & Adapters) separa a lógica de negócio das interações externas, tornando a aplicação independente de frameworks, bancos de dados e tecnologias específicas.
 
-## Estrutura de Diretórios
+## Estrutura de Diretórios Real do Projeto
 
 ```
-GameServer.AuthService/
-├── Application/
-│   ├── Ports/
-│   │   ├── In/          # Interfaces para entrada de dados (casos de uso)
-│   │   └── Out/         # Interfaces para saída de dados (repositórios, serviços)
-│   ├── Services/        # Implementação dos casos de uso
-│   └── Domain/
-│       ├── Models/      # Entidades e objetos de valor
-│       ├── Events/      # Eventos de domínio
-│       └── Exceptions/  # Exceções específicas do domínio
+GameServer.AccountService/
 │
-├── Infrastructure/
+├── AccountManagement/
 │   ├── Adapters/
-│   │   ├── In/          # Adaptadores de entrada (Controllers, APIs)
-│   │   └── Out/         # Adaptadores de saída (Repositórios, Clientes HTTP)
-│   ├── Configuration/   # Configurações de infraestrutura
-│   └── Security/        # Implementações de segurança
+│   │   ├── In/              # Adaptadores de entrada (Controllers, APIs)
+│   │   └── Out/             # Adaptadores de saída (Repositórios, Clientes HTTP)
+│   ├── Application/
+│   │   ├── CQRS/            # Implementação de Command/Query
+│   │   ├── DTO/             # Objetos de transferência de dados
+│   │   └── UsesCases/       # Implementação dos casos de uso
+│   ├── Domain/
+│   │   ├── Entities/        # Entidades do domínio
+│   │   ├── Enums/
+│   │   ├── Events/          # Eventos de domínio
+│   │   ├── Exceptions/      # Exceções específicas do domínio
+│   │   └── ValueObjects/
+│   ├── Infrastructure/
+│   │   ├── DI/              # Injeção de dependências
+│   │   ├── UnityOfWork/     # Unidade de trabalho
+│   │   └── Utils/           # Utilitários
+│   └── Ports/
+│       ├── In/              # Interfaces para entrada de dados (casos de uso)
+│       └── Out/             # Interfaces para saída de dados (repositórios, serviços)
 │
-├── Program.cs           # Ponto de entrada da aplicação
-└── appsettings.json     # Configurações da aplicação
+├── Program.cs               # Ponto de entrada da aplicação
+├── appsettings.json          # Configuração principal
+├── appsettings.Development.json # Configuração para ambiente de desenvolvimento
+├── GameServer.AccountService.csproj # Arquivo de projeto .NET
+├── Properties/              # Configurações do projeto (ex: launchSettings.json)
+├── bin/                     # Saída de build
+└── obj/                     # Arquivos temporários de build
 ```
 
 ## Representação Visual da Arquitetura Hexagonal
@@ -37,10 +48,8 @@ GameServer.AuthService/
 │  ┌─────────────┐         DOMÍNIO         ┌─────────────┐ │
 │  │   Adapters  │      ┌──────────┐       │   Adapters  │ │
 │  │     In      │◄────►│          │◄─────►│     Out     │ │
-│  │             │      │ Aplicação│       │             │ │
-│  │ Controllers │      │          │       │Repositories │ │
-│  │    APIs     │      │ Services │       │   Clients   │ │
-│  │             │      │          │       │             │ │
+│  │ Controllers │      │ Aplicação│       │Repositories │ │
+│  │    APIs     │      │  Domain  │       │   Clients   │ │
 │  └─────┬───────┘      └──────────┘       └──────┬──────┘ │
 │        │                                        │        │
 └────────┼────────────────────────────────────────┼────────┘
@@ -55,30 +64,30 @@ GameServer.AuthService/
 
 ## Descrição dos Componentes
 
-### Domínio e Aplicação
-- **Domain/Entities**: Classes que representam as entidades principais do negócio
-- **Domain/ValueObjects**: Objetos de valor que encapsulam conceitos do domínio
-- **Domain/Events**: Eventos que representam mudanças de estado no domínio
-- **Domain/Exceptions**: Exceções específicas do domínio para tratamento de erros
-- **Application/Models**: Classes que representam os dados de entrada e saída dos casos de uso
-- **Application/Ports/In**: Definem os casos de uso que o sistema oferece
-- **Application/Ports/Out**: Definem as interfaces para acessar recursos externos
-- **Application/Services**: Implementam a lógica de negócio usando as portas
+### AccountManagement/
+- **Adapters/In**: Adaptadores de entrada, como Controllers e APIs REST/gRPC.
+- **Adapters/Out**: Adaptadores de saída, como repositórios, clientes HTTP, integrações externas.
+- **Application/**: Camada de aplicação, onde ficam os casos de uso, DTOs e (se houver) CQRS.
+- **Domain/**: Núcleo do domínio, com entidades, objetos de valor, enums, eventos e exceções.
+- **Infrastructure/**: Implementações técnicas, utilitários, injeção de dependências, unidade de trabalho.
+- **Ports/In**: Interfaces para entrada de dados (contratos dos casos de uso).
+- **Ports/Out**: Interfaces para saída de dados (contratos de repositórios, serviços externos).
 
-### Adaptadores
-- **Infrastructure/Adapters/In**: Implementações que recebem solicitações externas, ex: Controllers, APIs
-- **Infrastructure/Adapters/Out**: Implementações para acessar sistemas externos (bancos de dados, APIs)
+### Raiz do Serviço
+- **Program.cs**: Ponto de entrada da aplicação.
+- **appsettings.json / appsettings.Development.json**: Configurações da aplicação.
+- **GameServer.AccountService.csproj**: Arquivo de projeto .NET.
+- **Properties/**: Configurações do projeto (ex: launchSettings.json).
+- **bin/** e **obj/**: Pastas geradas pelo build do .NET.
 
-### Configuração
-- **Infrastructure/Configuration**: Configurações específicas do ambiente, como conexão com banco de dados, serviços externos, etc.
-- **Infrastructure/Security**: Implementações de segurança, como autenticação e autorização
+## Observações e Boas Práticas
+- **Padronização**: Esta estrutura é replicada nos demais microsserviços do GameServer, facilitando manutenção e evolução.
+- **Testabilidade**: Núcleo de domínio isolado, facilitando testes unitários.
+- **Flexibilidade**: Permite troca de tecnologias externas sem impacto no domínio.
+- **Manutenibilidade**: Separação clara de responsabilidades.
 
-### Ponto de Entrada
-- **Program.cs**: Ponto de entrada da aplicação, onde a configuração e inicialização ocorrem
-- **appsettings.json**: Arquivo de configuração da aplicação, onde são definidas as variáveis de ambiente e configurações específicas
-
-### Benefícios desta Estrutura
-- **Testabilidade**: Núcleo de aplicação isolado, facilitando testes unitários
-- **Flexibilidade**: Fácil substituição de tecnologias externas
-- **Manutenibilidade**: Separação clara de responsabilidades
+## Dicas
+- Sempre alinhe a documentação com a estrutura real do projeto.
+- Atualize este arquivo ao criar novas pastas ou componentes relevantes.
+- Utilize comentários nos diretórios para facilitar o entendimento de novos desenvolvedores.
 

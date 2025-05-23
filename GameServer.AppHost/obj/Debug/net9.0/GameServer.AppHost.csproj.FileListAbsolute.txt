@@ -131,7 +131,6 @@
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/GameServer.AppHost.AssemblyInfoInputs.cache
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/GameServer.AppHost.AssemblyInfo.cs
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/GameServer.AppHost.csproj.CoreCompileInputs.cache
-/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/Aspire/references/GameServer_AuthService.ProjectMetadata.g.cs
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/Aspire/references/_AppHost.ProjectMetadata.g.cs
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/GameServer.AppHost.sourcelink.json
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/GameServ.97A80297.Up2Date
@@ -143,3 +142,4 @@
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/Aspire/references/GameServer_CharacterService.ProjectMetadata.g.cs
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/Aspire/references/GameServer_Web.ProjectMetadata.g.cs
 /home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/Aspire/references/GameServer_WorldSimulationService.ProjectMetadata.g.cs
+/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AppHost/obj/Debug/net9.0/Aspire/references/GameServer_AccountService.ProjectMetadata.g.cs

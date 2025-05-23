@@ -26,6 +26,7 @@
   <ItemGroup>
     <PackageReference Include="OpenIddict.AspNetCore" Version="6.3.0" />
     <PackageReference Include="OpenIddict.EntityFrameworkCore" Version="6.3.0" />
+    <PackageReference Include="OpenIddict.Quartz" Version="6.3.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
   </ItemGroup>
 
@@ -37,6 +38,10 @@
     <Reference Include="Microsoft.AspNetCore.Authentication.JwtBearer">
       <HintPath>..\..\..\..\.nuget\packages\microsoft.aspnetcore.authentication.jwtbearer\9.0.5\lib\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AccountManagement/Application/UsesCases/" />
   </ItemGroup>
 
 </Project>

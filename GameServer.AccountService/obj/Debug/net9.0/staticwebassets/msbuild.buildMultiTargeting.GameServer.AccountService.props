@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/GameServer.AccountService.props" />
+</Project>

@@ -5,7 +5,7 @@ namespace Projects;
 [global::System.CodeDom.Compiler.GeneratedCode("Aspire.Hosting", null)]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage(Justification = "Generated code.")]
 [global::System.Diagnostics.DebuggerDisplay("Type = {GetType().Name,nq}, ProjectPath = {ProjectPath}")]
-public class GameServer_AuthService : global::Aspire.Hosting.IProjectMetadata
+public class GameServer_AccountService : global::Aspire.Hosting.IProjectMetadata
 {
-    public string ProjectPath => """/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AuthService/GameServer.AuthService.csproj""";
+    public string ProjectPath => """/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AccountService/GameServer.AccountService.csproj""";
 }

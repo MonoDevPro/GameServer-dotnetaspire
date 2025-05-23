@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "XiN4Q8n6JYIhHV1RTr2X3FQi2sFlMe2yKLGA7C2qt18=",
-  "Source": "GameServer.AuthService",
-  "BasePath": "_content/GameServer.AuthService",
+  "Hash": "og6QvoQ5n4GwXeYgqtcZg0JRh+r+6W3x9m4dkb2VaEY=",
+  "Source": "GameServer.AccountService",
+  "BasePath": "_content/GameServer.AccountService",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

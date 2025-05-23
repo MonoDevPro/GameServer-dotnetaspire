@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "28NQjrI3nfM=",
+  "dgSpecHash": "X8ME7G6IuYE=",
   "success": true,
   "projectFilePath": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.AccountService/GameServer.AccountService.csproj",
   "expectedPackageFiles": [
@@ -100,6 +100,7 @@
     "/home/filipe/.nuget/packages/openiddict.core/6.3.0/openiddict.core.6.3.0.nupkg.sha512",
     "/home/filipe/.nuget/packages/openiddict.entityframeworkcore/6.3.0/openiddict.entityframeworkcore.6.3.0.nupkg.sha512",
     "/home/filipe/.nuget/packages/openiddict.entityframeworkcore.models/6.3.0/openiddict.entityframeworkcore.models.6.3.0.nupkg.sha512",
+    "/home/filipe/.nuget/packages/openiddict.quartz/6.3.0/openiddict.quartz.6.3.0.nupkg.sha512",
     "/home/filipe/.nuget/packages/openiddict.server/6.3.0/openiddict.server.6.3.0.nupkg.sha512",
     "/home/filipe/.nuget/packages/openiddict.server.aspnetcore/6.3.0/openiddict.server.aspnetcore.6.3.0.nupkg.sha512",
     "/home/filipe/.nuget/packages/openiddict.server.dataprotection/6.3.0/openiddict.server.dataprotection.6.3.0.nupkg.sha512",
@@ -121,6 +122,8 @@
     "/home/filipe/.nuget/packages/polly.extensions/8.4.2/polly.extensions.8.4.2.nupkg.sha512",
     "/home/filipe/.nuget/packages/polly.extensions.http/3.0.0/polly.extensions.http.3.0.0.nupkg.sha512",
     "/home/filipe/.nuget/packages/polly.ratelimiting/8.4.2/polly.ratelimiting.8.4.2.nupkg.sha512",
+    "/home/filipe/.nuget/packages/quartz/3.13.1/quartz.3.13.1.nupkg.sha512",
+    "/home/filipe/.nuget/packages/quartz.extensions.dependencyinjection/3.13.1/quartz.extensions.dependencyinjection.3.13.1.nupkg.sha512",
     "/home/filipe/.nuget/packages/scrutor/3.3.0/scrutor.3.3.0.nupkg.sha512",
     "/home/filipe/.nuget/packages/scrutor.aspnetcore/3.3.0/scrutor.aspnetcore.3.3.0.nupkg.sha512",
     "/home/filipe/.nuget/packages/swashbuckle.aspnetcore/8.1.1/swashbuckle.aspnetcore.8.1.1.nupkg.sha512",
