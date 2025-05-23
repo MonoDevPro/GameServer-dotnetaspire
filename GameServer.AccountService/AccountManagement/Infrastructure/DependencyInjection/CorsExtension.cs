@@ -23,17 +23,25 @@ public static class CorsExtension
                     .GetSection("Cors:AllowedOrigins").Get<string[]>() ?? Array.Empty<string>())
                     .AllowAnyHeader()
                     .AllowAnyMethod()
-                    .AllowCredentials();
+                    .AllowCredentials()
+                    .SetIsOriginAllowed((host) =>
+                    {
+                        var allowedHosts = buildServiceProvider
+                            .GetRequiredService<IConfiguration>()
+                            .GetSection("Cors:AllowedOrigins").Get<string[]>() ?? Array.Empty<string>();
+                        return allowedHosts.Contains(host);
+                    });
             });
         });
-        
+
         return builder;
     }
-    
+
     public static WebApplication UseCorsApplication(this WebApplication app)
     {
+        app.UseCors(AccountServicesExtension.PolicyDefaultName);
         app.UseCors(AccountServicesExtension.CorsPolicyName);
-        
+
         return app;
     }
 }

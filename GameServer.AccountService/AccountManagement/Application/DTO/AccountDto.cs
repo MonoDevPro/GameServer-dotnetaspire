@@ -8,45 +8,39 @@ public class AccountDto
     /// ID do usuário
     /// </summary>
     public long Id { get; }
-    
+
     /// <summary>
     /// Unique ID do usuário
     /// </summary>
     public Guid UniqueId { get; }
-    
+
     /// <summary>
     /// Nome de usuário
     /// </summary>
     public string? UserName { get; }
-    
+
     /// <summary>
     /// Email
     /// </summary>
     public string? Email { get; }
-    
+
     /// <summary>
     /// Nome
     /// </summary>
     public string? FirstName { get; }
-    
+
     /// <summary>
     /// Sobrenome
     /// </summary>
     public string? LastName { get; }
 
-    /// <summary>
-    /// Claims Principal
-    /// </summary>
-    public IPrincipal? ClaimsPrincipal { get; }
-    
     public AccountDto(
-        long id, 
-        Guid uniqueId, 
-        string? userName, 
-        string? email, 
-        string? firstName, 
-        string? lastName,
-        IPrincipal? claimsPrincipal = null)
+        long id,
+        Guid uniqueId,
+        string? userName,
+        string? email,
+        string? firstName,
+        string? lastName)
     {
         Id = id;
         UniqueId = uniqueId;
@@ -54,6 +48,5 @@ public class AccountDto
         Email = email;
         FirstName = firstName;
         LastName = lastName;
-        ClaimsPrincipal = claimsPrincipal;
     }
 }

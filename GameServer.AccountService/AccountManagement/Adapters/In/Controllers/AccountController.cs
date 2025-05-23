@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using OpenIddict.Abstractions;
 using OpenIddict.Server.AspNetCore;
+using OpenIddict.Validation.AspNetCore;
 
 namespace GameServer.AccountService.AccountManagement.Adapters.In.Controllers;
 
@@ -19,17 +20,17 @@ public class AccountController : ControllerBase
 {
     private readonly ICommandBus _commandBus;
     private readonly IQueryBus _queryBus;
-    private readonly IUserClaimsPrincipalFactory<ApplicationUser> _userClaimsPrincipalFactory;
-    private readonly IAccountIdentitySyncService _accountIdentitySyncService;
-    
+    //private readonly IUserClaimsPrincipalFactory<ApplicationUser> _userClaimsPrincipalFactory;
+    //private readonly IAccountIdentitySyncService _accountIdentitySyncService;
+
     //private readonly UserManager<ApplicationUser> _userManager;
     //private readonly SignInManager<ApplicationUser> _signInManager;
     //private readonly IOpenIddictTokenManager _tokenManager; // ou via HttpContext
 
     public AccountController(
-        ICommandBus commandBus, 
-        IQueryBus queryBus,
-        IUserClaimsPrincipalFactory<ApplicationUser> userClaimsPrincipalFactory
+        ICommandBus commandBus,
+        IQueryBus queryBus
+        //IUserClaimsPrincipalFactory<ApplicationUser> userClaimsPrincipalFactory
         //UserManager<ApplicationUser> userManager,
         //SignInManager<ApplicationUser> signInManager,
         //IOpenIddictTokenManager tokenManager
@@ -37,37 +38,23 @@ public class AccountController : ControllerBase
     {
         _commandBus = commandBus;
         _queryBus = queryBus;
-        _userClaimsPrincipalFactory = userClaimsPrincipalFactory;
-        
+        //_userClaimsPrincipalFactory = userClaimsPrincipalFactory;
+
         //_userManager = userManager;
         //_signInManager = signInManager;
         //_tokenManager = tokenManager;
     }
-    
+
     [HttpPost("register")]
     [AllowAnonymous]
-    public async Task<IActionResult> Create([FromBody] RegisterCommand command)
+    public async Task<IActionResult> Register([FromBody] RegisterCommand command)
     {
         var result = await _commandBus.SendAsync<RegisterCommand, ResultCommand>(command);
-        
-        if (result.IsSuccess)
-        {
-            // Aqui você pode adicionar lógica adicional após o registro, se necessário
-            // Por exemplo, enviar um e-mail de confirmação ou gerar um token JWT
-            
-            var user = await _queryBus.SendAsync<GetAccountByUsernameQuery, AccountDto>(
-                new GetAccountByUsernameQuery(command.Username));
-
-            if (user.IsFailure)
-                return BadRequest(user.ErrorMessage);
-        
-            // 4) Retorne sucesso com o usuário criado
-            return Ok(result);
-        }
-        
-        return result.IsSuccess ? Ok(result) : BadRequest(result.ErrorMessage);
+        return result.IsSuccess
+            ? Ok(result)
+            : BadRequest(result.ErrorMessage);
     }
-    
+
     [HttpGet("{id}")]
     [Authorize]
     public async Task<IActionResult> GetById(long id)
@@ -76,15 +63,15 @@ public class AccountController : ControllerBase
         var result = await _queryBus.SendAsync<GetAccountByIdQuery, AccountDto>(query);
         return result.Value != null ? Ok(result) : NotFound();
     }
-    
+
     [HttpPost("login")]
-    [AllowAnonymous]
+    [Authorize]
     public async Task<IActionResult> Login([FromBody] AuthenticateCommand command)
     {
         var result = await _commandBus.SendAsync<AuthenticateCommand, ResultCommand>(command);
         return result.IsSuccess ? Ok(result) : BadRequest(result.ErrorMessage);
     }
-    
+
     [HttpPost("logout")]
     [Authorize]
     public async Task<IActionResult> Logout([FromBody] LogoutCommand command)

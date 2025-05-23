@@ -19,15 +19,13 @@ namespace GameServer.AccountService.AccountManagement.Domain.ValueObjects
 
         public string Hash { get; private set; }
         public PasswordStrength Strength { get; private set; }
-        
-        private PasswordVO() { }
 
         private PasswordVO(
-            string existingHash, 
+            string hash,
             PasswordStrength strength
             )
         {
-            Hash = existingHash ?? throw new ArgumentNullException(nameof(existingHash));
+            Hash = hash ?? throw new ArgumentNullException(nameof(hash));
             Strength = strength;
         }
 
@@ -109,17 +107,17 @@ namespace GameServer.AccountService.AccountManagement.Domain.ValueObjects
         private static PasswordStrength EvaluateStrength(string password)
         {
             int score = 0;
-    
+
             // Verificações de comprimento
             if (password.Length >= MinLength) score++;
             if (password.Length >= 12) score++;
-    
+
             // Cache dos resultados de Regex para evitar múltiplas execuções
             bool hasUpperCase = Regex.IsMatch(password, "[A-Z]");
             bool hasLowerCase = Regex.IsMatch(password, "[a-z]");
             bool hasDigit = Regex.IsMatch(password, "[0-9]");
             bool hasSpecialChar = Regex.IsMatch(password, @"[!@#$%^&*(),.?"":\{\}|<>]");
-    
+
             // Atribuição de pontos
             if (hasUpperCase) score++;
             if (hasLowerCase) score++;

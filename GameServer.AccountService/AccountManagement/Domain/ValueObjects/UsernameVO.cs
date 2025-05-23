@@ -9,8 +9,6 @@ public sealed class UsernameVO : ValueObject<UsernameVO>
     private const int MaxLength = 20;
 
     public string Value { get; private set; }
-    
-    private UsernameVO() { }
 
     private UsernameVO(string value)
     {
@@ -38,11 +36,11 @@ public sealed class UsernameVO : ValueObject<UsernameVO>
             throw new ArgumentException("Nome de usuário deve conter apenas letras, números e underscore");
     }
 
-    protected override bool EqualsCore(UsernameVO? other) => 
+    protected override bool EqualsCore(UsernameVO? other) =>
         Value == other?.Value;
-        
-    protected override int ComputeHashCode() => 
+
+    protected override int ComputeHashCode() =>
         HashCode.Combine(Value);
-        
+
     public override string ToString() => Value;
 }

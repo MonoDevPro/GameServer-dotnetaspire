@@ -4,29 +4,27 @@ namespace GameServer.AccountService.AccountManagement.Domain.ValueObjects;
 
 public sealed class LoginInfoVO : ValueObject<LoginInfoVO>
 {
-    public string IpAddress { get; }
-    public string DeviceInfo { get; }
-    public DateTime LoginTime { get; }
-    
-    private LoginInfoVO(string ipAddress, string deviceInfo)
+    public string LastLoginIp { get; }
+    public DateTime LastLoginDate { get; private set; } = default!;
+
+    private LoginInfoVO(string lastLoginIp, DateTime lastLoginDate)
     {
-        IpAddress = ipAddress;
-        DeviceInfo = deviceInfo;
-        LoginTime = DateTime.UtcNow;
+        LastLoginIp = lastLoginIp;
+        LastLoginDate = lastLoginDate;
     }
-    
-    public static LoginInfoVO Create(string ipAddress, string deviceInfo)
+
+    public static LoginInfoVO Create(string ipAddress, DateTime lastLoginDate)
     {
         if (string.IsNullOrWhiteSpace(ipAddress))
             throw new ArgumentException("IP não pode ser vazio", nameof(ipAddress));
-            
-        return new LoginInfoVO(ipAddress, deviceInfo ?? "Desconhecido");
+
+        return new LoginInfoVO(ipAddress, lastLoginDate);
     }
-    
-    protected override bool EqualsCore(LoginInfoVO? other) => 
-        IpAddress == other?.IpAddress && 
-        DeviceInfo == other.DeviceInfo;
-        
-    protected override int ComputeHashCode() => 
-        HashCode.Combine(IpAddress, DeviceInfo);
+
+    protected override bool EqualsCore(LoginInfoVO? other) =>
+        LastLoginIp == other?.LastLoginIp &&
+        LastLoginDate == other?.LastLoginDate;
+
+    protected override int ComputeHashCode() =>
+        HashCode.Combine(LastLoginIp, LastLoginDate);
 }

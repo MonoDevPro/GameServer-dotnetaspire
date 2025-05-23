@@ -169,7 +169,7 @@ public abstract class IdentityDbContextBase : IdentityDbContext<ApplicationUser,
         {
             LastSaveChangesResult.AddMessage($"ChangeTracker has modified entities: {entry.Entity.GetType()}");
         }
-        
+
         var deletedEntries = ChangeTracker.Entries().Where(e => e.State == EntityState.Deleted);
         foreach (var entry in deletedEntries)
         {
@@ -186,17 +186,17 @@ public abstract class IdentityDbContextBase : IdentityDbContext<ApplicationUser,
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-        
+
         // Configurações específicas do OpenIddict
         builder.UseOpenIddict();
-        
+
         // Renomear tabelas do Identity para manter consistência de nomenclatura
-        builder.Entity<IdentityUser>().ToTable("IdentityUsers");
-        builder.Entity<IdentityRole>().ToTable("IdentityRoles");
-        builder.Entity<IdentityUserRole<string>>().ToTable("IdentityUserRoles");
-        builder.Entity<IdentityUserClaim<string>>().ToTable("IdentityUserClaims");
-        builder.Entity<IdentityUserLogin<string>>().ToTable("IdentityUserLogins");
-        builder.Entity<IdentityRoleClaim<string>>().ToTable("IdentityRoleClaims");
-        builder.Entity<IdentityUserToken<string>>().ToTable("IdentityUserTokens");
+        builder.Entity<ApplicationUser>().ToTable("IdentityUsers");
+        builder.Entity<ApplicationUserRole>().ToTable("IdentityRoles");
+        builder.Entity<IdentityUserRole<Guid>>().ToTable("IdentityUserRoles");
+        builder.Entity<IdentityUserClaim<Guid>>().ToTable("IdentityUserClaims");
+        builder.Entity<IdentityUserLogin<Guid>>().ToTable("IdentityUserLogins");
+        builder.Entity<IdentityRoleClaim<Guid>>().ToTable("IdentityRoleClaims");
+        builder.Entity<IdentityUserToken<Guid>>().ToTable("IdentityUserTokens");
     }
 }

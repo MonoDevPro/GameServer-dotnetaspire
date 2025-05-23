@@ -10,17 +10,16 @@ public class Account : Entity<long>
     #region Propriedades
 
     // Informações básicas da conta
-    public UsernameVO Username { get; private set; }
-    public EmailVO Email { get; private set; }
-    public PasswordVO Password { get; private set; }
+    public UsernameVO Username { get; private set; } = default!;
+    public EmailVO Email { get; private set; } = default!;
+    public PasswordVO Password { get; private set; } = default!;
     public bool IsActive { get; private set; }
     public AccountType AccountType { get; private set; } = AccountType.Player;
-    
+
     // Informações de segurança
-    public BanInfoVO BanInfo { get; private set; }
-    public DateTime CreatedAt { get; private set; }
-    public LoginInfoVO? LastLoginInfo { get; private set; }
-    public DateTime? LastLoginDate { get; private set; }
+    public BanInfoVO BanInfo { get; private set; } = default!;
+    public DateTime CreatedAt { get; private set; } = default!;
+    public LoginInfoVO LastLoginInfo { get; private set; } = default!;
 
     // Permissões
     private readonly List<RoleVO> _roles = new();
@@ -45,6 +44,9 @@ public class Account : Entity<long>
         // Adiciona evento de domínio
         AddDomainEvent(new AccountCreatedEvent(Id, Email, Username));
     }
+
+    // Construtor sem parâmetros para o EF Core
+    protected Account() { }
 
     #endregion
 
@@ -96,7 +98,6 @@ public class Account : Entity<long>
             throw new DomainException($"Conta banida até {BanInfo.ExpiresAt}. Motivo: {BanInfo.Reason}");
 
         LastLoginInfo = loginInfo;
-        LastLoginDate = DateTime.UtcNow;
 
         AddDomainEvent(new AccountLoggedIn(Id, Username, loginInfo));
     }

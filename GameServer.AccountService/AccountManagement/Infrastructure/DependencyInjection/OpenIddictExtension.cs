@@ -6,6 +6,8 @@ using OpenIddict.Core;
 using OpenIddict.EntityFrameworkCore.Models;
 using OpenIddict.Server;
 using OpenIddict.Validation;
+using Quartz;
+using static OpenIddict.Abstractions.OpenIddictConstants;
 
 namespace GameServer.AccountService.AccountManagement.Infrastructure.DependencyInjection;
 
@@ -16,54 +18,71 @@ public static class OpenIddictExtension
         // 1) Carrega a seção OpenIddict do appsettings.json
         builder.Services.Configure<OpenIddictSettings>(
             builder.Configuration.GetSection("OpenIddict"));
-        
+
+        // OpenIddict offers native integration with Quartz.NET to perform scheduled tasks
+        // (like pruning orphaned authorizations/tokens from the database) at regular intervals.
+        builder.Services.AddQuartz(options =>
+        {
+            // Não é mais necessário configurar explicitamente o MicrosoftDependencyInjectionJobFactory,
+            // pois ele já é o padrão ao usar AddQuartz com DI no .NET moderno.
+            options.UseSimpleTypeLoader();
+            options.UseInMemoryStore();
+            options.InterruptJobsOnShutdown = false;
+            options.InterruptJobsOnShutdownWithWait = false;
+        });
+
         // Configurar OpenIddict completo
         builder.Services.AddOpenIddict()
             .AddCore(options =>
             {
                 options.UseEntityFrameworkCore()
                     .UseDbContext<AccountDbContext>();
+
+                // Enable Quartz.NET integration.
+                options.UseQuartz();
             })
             .AddServer(options =>
             {
-                /*options.AddEventHandler(OpenIddictServerHandlerDescriptor.CreateBuilder<T>() (builder =>
-                    builder.UseInlineHandler(context =>
-                    {
-                        // adiciona um campo customizado:
-                        context.Response["x-custom"] = "meu-valor";
-                        return default;
-                    })
-                ));*/
-                
-                options.SetTokenEndpointUris("connect/token")
+                options
+                    .SetTokenEndpointUris("connect/token")
                     .SetAuthorizationEndpointUris("connect/authorize")
                     .SetUserInfoEndpointUris("connect/userinfo")
-                    .SetIntrospectionEndpointUris("connect/introspect");
-                
+                    .SetIntrospectionEndpointUris("connect/introspect")
+                    .SetRevocationEndpointUris("connect/revocation")
+                    .SetEndSessionEndpointUris("connect/logout");
+
+                // Mark the "email", "profile" and "roles" scopes as supported scopes.
+                options.RegisterScopes(Scopes.Email, Scopes.Profile, Scopes.Roles);
+
                 // Flows permitidos
-                options.AllowAuthorizationCodeFlow()
+                options
+                    .AllowAuthorizationCodeFlow()
                     .AllowRefreshTokenFlow()
                     .AllowClientCredentialsFlow()
                     .AllowPasswordFlow();
-                
+
                 // Certificados para desenvolvimento
-                options.AddDevelopmentEncryptionCertificate()
+                options
+                    .AddDevelopmentEncryptionCertificate()
                     .AddDevelopmentSigningCertificate();
-                
-                options.UseAspNetCore()
-                    .EnableTokenEndpointPassthrough()
+
+                options
+                    .UseAspNetCore()
                     .EnableAuthorizationEndpointPassthrough()
-                    .EnableUserInfoEndpointPassthrough();
+                    .EnableEndSessionEndpointPassthrough()
+                    .EnableTokenEndpointPassthrough()
+                    .EnableUserInfoEndpointPassthrough()
+                    .EnableStatusCodePagesIntegration();
             })
             .AddValidation(options =>
             {
                 options.UseLocalServer();
                 options.UseAspNetCore();
             });
-        
+
         return builder;
     }
-    
+
     public static async Task SeedOpenIddictClientsAsync(IServiceProvider provider)
     {
         // Traz a configuração
@@ -81,9 +100,9 @@ public static class OpenIddictExtension
             {
                 var descriptor = new OpenIddictApplicationDescriptor
                 {
-                    ClientId         = appSettings.ClientId,
-                    ClientSecret     = appSettings.ClientSecret,
-                    DisplayName      = appSettings.DisplayName
+                    ClientId = appSettings.ClientId,
+                    ClientSecret = appSettings.ClientSecret,
+                    DisplayName = appSettings.DisplayName
                 };
 
                 // URIs

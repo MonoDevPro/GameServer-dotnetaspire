@@ -16,7 +16,7 @@ public static class CQRSContainerServices
         // CQRS QueryBus e Handlers
         builder.Services.AddScoped<IQueryBus, QueryBus>();
         builder.Services.AddScoped<IQueryHandler<GetAccountByIdQuery, AccountDto>, GetAccountByIdQueryHandler>();
-        
+
         return builder;
     }
 }

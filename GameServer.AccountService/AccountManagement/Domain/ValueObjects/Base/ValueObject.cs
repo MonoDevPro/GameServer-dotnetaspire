@@ -2,9 +2,6 @@ namespace GameServer.AccountService.AccountManagement.Domain.ValueObjects.Base;
 
 public abstract class ValueObject<T> : IEquatable<T>
 {
-    // Construtor sem parâmetros para o EF Core
-    protected ValueObject() { }
-    
     public override bool Equals(object? obj)
     {
         if (obj is not T other) return false;

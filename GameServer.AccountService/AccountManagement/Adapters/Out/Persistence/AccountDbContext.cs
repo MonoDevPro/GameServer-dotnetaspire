@@ -2,6 +2,7 @@ using GameServer.AccountService.AccountManagement.Domain.Entities;
 using GameServer.AccountService.AccountManagement.Domain.ValueObjects;
 
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence;
 
@@ -16,35 +17,44 @@ public class AccountDbContext : IdentityDbContextBase
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        
         // Mapeia as tabelas do OpenIddict
         modelBuilder.UseOpenIddict();
-            
+
         // Configuração da entidade Account
         var accountEntity = modelBuilder.Entity<Account>();
         accountEntity.HasKey(a => a.Id);
         accountEntity.Property(a => a.IsActive);
         accountEntity.Property(a => a.AccountType);
         accountEntity.Property(a => a.CreatedAt);
-        accountEntity.Property(a => a.LastLoginDate);
-            
-        // Configuração dos Value Objects
-        accountEntity.OwnsOne(a => a.Email, email =>
-        {
-            email.Property(e => e.Value).HasColumnName("Email").IsRequired();
-        });
-            
-        accountEntity.OwnsOne(a => a.Username, username =>
-        {
-            username.Property(u => u.Value).HasColumnName("Username").IsRequired();
-        });
-            
+        accountEntity.Ignore(a => a.DomainEvents); // Ignora eventos de domínio para evitar loops infinitos
+
+        // Configuração dos Value Objects com conversores customizados
+        accountEntity.Property(a => a.Email)
+            .HasConversion(
+                v => v.Value, // Para o banco
+                v => EmailVO.Create(v) // Para o domínio
+            )
+            .HasColumnName("Email").IsRequired();
+
+        accountEntity.Property(a => a.Username)
+            .HasConversion(
+                v => v.Value,
+                v => UsernameVO.Create(v)
+            )
+            .HasColumnName("Username").IsRequired();
+
+        // PasswordVO como propriedade complexa (OwnsOne)
         accountEntity.OwnsOne(a => a.Password, password =>
         {
-            password.Property(p => p.Hash).HasColumnName("PasswordHash").IsRequired();
-            password.Property(p => p.Hash).HasColumnName("PasswordStrength").IsRequired();
+            password.Property(p => p.Hash)
+                .HasColumnName("PasswordHash")
+                .IsRequired();
+            password.Property(p => p.Strength)
+                .HasColumnName("PasswordStrength")
+                .IsRequired();
         });
-            
+
+        // BanInfo pode ser mapeado como OwnsOne se for um VO complexo
         accountEntity.OwnsOne(a => a.BanInfo, banInfo =>
         {
             banInfo.Property(b => b.Status).HasColumnName("BanStatus");
@@ -52,10 +62,20 @@ public class AccountDbContext : IdentityDbContextBase
             banInfo.Property(b => b.Reason).HasColumnName("BanReason");
             banInfo.Property(b => b.BannedById).HasColumnName("BannedById");
         });
-            
+
+        // LoginInfoVO como propriedade complexa (OwnsOne)
+        accountEntity.OwnsOne(a => a.LastLoginInfo, loginInfo =>
+        {
+            loginInfo.Property(l => l.LastLoginIp)
+                .HasColumnName("LastLoginIp")
+                .IsRequired();
+            loginInfo.Property(l => l.LastLoginDate)
+                .HasColumnName("LastLoginDate")
+                .IsRequired();
+        });
+
         // Configuração do relacionamento com as roles
         modelBuilder.Entity<RoleVO>().HasKey(r => r.Value);
-            
         accountEntity
             .HasMany(a => a.Roles)
             .WithMany()

@@ -17,7 +17,7 @@ public sealed class OAuth2SecuritySchemeTransformer : IOpenApiDocumentTransforme
     public OAuth2SecuritySchemeTransformer(IAuthenticationSchemeProvider authenticationSchemeProvider, IConfiguration configuration)
     {
         _authenticationSchemeProvider = authenticationSchemeProvider;
-        _authServerUrl = configuration.GetSection("AuthServer").GetValue<string>("Url");
+        _authServerUrl = configuration.GetSection("AccountService").GetValue<string>("Url");
 
         ArgumentNullException.ThrowIfNull(_authServerUrl);
     }

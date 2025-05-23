@@ -32,7 +32,7 @@ public static class AuthorizationExtension
 
         builder.Services.AddSingleton<IAuthorizationPolicyProvider, AuthorizationPolicyProvider>();
         builder.Services.AddSingleton<IAuthorizationHandler, AppPermissionHandler>();
-        
+
         return builder;
     }
 
@@ -43,7 +43,7 @@ public static class AuthorizationExtension
     public static WebApplication UseApplicationAuthorization(this WebApplication app)
     {
         app.UseAuthorization();
-        
+
         return app;
     }
 }

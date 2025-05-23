@@ -5,8 +5,6 @@ namespace GameServer.AccountService.AccountManagement.Domain.ValueObjects;
 public sealed class EmailVO : ValueObject<EmailVO>
 {
     public string Value { get; private set; }
-    
-    private EmailVO(){}
 
     private EmailVO(string value)
     {
