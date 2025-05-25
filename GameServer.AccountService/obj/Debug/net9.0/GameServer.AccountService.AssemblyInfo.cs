@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameServer.AccountService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3565679ae91b0783ac1f0b1d35a0aaaa88ed8f1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9be595e6e12140aaed9818ec79674f154f0d559")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameServer.AccountService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameServer.AccountService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

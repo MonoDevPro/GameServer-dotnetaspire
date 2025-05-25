@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GameServer.AccountService.AccountManagement.Adapters.Out.Persistence;
 
-public class AccountDbContext : IdentityDbContextBase
+public class AccountDbContext : DbContext
 {
     public DbSet<Account> Accounts { get; set; } = null!;
 
@@ -17,8 +17,6 @@ public class AccountDbContext : IdentityDbContextBase
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        // Mapeia as tabelas do OpenIddict
-        modelBuilder.UseOpenIddict();
 
         // Configuração da entidade Account
         var accountEntity = modelBuilder.Entity<Account>();

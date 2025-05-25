@@ -49,18 +49,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
-            "FluentValidation.DependencyInjectionExtensions": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.5, )"
-            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.3, )"
@@ -82,18 +70,6 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[9.0.4, )"
-            },
-            "OpenIddict.AspNetCore": {
-              "target": "Package",
-              "version": "[6.3.0, )"
-            },
-            "OpenIddict.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.3.0, )"
-            },
-            "OpenIddict.Quartz": {
-              "target": "Package",
-              "version": "[6.3.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

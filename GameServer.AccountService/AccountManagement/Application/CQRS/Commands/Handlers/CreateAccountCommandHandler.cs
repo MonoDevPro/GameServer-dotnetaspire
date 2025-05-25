@@ -4,7 +4,6 @@ using GameServer.AccountService.AccountManagement.Application.CQRS.Commands.Resu
 using GameServer.AccountService.AccountManagement.Domain.Entities;
 using GameServer.AccountService.AccountManagement.Domain.Exceptions;
 using GameServer.AccountService.AccountManagement.Domain.ValueObjects;
-using GameServer.AccountService.AccountManagement.Ports.Out.Identity;
 using GameServer.AccountService.AccountManagement.Ports.Out.Persistence;
 using GameServer.AccountService.AccountManagement.Ports.Out.Security;
 
@@ -14,22 +13,19 @@ public class CreateAccountCommandHandler : ICommandHandler<RegisterCommand, Resu
 {
     private readonly IAccountRepository _accountRepository;
     private readonly IPasswordHashService _passwordHashService;
-    private readonly IAccountIdentitySyncService _identitySyncService;
     private readonly ILogger<CreateAccountCommandHandler> _logger;
-    
+
     public CreateAccountCommandHandler(
         IAccountRepository accountRepository,
         IPasswordHashService passwordHashService,
-        IAccountIdentitySyncService identitySyncService,
         ILogger<CreateAccountCommandHandler> logger
         )
     {
         _accountRepository = accountRepository;
         _passwordHashService = passwordHashService;
-        _identitySyncService = identitySyncService;
         _logger = logger;
     }
-    
+
     public async Task<ResultCommand> HandleAsync(RegisterCommand command, CancellationToken cancellationToken = default)
     {
         try
@@ -39,16 +35,13 @@ public class CreateAccountCommandHandler : ICommandHandler<RegisterCommand, Resu
             var username = UsernameVO.Create(command.Username);
             var email = EmailVO.Create(command.Email);
             var password = PasswordVO.Create(command.Password, _passwordHashService);
-            
+
             // Criar entidade de domínio
             var account = new Account(username, email, password);
-            
+
             // Salvar
             await _accountRepository.SaveAsync(account);
-            
-            // Sincronizar com Identity
-            await _identitySyncService.SyncToIdentityAsync(account);
-            
+
             // Retornar o resultado
             return ResultCommand.Success();
         }
