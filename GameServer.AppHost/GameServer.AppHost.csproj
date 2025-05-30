@@ -11,9 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GameServer.AccountService\GameServer.AccountService.csproj" />
-    <ProjectReference Include="../GameServer.CharacterService/GameServer.CharacterService.csproj" />
-    <ProjectReference Include="../GameServer.Web/GameServer.Web.csproj" />
+    <ProjectReference Include="../GameServer.AuthServer/GameServer.AuthServer.csproj" />
     <ProjectReference Include="..\GameServer.WorldSimulationService\GameServer.WorldSimulationService.csproj" />
   </ItemGroup>
 

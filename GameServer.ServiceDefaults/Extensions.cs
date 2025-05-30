@@ -106,6 +106,27 @@ public static class Extensions
         return builder;
     }
 
+    /// <summary>
+    /// Adiciona configuração CQRS padronizada para microsserviços
+    /// </summary>
+    public static TBuilder AddCQRSDefaults<TBuilder>(this TBuilder builder) where TBuilder : IHostApplicationBuilder
+    {
+        // Adicionar dependência para GameServer.Shared.CQRS
+        // builder.Services.AddCQRS(Assembly.GetCallingAssembly());
+
+        // Configurar logging específico para CQRS
+        builder.Services.Configure<LoggerFilterOptions>(options =>
+        {
+            // Reduzir logs de debug do CQRS em produção
+            if (!builder.Environment.IsDevelopment())
+            {
+                options.AddFilter("GameServer.Shared.CQRS", LogLevel.Information);
+            }
+        });
+
+        return builder;
+    }
+
     public static WebApplication MapDefaultEndpoints(this WebApplication app)
     {
         // Adding health checks endpoints to applications in non-development environments has security implications.

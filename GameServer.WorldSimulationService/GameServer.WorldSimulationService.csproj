@@ -27,13 +27,5 @@
     <ProjectReference Include="../GameServer.ServiceDefaults/GameServer.ServiceDefaults.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Protobuf Include="Protos\worldsimulation.proto" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 
 </Project>

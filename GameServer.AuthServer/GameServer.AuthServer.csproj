@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="AspNet.Security.OAuth.GitHub" Version="9.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="9.0.5" />
     <PackageReference Include="OpenIddict.AspNetCore" Version="6.3.0" />
     <PackageReference Include="OpenIddict.Quartz" Version="6.3.0" />
     <PackageReference Include="Quartz.Extensions.Hosting" Version="3.14.0" />
