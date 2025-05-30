@@ -1,0 +1,229 @@
+@page
+@model GameServer.AuthServer.Pages.User.ProfileModel
+@{
+    ViewData["Title"] = "Meu Perfil";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-page="/User/Dashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Meu Perfil</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1 class="h3">
+                    <i class="bi bi-person-circle"></i> Meu Perfil
+                </h1>
+                <a asp-page="/User/Dashboard" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left"></i> Voltar ao Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.StatusMessage))
+    {
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @Model.StatusMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row g-4">
+        <!-- Informações Pessoais -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-person"></i> Informações Pessoais
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="Input.FirstName" class="form-label">Nome</label>
+                                <input asp-for="Input.FirstName" class="form-control" placeholder="Seu primeiro nome" />
+                                <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Input.LastName" class="form-label">Sobrenome</label>
+                                <input asp-for="Input.LastName" class="form-control" placeholder="Seu sobrenome" />
+                                <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Input.Email" class="form-label">Email</label>
+                                <input asp-for="Input.Email" class="form-control" readonly />
+                                <div class="form-text">
+                                    Para alterar seu email, entre em contato com o suporte.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="Input.PhoneNumber" class="form-label">Telefone</label>
+                                <input asp-for="Input.PhoneNumber" class="form-control"
+                                    placeholder="+55 (11) 99999-9999" />
+                                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Data de Criação</label>
+                                <input value="@Model.AccountCreatedDate?.ToString("dd/MM/yyyy HH:mm")"
+                                    class="form-control" readonly />
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-check-circle"></i> Salvar Alterações
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" onclick="resetForm()">
+                                <i class="bi bi-arrow-clockwise"></i> Resetar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Painel Lateral -->
+        <div class="col-md-4">
+            <!-- Status da Conta -->
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h6 class="card-title mb-0">
+                        <i class="bi bi-shield-check"></i> Status da Conta
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Email Verificado:</span>
+                        <span class="badge bg-success">
+                            <i class="bi bi-check-circle"></i> Sim
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>2FA Ativo:</span>
+                        <span class="badge bg-warning">
+                            <i class="bi bi-exclamation-triangle"></i> Não
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Conta Ativa:</span>
+                        <span class="badge bg-success">
+                            <i class="bi bi-check-circle"></i> Sim
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-outline-primary btn-sm w-100">
+                        <i class="bi bi-shield-plus"></i> Configurar 2FA
+                    </a>
+                </div>
+            </div>
+
+            <!-- Permissões -->
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">
+                    <h6 class="card-title mb-0">
+                        <i class="bi bi-key"></i> Permissões
+                    </h6>
+                </div>
+                <div class="card-body">
+                    @if (Model.UserClaims.Any())
+                    {
+                        @foreach (var claim in Model.UserClaims.Take(5))
+                        {
+                            <span class="badge bg-secondary me-1 mb-1">@claim.Type: @claim.Value</span>
+                        }
+                        @if (Model.UserClaims.Count > 5)
+                        {
+                            <div class="mt-2">
+                                <small class="text-muted">+@(Model.UserClaims.Count - 5) mais permissões</small>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <small class="text-muted">Nenhuma permissão especial atribuída.</small>
+                    }
+                </div>
+            </div>
+
+            <!-- Ações Perigosas -->
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h6 class="card-title mb-0">
+                        <i class="bi bi-exclamation-triangle"></i> Zona Perigosa
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <p class="card-text small text-muted">
+                        Ações que podem afetar permanentemente sua conta.
+                    </p>
+                    <div class="d-grid gap-2">
+                        @if (Model.HasLocalPassword)
+                        {
+                            <a asp-page="/User/Settings" class="btn btn-outline-warning btn-sm">
+                                <i class="bi bi-key"></i> Alterar Senha
+                            </a>
+                        }
+                        else
+                        {
+                            @if (Model.ExternalLogins.Contains("GitHub"))
+                            {
+                                <a href="https://github.com/settings/password" target="_blank"
+                                    class="btn btn-outline-dark btn-sm">
+                                    <i class="bi bi-github"></i> Gerenciar Senha (GitHub)
+                                </a>
+                            }
+                            else
+                            {
+                                <span class="btn btn-outline-secondary btn-sm disabled">
+                                    <i class="bi bi-key"></i> Senha gerenciada via OAuth
+                                </span>
+                            }
+                        }
+                        <button type="button" class="btn btn-outline-danger btn-sm" onclick="deleteAccount()">
+                            <i class="bi bi-trash"></i> Excluir Conta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function resetForm() {
+            if (confirm('Tem certeza que deseja resetar todas as alterações?')) {
+                location.reload();
+            }
+        }
+
+        function deleteAccount() {
+            if (confirm('ATENÇÃO: Esta ação é irreversível! Tem certeza que deseja excluir sua conta permanentemente?')) {
+                if (confirm('Última confirmação: Você realmente deseja excluir sua conta? Todos os seus dados serão perdidos!')) {
+                    // Implementar exclusão de conta
+                    alert('Funcionalidade de exclusão de conta será implementada em breve.');
+                }
+            }
+        }
+    </script>
+}

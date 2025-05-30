@@ -1,0 +1,42 @@
+﻿@page
+@model GameServer.AuthServer.Pages.Connect.SignInModel
+
+<div class="jumbotron">
+    @if (User.Identity is { IsAuthenticated: true })
+    {
+        <h2>Welcome, @User.Identity.Name</h2>
+
+        <table style="table-layout: fixed; width: 100%; font-size: 0.7em">
+            <tr>
+                <th>Claim name</th>
+                <th>Claim value</th>
+            </tr>
+
+            @foreach (var claim in User.Claims)
+            {
+                <tr>
+                    <td style="word-wrap: break-word">@claim.Type</td>
+                    <td style="word-wrap: break-word">@claim.Value</td>
+                </tr>
+            }
+        </table>
+
+        <form asp-page="SignOut" asp-route-returnUrl="@Model.ReturnUrl" asp-antiforgery="true" method="post">
+            <button type="submit" class="btn btn-lg btn-warning">Sign out</button>
+        </form>
+    }
+    else
+    {
+        <h1>Authentication Required</h1>
+        <p>You need to sign in to access this application.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <a href="/Identity/Account/Login?returnUrl=@Model.ReturnUrl" class="btn btn-lg btn-primary">Sign In</a>
+            </div>
+            <div class="col-md-6">
+                <a href="/Identity/Account/Register?returnUrl=@Model.ReturnUrl" class="btn btn-lg btn-success">Register</a>
+            </div>
+        </div>
+    }
+</div>

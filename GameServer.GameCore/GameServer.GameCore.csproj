@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-GameServer.GameCore-00688260-e901-4ae0-b011-e42a93d11a2b</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="AccountContext\Ports\In\" />
+      <Folder Include="CharacterContext\" />
+      <Folder Include="WorldContext\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Protobuf Include="WorldContext\Protos\worldsimulation.proto">
+        <Generator>MSBuild:Compile</Generator>
+      </Protobuf>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GameServer.Shared.CQRS\GameServer.Shared.CQRS.csproj" />
+      <ProjectReference Include="..\GameServer.Shared.Database\GameServer.Shared.Database.csproj" />
+      <ProjectReference Include="..\GameServer.Shared.EventBus\GameServer.Shared.EventBus.csproj" />
+    </ItemGroup>
+</Project>

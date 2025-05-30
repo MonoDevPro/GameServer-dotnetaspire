@@ -1,0 +1,344 @@
+@page
+@model GameServer.AuthServer.Pages.User.SettingsModel
+@{
+    ViewData["Title"] = "Configurações";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-page="/User/Dashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Configurações</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1 class="h3">
+                    <i class="bi bi-gear"></i> Configurações da Conta
+                </h1>
+                <a asp-page="/User/Dashboard" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left"></i> Voltar ao Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.StatusMessage))
+    {
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @Model.StatusMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row g-4">
+        <!-- Configurações de Segurança -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-shield-exclamation"></i> Segurança
+                    </h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.HasLocalPassword)
+                    {
+                        <form method="post" asp-page-handler="UpdateSecurity">
+                            <div class="mb-3">
+                                <h6>Alteração de Senha</h6>
+                                <p class="text-muted small">Altere sua senha regularmente para manter sua conta segura.</p>
+                                <div class="mb-3">
+                                    <label asp-for="SecurityInput.CurrentPassword" class="form-label">Senha Atual</label>
+                                    <input asp-for="SecurityInput.CurrentPassword" class="form-control" type="password" />
+                                    <span asp-validation-for="SecurityInput.CurrentPassword" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="SecurityInput.NewPassword" class="form-label">Nova Senha</label>
+                                    <input asp-for="SecurityInput.NewPassword" class="form-control" type="password" />
+                                    <span asp-validation-for="SecurityInput.NewPassword" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="SecurityInput.ConfirmPassword" class="form-label">Confirmar Nova
+                                        Senha</label>
+                                    <input asp-for="SecurityInput.ConfirmPassword" class="form-control" type="password" />
+                                    <span asp-validation-for="SecurityInput.ConfirmPassword" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <hr class="my-3">
+
+                            <div class="mb-3">
+                                <h6>Autenticação de Dois Fatores (2FA)</h6>
+                                <p class="text-muted small">Adicione uma camada extra de segurança à sua conta.</p>
+                                <div class="form-check form-switch">
+                                    <input asp-for="SecurityInput.TwoFactorEnabled" class="form-check-input" type="checkbox"
+                                        disabled />
+                                    <label asp-for="SecurityInput.TwoFactorEnabled" class="form-check-label">
+                                        Habilitar 2FA <span class="badge bg-warning">Em Breve</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-danger">
+                                <i class="bi bi-shield-check"></i> Atualizar Segurança
+                            </button>
+                        </form>
+                    }
+                    else
+                    {
+                        <div class="mb-3">
+                            <h6>Gerenciamento de Senha</h6>
+                            <div class="alert alert-info d-flex align-items-center" role="alert">
+                                <i class="bi bi-info-circle me-2"></i>
+                                <div>
+                                    Você está logado via <strong>@string.Join(", ", Model.ExternalLogins)</strong>.
+                                    Para alterar sua senha, acesse as configurações da sua conta no provedor de
+                                    autenticação.
+                                </div>
+                            </div>
+                            @if (Model.ExternalLogins.Contains("GitHub"))
+                            {
+                                <a href="https://github.com/settings/password" target="_blank" class="btn btn-outline-dark">
+                                    <i class="bi bi-github"></i> Gerenciar Senha no GitHub
+                                </a>
+                            }
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="mb-3">
+                            <h6>Autenticação de Dois Fatores (2FA)</h6>
+                            <p class="text-muted small">Adicione uma camada extra de segurança à sua conta.</p>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" disabled />
+                                <label class="form-check-label">
+                                    Habilitar 2FA <span class="badge bg-warning">Em Breve</span>
+                                </label>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Configurações de Notificações -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header bg-info text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-bell"></i> Notificações
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-page-handler="UpdateNotifications">
+                        <div class="mb-3">
+                            <h6>Notificações por Email</h6>
+                            <div class="form-check">
+                                <input asp-for="NotificationInput.EmailOnLogin" class="form-check-input"
+                                    type="checkbox" />
+                                <label asp-for="NotificationInput.EmailOnLogin" class="form-check-label">
+                                    Notificar sobre novos logins
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input asp-for="NotificationInput.EmailOnPasswordChange" class="form-check-input"
+                                    type="checkbox" />
+                                <label asp-for="NotificationInput.EmailOnPasswordChange" class="form-check-label">
+                                    Notificar sobre mudanças de senha
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input asp-for="NotificationInput.EmailOnSecurityAlert" class="form-check-input"
+                                    type="checkbox" />
+                                <label asp-for="NotificationInput.EmailOnSecurityAlert" class="form-check-label">
+                                    Alertas de segurança
+                                </label>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="mb-3">
+                            <h6>Notificações do Sistema</h6>
+                            <div class="form-check">
+                                <input asp-for="NotificationInput.SystemMaintenance" class="form-check-input"
+                                    type="checkbox" />
+                                <label asp-for="NotificationInput.SystemMaintenance" class="form-check-label">
+                                    Manutenções do sistema
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input asp-for="NotificationInput.GameUpdates" class="form-check-input"
+                                    type="checkbox" />
+                                <label asp-for="NotificationInput.GameUpdates" class="form-check-label">
+                                    Atualizações do jogo
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-info">
+                            <i class="bi bi-bell-fill"></i> Salvar Notificações
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Configurações de Privacidade -->
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-eye-slash"></i> Privacidade
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-page-handler="UpdatePrivacy">
+                        <div class="mb-3">
+                            <h6>Visibilidade do Perfil</h6>
+                            <div class="form-check">
+                                <input asp-for="PrivacyInput.ProfilePublic" class="form-check-input" type="checkbox" />
+                                <label asp-for="PrivacyInput.ProfilePublic" class="form-check-label">
+                                    Perfil público
+                                </label>
+                                <div class="form-text">Permitir que outros usuários vejam seu perfil básico.</div>
+                            </div>
+                            <div class="form-check">
+                                <input asp-for="PrivacyInput.ShowOnlineStatus" class="form-check-input"
+                                    type="checkbox" />
+                                <label asp-for="PrivacyInput.ShowOnlineStatus" class="form-check-label">
+                                    Mostrar status online
+                                </label>
+                                <div class="form-text">Exibir quando você está online para outros jogadores.</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="mb-3">
+                            <h6>Dados e Analytics</h6>
+                            <div class="form-check">
+                                <input asp-for="PrivacyInput.AllowAnalytics" class="form-check-input" type="checkbox" />
+                                <label asp-for="PrivacyInput.AllowAnalytics" class="form-check-label">
+                                    Permitir coleta de dados para melhorias
+                                </label>
+                                <div class="form-text">Ajude-nos a melhorar o jogo compartilhando dados anônimos de uso.
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-warning">
+                            <i class="bi bi-shield-check"></i> Salvar Privacidade
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Configurações da Conta -->
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-person-gear"></i> Conta
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6>Informações da Conta</h6>
+                        <ul class="list-unstyled">
+                            <li><strong>ID da Conta:</strong> <code>@Model.UserId</code></li>
+                            <li><strong>Email:</strong> @Model.UserEmail</li>
+                            <li><strong>Criada em:</strong> @Model.AccountCreatedDate?.ToString("dd/MM/yyyy")</li>
+                            <li><strong>Último Login:</strong> @Model.LastLoginDate?.ToString("dd/MM/yyyy HH:mm")</li>
+                        </ul>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="mb-3">
+                        <h6>Sessões Ativas</h6>
+                        <p class="text-muted small">Gerencie dispositivos conectados à sua conta.</p>
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-outline-secondary btn-sm"
+                                onclick="viewActiveSessions()">
+                                <i class="bi bi-list"></i> Ver Sessões Ativas
+                            </button>
+                            <form method="post" asp-page-handler="LogoutAllDevices" class="d-inline">
+                                <button type="submit" class="btn btn-outline-danger btn-sm w-100"
+                                    onclick="return confirm('Deseja fazer logout de todos os dispositivos?')">
+                                    <i class="bi bi-power"></i> Logout de Todos os Dispositivos
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zona Perigosa -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-exclamation-triangle-fill"></i> Zona Perigosa
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h6>Excluir Conta</h6>
+                            <p class="text-muted">
+                                Uma vez excluída, sua conta não poderá ser recuperada. Todos os seus dados, personagens
+                                e progresso serão perdidos permanentemente.
+                            </p>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                            <button type="button" class="btn btn-danger w-100" onclick="deleteAccount()">
+                                <i class="bi bi-trash-fill"></i> Excluir Minha Conta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function viewActiveSessions() {
+            // Implementar visualização de sessões ativas
+            alert('Funcionalidade de visualização de sessões ativas será implementada em breve.');
+        }
+
+        function deleteAccount() {
+            if (confirm('ATENÇÃO: Esta ação é irreversível!\n\nSua conta será permanentemente excluída, incluindo:\n- Todos os personagens\n- Todo o progresso no jogo\n- Todas as configurações\n- Histórico de compras\n\nTem certeza absoluta que deseja continuar?')) {
+                var confirmation = prompt('Para confirmar, digite "EXCLUIR" (em maiúsculas):');
+                if (confirmation === 'EXCLUIR') {
+                    if (confirm('Esta é sua última chance! Tem certeza que deseja excluir permanentemente sua conta?')) {
+                        // Implementar exclusão de conta
+                        alert('Funcionalidade de exclusão de conta será implementada em breve.');
+                    }
+                } else if (confirmation !== null) {
+                    alert('Confirmação incorreta. A conta não foi excluída.');
+                }
+            }
+        }
+    </script>
+}
+
+               

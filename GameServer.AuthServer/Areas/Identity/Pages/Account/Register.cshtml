@@ -1,0 +1,142 @@
+@page "/Identity/Account/Register"
+@model RegisterModel
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white text-center">
+                    <h3 class="mb-0">
+                        <i class="bi bi-person-plus"></i> Cadastro
+                    </h3>
+                    <p class="mb-0 mt-2">Crie sua conta no GameServer</p>
+                </div>
+                <div class="card-body p-4">
+                    <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username"
+                                aria-required="true" placeholder="name@example.com" />
+                            <label asp-for="Input.Email" class="form-label">
+                                <i class="bi bi-envelope"></i> Email
+                            </label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Password" class="form-control" autocomplete="new-password"
+                                aria-required="true" placeholder="password" />
+                            <label asp-for="Input.Password" class="form-label">
+                                <i class="bi bi-key"></i> Senha
+                            </label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password"
+                                aria-required="true" placeholder="password" />
+                            <label asp-for="Input.ConfirmPassword" class="form-label">
+                                <i class="bi bi-key-fill"></i> Confirmar Senha
+                            </label>
+                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid mb-3">
+                            <button id="registerSubmit" type="submit" class="btn btn-success btn-lg">
+                                <i class="bi bi-person-plus"></i> Criar Conta
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center bg-light">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-box-arrow-in-right"></i> Já tenho uma conta
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <small class="text-muted">
+                                <a id="forgot-password" asp-page="./ForgotPassword" class="text-decoration-none">
+                                    <i class="bi bi-question-circle"></i> Esqueceu sua senha?
+                                </a>
+                                |
+                                <a id="resend-confirmation" asp-page="./ResendEmailConfirmation"
+                                    class="text-decoration-none">
+                                    <i class="bi bi-envelope-check"></i> Reenviar confirmação
+                                </a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações de Requisitos de Senha -->
+            <div class="card mt-3 border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h6 class="mb-0">
+                        <i class="bi bi-shield-check"></i> Requisitos de Senha
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <p class="mb-2">Sua senha deve conter:</p>
+                    <ul class="mb-0">
+                        <li>Pelo menos 6 caracteres</li>
+                        <li>Pelo menos 1 letra maiúscula</li>
+                        <li>Pelo menos 1 letra minúscula</li>
+                        <li>Pelo menos 1 número</li>
+                        <li>Pelo menos 1 caractere especial (!@@#$%^&*)</li>
+                    </ul>
+                </div>
+            </div>
+
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) > 0)
+                {
+                    <div class="card mt-3 border-secondary">
+                        <div class="card-header bg-secondary text-white">
+                            <h6 class="mb-0">
+                                <i class="bi bi-share"></i> Cadastro Social
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-3 text-center">Ou cadastre-se usando:</p>
+                            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl"
+                                method="post">
+                                <div class="d-grid">
+                                    @foreach (var provider in Model.ExternalLogins!)
+                                    {
+                                        <button type="submit" class="btn btn-dark btn-lg mb-2" name="provider" value="@provider.Name"
+                                            title="Cadastre-se usando sua conta @provider.DisplayName">
+                                            @if (provider.Name.ToLower() == "github")
+                                            {
+                                                <i class="bi bi-github"></i>
+                                            }
+                                            else
+                                            {
+                                                <i class="bi bi-share"></i>
+                                            }
+                                            Cadastrar com @provider.DisplayName
+                                        </button>
+                                    }
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+                               

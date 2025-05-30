@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS.Tests/GameServer.Shared.CQRS.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS.Tests/GameServer.Shared.CQRS.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS.Tests/GameServer.Shared.CQRS.Tests.csproj",
+        "projectName": "GameServer.Shared.CQRS.Tests",
+        "projectPath": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS.Tests/GameServer.Shared.CQRS.Tests.csproj",
+        "packagesPath": "/home/filipe/.nuget/packages/",
+        "outputPath": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/filipe/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS/GameServer.Shared.CQRS.csproj": {
+                "projectPath": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS/GameServer.Shared.CQRS.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "BenchmarkDotNet": {
+              "target": "Package",
+              "version": "[0.13.12, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS/GameServer.Shared.CQRS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS/GameServer.Shared.CQRS.csproj",
+        "projectName": "GameServer.Shared.CQRS",
+        "projectPath": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS/GameServer.Shared.CQRS.csproj",
+        "packagesPath": "/home/filipe/.nuget/packages/",
+        "outputPath": "/home/filipe/Desenvolvimento/NOVOSERVER-ASPIRE/GameServer/GameServer.Shared.CQRS/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/filipe/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

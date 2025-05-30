@@ -1,0 +1,151 @@
+@page "/Identity/Account/Login"
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3 class="mb-0">
+                        <i class="bi bi-box-arrow-in-right"></i> Login
+                    </h3>
+                    <p class="mb-0 mt-2">Entre na sua conta do GameServer</p>
+                </div>
+                <div class="card-body p-4">
+                    <form id="account" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username"
+                                aria-required="true" placeholder="name@example.com" />
+                            <label asp-for="Input.Email" class="form-label">
+                                <i class="bi bi-envelope"></i> Email
+                            </label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password"
+                                aria-required="true" placeholder="password" />
+                            <label asp-for="Input.Password" class="form-label">
+                                <i class="bi bi-key"></i> Senha
+                            </label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                            <label asp-for="Input.RememberMe" class="form-check-label">
+                                <i class="bi bi-check-circle"></i> @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            </label>
+                        </div>
+
+                        <div class="d-grid mb-3">
+                            <button id="login-submit" type="submit" class="btn btn-primary btn-lg">
+                                <i class="bi bi-box-arrow-in-right"></i> Entrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center bg-light">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl"
+                                class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-person-plus"></i> Criar nova conta
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <small class="text-muted">
+                                <a id="forgot-password" asp-page="./ForgotPassword" class="text-decoration-none">
+                                    <i class="bi bi-question-circle"></i> Esqueceu sua senha?
+                                </a>
+                                |
+                                <a id="resend-confirmation" asp-page="./ResendEmailConfirmation"
+                                    class="text-decoration-none">
+                                    <i class="bi bi-envelope-check"></i> Reenviar confirmação
+                                </a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações de Login de Teste -->
+            <div class="card mt-3 border-info">
+                <div class="card-header bg-info text-white">
+                    <h6 class="mb-0">
+                        <i class="bi bi-info-circle"></i> Conta de Teste
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <p class="mb-2">Use as credenciais abaixo para testar o sistema:</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <strong>Email:</strong><br>
+                            <code>admin@gameserver.local</code>
+                        </div>
+                        <div class="col-sm-6">
+                            <strong>Senha:</strong><br>
+                            <code>Admin123!</code>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-info btn-sm mt-2 w-100"
+                        onclick="fillTestCredentials()">
+                        <i class="bi bi-clipboard"></i> Preencher Automaticamente
+                    </button>
+                </div>
+            </div>
+
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) > 0)
+                {
+                    <div class="card mt-3 border-secondary">
+                        <div class="card-header bg-secondary text-white">
+                            <h6 class="mb-0">
+                                <i class="bi bi-share"></i> Login Social
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-3 text-center">Ou entre usando:</p>
+                            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl"
+                                method="post">
+                                <div class="d-grid">
+                                    @foreach (var provider in Model.ExternalLogins!)
+                                    {
+                                        <button type="submit" class="btn btn-dark btn-lg mb-2" name="provider"
+                                            value="@provider.Name" title="Entrar usando sua conta @provider.DisplayName">
+                                            @if (provider.Name.ToLower() == "github")
+                                            {
+                                                <i class="bi bi-github"></i>
+                                            }
+                                            else
+                                            {
+                                                <i class="bi bi-share"></i>
+                                            }
+                                            Entrar com @provider.DisplayName
+                                        </button>
+                                    }
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function fillTestCredentials() {
+            document.getElementById('Input_Email').value = 'admin@gameserver.local';
+            document.getElementById('Input_Password').value = 'Admin123!';
+        }
+    </script>
+}

@@ -1,0 +1,199 @@
+﻿@page
+@model GameServer.AuthServer.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+@if (User.Identity?.IsAuthenticated == true)
+{
+    <!-- Usuário Logado -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron bg-primary text-white rounded p-5 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h1 class="display-4">
+                                <i class="bi bi-person-check-fill"></i> Bem-vindo de volta, @User.Identity.Name!
+                            </h1>
+                            <p class="lead">Sua conta está ativa e pronta para a aventura.</p>
+                            <p class="mb-0">
+                                <small>
+                                    Último acesso: @DateTime.Now.AddHours(-2).ToString("dd/MM/yyyy HH:mm")
+                                </small>
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <a asp-page="/User/Dashboard" class="btn btn-light btn-lg">
+                                <i class="bi bi-speedometer2"></i> Ir para Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Acesso Rápido -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-person-circle text-primary" style="font-size: 3rem;"></i>
+                        <h5 class="card-title mt-3">Meu Perfil</h5>
+                        <p class="card-text">Gerencie suas informações pessoais e configurações de conta.</p>
+                        <a asp-page="/User/Profile" class="btn btn-outline-primary">
+                            <i class="bi bi-person"></i> Ver Perfil
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-gear text-success" style="font-size: 3rem;"></i>
+                        <h5 class="card-title mt-3">Configurações</h5>
+                        <p class="card-text">Ajuste suas preferências de segurança e notificações.</p>
+                        <a asp-page="/User/Settings" class="btn btn-outline-success">
+                            <i class="bi bi-gear"></i> Configurar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-shield-check text-warning" style="font-size: 3rem;"></i>
+                        <h5 class="card-title mt-3">Segurança</h5>
+                        <p class="card-text">Monitore a segurança da sua conta e sessões ativas.</p>
+                        <a href="#" class="btn btn-outline-warning">
+                            <i class="bi bi-shield"></i> Ver Segurança
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-question-circle text-info" style="font-size: 3rem;"></i>
+                        <h5 class="card-title mt-3">Suporte</h5>
+                        <p class="card-text">Precisa de ajuda? Consulte nossa documentação e suporte.</p>
+                        <a href="#" class="btn btn-outline-info">
+                            <i class="bi bi-headset"></i> Obter Ajuda
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informações da Sessão -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h6 class="card-title mb-0">
+                            <i class="bi bi-info-circle"></i> Informações da Sessão
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <strong>IP:</strong> @HttpContext.Connection.RemoteIpAddress
+                            </div>
+                            <div class="col-md-3">
+                                <strong>Navegador:</strong> @HttpContext.Request.Headers["User-Agent"].ToString().Split(' ')[0]
+                            </div>
+                            <div class="col-md-3">
+                                <strong>Sessão Iniciada:</strong> @DateTime.Now.AddMinutes(-30).ToString("HH:mm")
+                            </div>
+                            <div class="col-md-3">
+                                <form method="post" asp-area="Identity" asp-page="/Account/Logout" class="d-inline">
+                                    <button type="submit" class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-box-arrow-right"></i> Logout
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <!-- Usuário Não Logado -->
+    <div class="text-center">
+        <div class="jumbotron bg-gradient-primary text-white rounded p-5 mb-5">
+            <h1 class="display-3">
+                <i class="bi bi-shield-check"></i> GameServer Authentication
+            </h1>
+            <p class="lead">Sistema de autenticação seguro para o GameServer</p>
+            <p class="mb-4">Faça login para acessar sua conta ou registre-se para começar sua jornada.</p>
+            <div class="btn-group" role="group">
+                <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-light btn-lg me-3">
+                    <i class="bi bi-box-arrow-in-right"></i> Fazer Login
+                </a>
+                <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-person-plus"></i> Criar Conta
+                </a>
+            </div>
+        </div>
+
+        <div class="row g-4 text-start">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-shield-fill-check text-success" style="font-size: 3rem;"></i>
+                        <h5 class="card-title mt-3">Segurança Avançada</h5>
+                        <p class="card-text">
+                            Proteção robusta com OpenIddict, ASP.NET Core Identity e autenticação de dois fatores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-lightning-fill text-warning" style="font-size: 3rem;"></i>
+                        <h5 class="card-title mt-3">Alto Desempenho</h5>
+                        <p class="card-text">
+                            Powered by .NET Aspire para máxima performance e escalabilidade no gerenciamento de sessões.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-graph-up text-info" style="font-size: 3rem;"></i>
+                        <h5 class="card-title mt-3">Monitoramento</h5>
+                        <p class="card-text">
+                            Telemetria completa e health checks para garantir a disponibilidade dos serviços.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Tecnologias Utilizadas</h6>
+                        <div class="d-flex justify-content-center flex-wrap gap-2">
+                            <span class="badge bg-primary">ASP.NET Core</span>
+                            <span class="badge bg-success">OpenIddict</span>
+                            <span class="badge bg-info">.NET Aspire</span>
+                            <span class="badge bg-warning">PostgreSQL</span>
+                            <span class="badge bg-danger">Bootstrap 5</span>
+                            <span class="badge bg-dark">Entity Framework</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
